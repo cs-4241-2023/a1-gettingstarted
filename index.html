@@ -1,28 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --white-green: #f8fff8;
+        --light-green: #c1e1c1;
+        --dark-blue: #2f4858;
+        --green: #97c2af;
+      }
+
+      body {
+        background-color: var(--dark-blue);
+      }
+
+      h1 {
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        color: var(--white-green);
+      }
+      h2 {
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        color: var(--white-green);
+      }
+      h3 {
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        color: var(--white-green);
+      }
+
+      p {
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
+        font-size: 1.25rem;
+        color: var(--light-green);
+      }
+
+      li,
+      a {
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
+        color: var(--light-green);
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1 id="typewriter-text" text="Information about Randy Dyer"></h1>
     <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
+      Hello! I'm a Computer science major in the class of 2024. I've taken the
+      following courses here at WPI:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS 1101 INTRO TO PROGRAM DESIGN</li>
+      <li>CS 2102 OBJECT-ORIENTED DESIGN CONCEPTS</li>
+      <li>CS 2223 ALGORITHMS</li>
+      <li>CS 2303 SYSTEMS PROGRAMMING CONCEPTS</li>
+      <li>CS 3013 OPERATING SYSTEMS</li>
+      <li>CS 3043 SOCIAL IMPLICATIONS OF INFORMATION PROCESSING</li>
+      <li>CS 3133 FOUNDATIONS OF COMPUTER SCIENCE</li>
+      <li>CS 3431 DATABASE SYSTEMS</li>
+      <li>CS 3041 HUMAN COMPUTER INTERACTION</li>
+      <li>CS 3733 SOFTWARE ENGINEERING</li>
+      <li>CS 4342 MACHINE LEARNING</li>
+    </ul>
+    <h2>Experience with Technologies and methods:</h2>
+    <h3>Some:</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JAVASCRIPT</li>
+      <li>JAVA</li>
+      <li>PYTHON</li>
+      <li>UNIT TESTING</li>
+    </ul>
+    <h3>None:</h3>
+    <ul>
+      <li>RUBY</li>
+    </ul>
+
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <a href="https://craniosacralmassagetherapy.com/" target="_blank"
+          >ALTON THERPUETIC MASSAGE</a
+        >
+      </li>
+      <li>
+        <a href="https://studentsuccesshandbook.wpi.edu//" target="_blank"
+          >STUDENT SUCCESS HANDBOOK</a
+        >
+      </li>
+      <li><a href="https://www.cero.coop/" target="_blank">CERO</a></li>
+    </ul>
+    <h2>Hobbies:</h2>
+    <ul>
+      <li>Basketball and Spikeball</li>
+      <li>Music, Composing, Drums</li>
+      <li>Cooking</li>
     </ul>
   </body>
+  <script>
+    function typewriterEffect(elementId, text, speed) {
+      var element = document.getElementById(elementId);
+      var textLength = text.length;
+      var index = 0;
+
+      function typeNextCharacter() {
+        if (index < textLength) {
+          element.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeNextCharacter, speed);
+        }
+      }
+
+      typeNextCharacter();
+    }
+
+    // Call the typewriter effect function
+    const textContent = document.getElementById("typewriter-text");
+    typewriterEffect("typewriter-text", textContent.getAttribute("text"), 80);
+  </script>
 </html>
