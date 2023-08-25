@@ -3,26 +3,62 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Imports google font Josefin Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+</head>
+  
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Nelson Diaz</h1>
     <p>
-      [Self introduction]
+      Class of 2024
     </p>
     <p>
-      [Major and other information]
+      Computer Science major
     </p>
     <p>
-      [Other things]
+      Some CS Classes Taken:
     </p>
+    <ul>
+      <li>Software Engineering</li>
+      <li>Computer Networks</li>
+      <li>Networks Security</li>
+      <li>Introduction to AI</li>
+    </ul>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+      Technological Experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML: some</li>
+      <li>CSS: some</li>
+      <li>Java: a lot</li>
+      <li>Javascript: some</li>
+      <li>Ruby: None</li>
+      <li>Python: a lot</li>
+      <li>unit testing: some</li>
     </ul>
+    
+    <footer id="copyright">
+      © Copyright 2023
+    </footer>
   </body>
+  
+  <script>
+    const alignment = ["left", "center", "right"]
+    let index = 0
+    const updateTitleSize = function() {
+      index = (index+1)%3
+      document.getElementById("copyright").style.justifyContent = alignment[index];
+    }
+    
+    window.onload = function() {
+      setInterval(updateTitleSize, 500)
+    }
+  </script>
 </html>
