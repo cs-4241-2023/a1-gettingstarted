@@ -1,0 +1,34 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #B7F5D1;
+  margin: 0;
+}
+
+h1 {
+  background-color: #28362E;
+  color: #A4DBBB;
+  margin: 0;
+  padding: 8px;
+}
+
+h2 {
+  background-color: #28362E;
+  color: #A4DBBB;
+  padding: 8px;
+}
+
+p {
+  color: #28362E;
+  padding-left: 8px
+}
+
+li {
+  color: #587564;
+}
+
+footer {
+  color: #88B59B;
+  display: flex;
+  justify-content: center; /* Overwritten by JS animation */
+  padding: 8px
+}
