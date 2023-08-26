@@ -1,28 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h1>Information about Amanda Blanchard</h1>
 
-    <h2>Experience</h2>
+    <p><a href="https://wpi.edu"> WPI </a> class of 2025</p>
+    <p>BS/MS in Computer Science</p>
+    <h2>Computer Science Courses</h2>
     <p>
-      Working experience
+      Intro to Program Design, Object Oriented Concepts, System Programming
+      Concepts, Discrete Math, Algorithms, Foundations of Computer Science,
+      Operating Systems, Software Engineering, Object Oriented Analysis and
+      Design, Human Computer Interaction, Ethics of Creative AI
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <h2>Experience</h2>
+    <table>
+      <tr>
+        <th>Technology / Method</th>
+        <th>Experience Level</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>some</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>some</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>a lot</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>a lot</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>none</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>some</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>a lot</td>
+      </tr>
+    </table>
+
+    <script>
+      let image = null;
+      function init() {
+        image = document.getElementById("myImage");
+        image.style.position = "relative";
+        image.style.left = "0px";
+      }
+      function moveRight() {
+        image.style.left = parseInt(image.style.left) + 10 + "px";
+      }
+
+      window.onload = init;
+    </script>
+    <form>
+      <img
+        id="myImage"
+        src="https://img.emg-services.net/institutes/institute10335/wpi_banner.jpg"
+      />
+      <p>Click button below to move the image to right</p>
+      <input type="button" value="Click Me" onclick="moveRight();" />
+    </form>
   </body>
 </html>
