@@ -1,0 +1,44 @@
+body {
+    background-color: #C6FFBD;
+}
+
+
+h1 {
+    font-family: Sans-Serif;
+    color: #592302;
+}
+
+
+h2 {
+    font-family: Sans-Serif;
+    color: #592302;
+}
+
+
+p {
+    font-family: Arial;
+    color: #1505FA;
+}
+
+
+ul {
+    font-family: Monospace;
+}
+
+
+#container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background: #FF731F;
+}
+
+
+#animateDot {
+  height: 15px;
+  width: 15px;
+  background-color: #5C52F3;
+  position: absolute;
+  border-radius: 50%;
+  display: inline-block;
+}

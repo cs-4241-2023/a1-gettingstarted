@@ -5,24 +5,75 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Matthew McAlarney</h1>
     <p>
-      [Self introduction]
+      Class of 2020
     </p>
     <p>
-      [Major and other information]
+      Computer Science Major
     </p>
     <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
+      CS courses I have taken:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Intro to Program Design</li>
+      <li>Object-Oriented Design Concepts</li>
+      <li>Introduction to Systems Programming</li>
+      <li>Machine Organization and Assembly Language</li>
+      <li>Social Implications of Information Processing</li>
+      <li>Discrete Mathematics</li>
+      <li>Algorithms</li>
+      <li>Operating Systems</li>
+      <li>Software Engineering</li>
+      <li>Foundations of Computer Science</li>
+      <li>Databases 1</li>
+      <li>Theory of Computation</li>
     </ul>
+    <h2>Experience</h2>
+    <p>
+      Experience with the following technologies and methods:
+    </p>
+    <ul>
+      <li>HTML - Some</li>
+      <li>CSS - Some</li>
+      <li>Java - Some</li>
+      <li>JavaScript - Some</li>
+      <li>Ruby - None</li>
+      <li>Python - Some</li>
+      <li>Unit Testing - Some</li>
+    </ul>
+    <p>
+      Working experience:
+    </p>
+    <ul>
+      <li>Two software development internships using Java and Spring Boot</li>
+    </ul>
+    <h2>
+      Extra animation
+    </h2>
+    <div id = "container">
+      <div id = "animateDot"></div>
+    </div>
+    <button onclick = "moveDotDown()">Move Dot Down</button>
+    <link rel="stylesheet" href="/style.css"/>
   </body>
+  <script>
+    function moveDotDown() {
+      let intervalId = null;
+      const dotElement = document.getElementById("animateDot");
+      let position = 0;
+      clearInterval(intervalId);
+      intervalId = setInterval(frameMove, 10);
+
+      function frameMove() {    
+        if(position == 150) {
+          clearInterval(intervalId);
+        }
+        else {
+          position = position + 5;
+          dotElement.style.top = position + 'px';
+        }
+      }
+    }
+  </script>
 </html>
