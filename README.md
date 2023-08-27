@@ -1,21 +1,6 @@
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Bright Lin
+http://a1-Bright183.glitch.me
 
-This project shows ...
-
-## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
-
-### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
-
-
-
-
-
-
-
-Bright Lin A1:
 
 Technical Achievements:
 1. Changed the colors using my custom color pallet
