@@ -3,7 +3,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 Matthew McAlarney
 
-http://a1-charlieroberts.glitch.me
+https://a1-maccode7110.glitch.me
 
 This assignment shows information about me as it pertains to WPI. The webpage displays my name, major, list of completed courses, technology experience and work experience. In additon, the webpage also includes a basic animation of a dot moving down a container.
 
