@@ -2,14 +2,16 @@
 
 body {
     background-color: #e1dad2;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 h1 {
     text-align: center;
+    color: #0c2431;
 }
 
-h1, h2 {
-    color: #0c2431;
+h2 {
+    color: #194a50;
 }
 
 p, li {
@@ -18,7 +20,7 @@ p, li {
 
 .category-title {
     font-weight: bold;
-    color: #0c2431;
+    color: #194a50;
 }
 
 ul {
