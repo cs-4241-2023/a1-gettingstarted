@@ -7,6 +7,8 @@ wpi username: mlmccormick
 Achievements:
 Used a color, color pallet from the adobe site. Screenshot is a saved image in the repo.
 Used an image tag.
+Used a different text style.
+Added animated color changing boarder around image.
 ... more to add
 
 *DUE: Thursday, August 31st by 11:59 AM (before the start of class!)*  

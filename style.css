@@ -1,3 +1,7 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h1 {
     color: #7C8399;
     padding: 10px;
@@ -5,7 +9,6 @@ h1 {
     border: 5px solid #7C8399;
     text-align: center;
     display: inline-block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
 h2 {
@@ -15,12 +18,10 @@ h2 {
   background-color: #DCE6E3;
   text-align: center;
   display:inline-flex;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p {
   color: #7C8399;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p.experience {
@@ -29,5 +30,19 @@ p.experience {
 
 ul {
   color: #7C9990;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  background-color: rgb(147, 147, 255);
+  animation: imageGridAni  1s infinite;
+}
+
+@keyframes imageGridAni {
+  25%  {background-color:rgb(152, 103, 199)}
+  50%  {background-color:rgb(114, 91, 145)}
+  75%  {background-color:rgb(152, 103, 199)}
+  100% {background-color:rgb(147, 147, 255)}
 }
