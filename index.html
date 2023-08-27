@@ -1,28 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&family=Tulpen+One&display=swap" rel="stylesheet">
+
+    <style>
+      th, td {
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+      
+      td{
+        text-align: center;
+      }
+
+      body {
+        font-size: 20px;
+        font-family: 'Tulpen One', cursive;
+      }
+
+      h1,h2{
+        color: #98A5E3;
+      }
+      
+      .blue-background{
+        background-color: #98A5E3;
+      }
+
+      .pink-background{
+        background-color: #FCA9E3;
+      }
+
+      .green-background{
+        background-color: #B4FAD7;
+      }
+
+      .yellow-background{
+        background-color: #E3E198;
+      }
+
+      #moving-image {
+        position: absolute;
+        width: 100px;
+        top: 0%;
+        left: 0%;
+      }
+
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h1>Information about James Yi</h1>
+    <p><a href="https://wpi.edu">WPI</a>
+      Class of 2024</p>
+    <p>Computer Science Major</p>
+
+    <h2>Previous Courses Taken</h2>
+    <table>
+      <tr>
+        <th>Course Code</th>
+        <th>Course Name</th>
+      </tr>
+      <tr>
+        <td>CS 1102</td>
+        <td>Accel Intro to Prog Design</td>
+      </tr>
+      <tr>
+        <td>CS 2102</td>
+        <td>Obj-Oriented Design Concepts</td>
+      </tr>
+      <tr>
+        <td>CS 2011</td>
+        <td>Mach Org & Assem Lang</td>
+      </tr>
+      <tr>
+        <td>CS 2022</td>
+        <td>Discrete Mathematics</td>
+      </tr>
+      <tr>
+        <td>CS 2223</td>
+        <td>Algorithms</td>
+      </tr>
+      <tr>
+        <td>CS 2303</td>
+        <td>Systems Prog Concepts</td>
+      </tr>
+      <tr>
+        <td>CS 3013</td>
+        <td>Operating Systems</td>
+      </tr>
+      <tr>
+        <td>CS 3043</td>
+        <td>Social Impl Of Info Proc</td>
+      </tr>
+      <tr>
+        <td>CS 3133</td>
+        <td>Foundations of Computer Science</td>
+      </tr>
+      <tr>
+        <td>CS 3431</td>
+        <td>Database Systems I</td>
+      </tr>
+      <tr>
+        <td>CS 3733</td>
+        <td>Software Engineering</td>
+      </tr>
+    </table>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <table>
+      <tr class=blue-background>
+        <th>Technologies & Methods</th>
+        <th>Experience</th>
+      </tr>
+      <tr class=yellow-background>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr class=yellow-background>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr class=green-background>
+        <td>Java</td>
+        <td>A lot</td>
+      </tr>
+      <tr class=yellow-background>
+        <td>Javascript</td>
+        <td>Some</td>
+      </tr>
+      <tr class=pink-background>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr class=yellow-background>
+        <td>Python</td>
+        <td>Some</td>
+      </tr>
+      <tr class=yellow-background>
+        <td>Unit Testing</td>
+        <td>Some</td>
+      </tr>
+    </table>
+    <img src="https://www.wpi.edu/sites/default/files/inline-image/Offices/Marketing-Communications/WPI_Inst_Prim_FulClr.png" alt="Moving Image" id="moving-image">
   </body>
+  <script>
+    const movingImage = document.getElementById("moving-image");
+    function moveImage() {
+        const maxX = window.innerWidth - movingImage.clientWidth;
+        const maxY = window.innerHeight - movingImage.clientHeight;
+
+        const randomX = Math.random() * maxX;
+        const randomY = Math.random() * maxY;
+
+        movingImage.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    }
+    setInterval(moveImage, 1000);
+    moveImage();
+  </script>
 </html>
