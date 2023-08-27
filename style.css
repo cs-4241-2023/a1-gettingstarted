@@ -35,10 +35,10 @@ ul {
 
 
 #animateDot {
-  height: 15px;
-  width: 15px;
+  height: 50px;
+  width: 50px;
   background-color: #5C52F3;
   position: absolute;
-  border-radius: 50%;
+  border-radius: 25%;
   display: inline-block;
 }
