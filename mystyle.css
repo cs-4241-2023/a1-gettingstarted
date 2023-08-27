@@ -1,0 +1,50 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+      to right,
+      #1CD4CE 0%,
+      #1CD4CE 50%,
+      #01FA9F 50%,
+      #01FA9F 100%
+    );
+}
+  
+  h1 {
+    color: #2AB4EB;
+    margin-left: 20px;
+  }
+
+  h2 {
+    color: #1C66D4;
+    margin-left: 20px;
+  }
+
+  
+  p {
+    color: #0017F5;
+    margin-left: 20px;
+  }
+
+
+
+
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+  
+  /* The element to apply the animation to */
+  h3 {
+    width: 150px;
+    height: 20px;
+    background-color: red;
+    margin-left: 20px;
+    animation-name: example;
+    animation-duration: 10s;
+  }
+  li {
+    margin-left: 20px;
+    
+  }
