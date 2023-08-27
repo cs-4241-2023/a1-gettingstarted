@@ -1,5 +1,5 @@
 James Yi
-http://a1-jamesyi.glitch.me
+http://a1-jamesstaryi.glitch.me
 
 This project shows a simple webpage that contains HTML, CSS and JS.
 
