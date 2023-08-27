@@ -5,11 +5,12 @@ Mirandi McCormick
 wpi username: mlmccormick
 
 Achievements:
-Used a color, color pallet from the adobe site. Screenshot is a saved image in the repo.
-Used an image tag.
-Used a different text style.
-Added animated color changing boarder around image.
-... more to add
+NOTE *i know i have more than I need, I just want to ensure I get all the points I need*
+Used CSS styling: color, font-family, display, background-color, padding, animation (max 5 points)
+Used a color pallet from the adobe site. Screenshot is a saved image in the repo (10 points)
+Used an image tag (1 point)
+Used a different text style (5 points)
+Added animated color changing boarder around image (5 points)
 
 *DUE: Thursday, August 31st by 11:59 AM (before the start of class!)*  
 
