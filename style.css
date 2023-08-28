@@ -10,7 +10,7 @@ h1 {
 
     outline-width: 10px;
     color: #FF99BC;
-    background-color: #FFE29B;
+    background-color: #FFFDAE;
 }
 
 p{
@@ -21,6 +21,11 @@ h2 {
     background-color: #A6BDFF;
 }
 
+h3 {
+    background-color:#FF99BC;
+
+}
+
 li {
     background-color: #CAFFCE;
 }
@@ -28,13 +33,65 @@ li {
 .borders {
     border-width:3px;
     border-style:solid;
-    border-color: black;
+    border-color: #A6BDFF;
+}
+
+.bordersList {
+    border-width:3px;
+    border-style:solid;
+    border-color: #FFB3CC;
 }
 
 .major {
     border-width:3px;
     border-style:solid;
-    border-color: #FFB3CC;
+    border-color: #FFED90;
 
 
 }
+
+th {
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
+    border-color:#FF9EBC;
+    background-color: #FFED90;
+}
+
+td {
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
+    border-color:#FFB3CC;
+    background-color: #FFFDAE;
+
+}
+
+.spin {
+    margin: 0;
+    position: absolute;
+    left: 40%
+}
+
+.spinButton {
+    margin: 0;
+    position: absolute;
+    left: 50%
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    img {
+        animation: spinSmile infinite 10s linear;
+    }
+}
+
+@keyframes spinSmile {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
