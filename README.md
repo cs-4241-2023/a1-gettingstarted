@@ -1,6 +1,9 @@
 # Adelynn Martin
 This project showcases various demonstrations, both technical and design-related,of the implementation of HTML, CSS, and JavaScript. This html file shows information about my background in skills related to the course.
 
+Glitch Project: https://a1-abmartin25.glitch.me
+
+
 
 ## Technical Achievements
 
