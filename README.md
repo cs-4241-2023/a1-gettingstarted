@@ -88,4 +88,4 @@ Color Palette
 
 ### Google Fonts
 
-For typography, I have utilized the Roboto font from Google Fonts. 
+For typography, I have utilized the Roboto and QUicksand fonts from Google Fonts. 
