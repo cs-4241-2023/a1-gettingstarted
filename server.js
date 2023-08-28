@@ -21,7 +21,6 @@ const server = http.createServer(function(request, response) {
   fs.readFile(filePath, function(error, content) {
     if (error) {
       response.writeHead(500);
-      response.end('Sorry, check with the site admin for error: ' + error.code + ' ..\n');
       response.end();
     } else {
       response.writeHead(200, { 'Content-Type': contentType });
