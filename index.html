@@ -1,28 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Custom colors */
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: #f1ecce;
+    }
+
+    .text-custom {
+      color: #2a2d34;
+    }
+
+    .header-custom {
+      color: #30c5ff;
+    }
+
+    .progress-custom {
+      background-color: #d64550;
+    }
+
+    .container-custom {
+      background-color: #ffffff;
+    }
+
+    .footer {
+      background-color: #2a2d34;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mx-auto mt-6 p-10 bg-white rounded-lg shadow-md">
+    <h1 class="text-4xl header-custom mb-2 border-b pb-2">About Me</h1>
+
+    <p class="mt-2 text-lg text-custom">
+      Welcome to my corner of the internet! I'm Amitai Erfanian, a Computer
+      Science major and full-stack developer with a passion for crafting
+      innovative solutions. Based in the vicinity of Los Angeles, I proudly
+      cheer for the Lakers 🏀. Currently in my senior year of studies, I'm
+      delving into the world of Computer Science while simultaneously pursuing
+      a BS-MS in Management, aiming to bridge the gap between technology and
+      business. Outside of academics, I'm deeply engaged in PracticeAI, a
+      startup focused on revolutionizing law firms through AI-driven
+      automation. Let's connect and explore the exciting realms of technology,
+      law, and business.
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+    <!-- WPI Details -->
+    <h2 class="text-3xl header-custom mt-6 border-b pb-2">WPI Details</h2>
+    <div class="grid grid-cols-2 mt-2 text-lg gap-0.5 text-custom">
+      <p>Class:</p>
+      <p>2024</p>
+      <p>Major:</p>
+      <p>Computer Science</p>
+      <p>Masters:</p>
+      <p>Business Management</p>
+    </div>
+
+    <!-- Tech Experience -->
+    <h2 class="text-3xl header-custom mt-6 border-b pb-2">Tech Experience</h2>
+    <div class="mt-2 space-y-4">
+      <div class="flex items-center">
+        <label for="html" class="w-1/4 text-lg text-custom">HTML:</label>
+        <div class="relative w-3/4">
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div id="html" class="h-2 progress-custom rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center">
+        <label for="css" class="w-1/4 text-lg text-custom">CSS:</label>
+        <div class="relative w-3/4">
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div id="css" class="h-2 progress-custom rounded-full" style="width: 50%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center">
+        <label for="java" class="w-1/4 text-lg text-custom">Java:</label>
+        <div class="relative w-3/4">
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div id="java" class="h-2 progress-custom rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center">
+        <label for="javascript" class="w-1/4 text-lg text-custom">JavaScript:</label>
+        <div class="relative w-3/4">
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div id="javascript" class="h-2 progress-custom rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center">
+        <label for="ruby" class="w-1/4 text-lg text-custom">Ruby:</label>
+        <div class="relative w-3/4">
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div id="ruby" class="h-2 progress-custom rounded-full" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center">
+        <label for="python" class="w-1/4 text-lg text-custom">Python:</label>
+        <div class="relative w-3/4">
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div id="python" class="h-2 progress-custom rounded-full" style="width: 50%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center">
+        <label for="unit-testing" class="w-1/4 text-lg text-custom">Unit Testing:</label>
+        <div class="relative w-3/4">
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div id="unit-testing" class="h-2 progress-custom rounded-full" style="width: 50%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Experience -->
+    <h2 class="text-3xl header-custom mt-6 border-b pb-2">My Experience</h2>
+    <ul class="list-disc ml-5 mt-2 text-lg list-custom">
+      <li>
+        I worked as the Lead Software Engineer on a team at Brigham and
+        Women's Hospital in Boston.
+      </li>
+      <li>I have conducted research with Professor Jacob Whitehill.</li>
+      <li>
+        I have also gained experience at Worcester Polytechnic Institute
+        (WPI).
+      </li>
     </ul>
-  </body>
+  </div>
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const progressBars = [
+      { id: "html", targetWidth: 90 },
+      { id: "css", targetWidth: 50 },
+      { id: "java", targetWidth: 90 },
+      { id: "javascript", targetWidth: 90 },
+      { id: "ruby", targetWidth: 0 },
+      { id: "python", targetWidth: 50 },
+      { id: "unit-testing", targetWidth: 50 },
+    ];
+
+    progressBars.forEach((bar) => {
+      const element = document.getElementById(bar.id);
+      let currentWidth = 0;
+      const interval = setInterval(() => {
+        if (currentWidth >= bar.targetWidth) {
+          clearInterval(interval);
+          return;
+        }
+        currentWidth++;
+        element.style.width = `${currentWidth}%`;
+      }, 20);
+    });
+  });
+</script>
+
+<!-- Footer -->
+<footer class="footer text-center text-white p-6 mt-8">
+  <p>&copy; 2023 Amitai Erfanian. All rights reserved.</p>
+  <p>
+    <a href="https://www.amitai.tech" target="_blank">Visit my website</a>
+  </p>
+</footer>
+
 </html>
