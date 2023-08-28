@@ -6,7 +6,7 @@ This project shows a simple webpage that contains HTML, CSS and JS.
 ## Technical Achievements
 - **Styled page with CSS**: Added font, color, font-size, border, border-radius, text-alignment, background-color
 - **JavaScript Animation**: Moving WPI Logo across the screen
-- **HTML tags**: Added link, image, tables
+- **HTML tags**: Added link, image, table, list
 
 ### Design Achievements
 - **Used Color Palette**: I attached my color palette to the repo.
