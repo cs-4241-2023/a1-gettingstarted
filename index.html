@@ -1,28 +1,81 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Information about David Gobran</h1>
+  <p>
+    Class of 2025
+  </p>
+  <p>
+    Computer Science Major
+  </p>
+  <p>
+    CS Courses taken:
+  <ul>
+    <li>CS 1101</li>
+    <li>CS 2103</li>
+    <li>CS 2303</li>
+    <li>CS 2022</li>
+    <li>CS 2223</li>
+    <li>CS 2011</li>
+    <li>CS 3013</li>
+    <li>CS 3133</li>
+    <li>CS 3043</li>
+    <li>CS 3733</li>
+    <li>CS 4120</li>
+    <li>CS 4123</li>
+    <li>CS 4513</li>
+    <li>CS 4342</li>
+    <li>CS 542</li>
+  </ul>
+  </p>
+
+  <h2>Experience</h2>
+  <p>
+    Technical skills
+  <ul>
+    <li>HTML: some</li>
+    <li>CSS: some</li>
+    <li>Java: a lot</li>
+    <li>JavaScript: a lot</li>
+    <li>Ruby: none</li>
+    <li>Python: some</li>
+    <li>unit testing: some</li>
+  </ul>
+  </p>
+  <p>
+    Working experience
+  </p>
+  <ul>
+    <li>Symbotic</li>
+    <li>eClinical Solutions</li>
+  </ul>
+
+  <script>
+    // Define an array of colors (from Adobe) to cycle through
+    const colors = ['#ADA91F', '#5FC6FA', '#FAF446', '#FA2D41', '#AD2835'];
+
+    // Define the animation function
+    let colorIndex = 0;
+    function animateElement() {
+      // Change the background color of the body
+      document.body.style.backgroundColor = colors[colorIndex];
+      colorIndex = (colorIndex + 1) % colors.length;
+    }
+
+    // Call the animation function every 2 seconds
+    setInterval(animateElement, 2000);
+  </script>
+
+</body>
+
 </html>
