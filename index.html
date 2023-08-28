@@ -12,63 +12,76 @@
 </head>
 
 <body>
-
-
-    <div class="container-box">
-        <div class="header">Ryan Rabbitt
-            <span class="icon" style="float: right;">x</span>
-        </div>
-        <div id="box-1">
-            <img src="https://cdn.glitch.global/220c9a36-9f4b-4860-a153-7334a346a87a/10743614.png?v=1692935866132">
-            <h1>Welcome</h1>
-            <hr>
-            <p>Hi! I'm Ryan! <br>Pronouns: He/Him <br> Age: 21
-            </p>
-        </div>
+    <button onclick="hide()"></button>
+    <div id="screensaver">
     </div>
-
-    <div class="container-box">
-        <div class="header">Info
-            <span class="icon" style="float: right;">x</span>
+    <div id="mainPage">
+        <div class="container-box">
+            <div class="header">Ryan Rabbitt
+                <span class="icon" style="float: right;">x</span>
+            </div>
+            <div id="box-1">
+                <img src="https://cdn.glitch.global/220c9a36-9f4b-4860-a153-7334a346a87a/10743614.png?v=1692935866132">
+                <h1>Welcome</h1>
+                <hr>
+                <p>Hi! I'm Ryan! <br>Pronouns: He/Him <br> Age: 21
+                </p>
+            </div>
         </div>
-        <div id="box-2">
-            <p>
-                Class of 2024, Computer Science major, IMGD minor
-            </p>
-            <p>
-                Previous CS Courses:
+
+        <div class="container-box">
+            <div class="header">Info
+                <span class="icon" style="float: right;">x</span>
+            </div>
+            <div id="box-2">
+                <p>
+                    Class of 2024, Computer Science major, IMGD minor
+                </p>
+                <p>
+                    Previous CS Courses:
+                    <ul>
+                        <li>Software Engineering</li>
+                        <li>Database Systems</li>
+                        <li>Computer Graphics</li>
+                        <li>Intro to AI</li>
+                        <li>Foundations of CS</li>
+                        <li>Operating Systems</li>
+                        <li>Algorithms</li>
+                    </ul>
+                </p>
+
+                <h1>Experience</h1>
+                <p>Technical Skills</p>
                 <ul>
-                    <li>Software Engineering</li>
-                    <li>Database Systems</li>
-                    <li>Computer Graphics</li>
-                    <li>Intro to AI</li>
-                    <li>Foundations of CS</li>
-                    <li>Operating Systems</li>
-                    <li>Algorithms</li>
+                    <li>HTML &#9733;&#9733;&#9733;</li>
+                    <li>CSS &#9733;&#9733;&#9733;</li>
+                    <li>Java &#9733;&#9733;&#9733;</li>
+                    <li>Javascript &#9733;&#9733;</li>
+                    <li>Ruby</li>
+                    <li>Python &#9733;</li>
+                    <li>unit testing &#9733;</li>
                 </ul>
-            </p>
-
-            <h1>Experience</h1>
-            <p>Technical Skills</p>
-            <ul>
-                <li>HTML &#9733;&#9733;&#9733;</li>
-                <li>CSS &#9733;&#9733;&#9733;</li>
-                <li>Java &#9733;&#9733;&#9733;</li>
-                <li>Javascript &#9733;&#9733;</li>
-                <li>Ruby</li>
-                <li>Python &#9733;</li>
-                <li>unit testing &#9733;</li>
-            </ul>
-            <p>
-                Working experience
-            </p>
-            <ul>
-                <li>Software Engineering Internship - Commscope: Web application development in Angular w/ Java backend</li>
-                <li>CS 3733 - Brigham & Women's Hospital Application</li>
-            </ul>
+                <p>
+                    Working experience
+                </p>
+                <ul>
+                    <li>Software Engineering Internship - Commscope: Web application development in Angular w/ Java backend</li>
+                    <li>CS 3733 - Brigham & Women's Hospital Application</li>
+                </ul>
+            </div>
         </div>
     </div>
 
+
+    <script>
+        function hide() {
+            var x = document.getElementById("screensaver");
+            var y = document.getElementById("mainPage");
+            x.style.display = "none";
+            document.body.style.backgroundColor = "#008181";
+            y.style.display = "block";
+        }
+    </script>
 </body>
 
 </html>

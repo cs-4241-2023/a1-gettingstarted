@@ -1,5 +1,4 @@
-body {
-    background-color: #008181;
+#mainPage {
     animation: fadeIn ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -7,6 +6,32 @@ body {
     color: black;
     margin: 0 auto;
     max-width: 900px;
+    display: none;
+}
+
+#screensaver {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('https://s.yimg.com/cd/diminuendo/1.0/original/ff1c1ad107c1f37cbe58de7e2870729974509a3c.gif');
+    background-size: cover;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    z-index: 10;
 }
 
 
