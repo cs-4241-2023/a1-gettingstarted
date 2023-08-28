@@ -3,26 +3,67 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
+  <body>
+    <header>
+      <h1>Information about Adelynn</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! My name is Adelynn and I'm a student in WPI's Webware A23 course.
+      </p>
+         <p>
+       I am a Junior CS Student minoring in data science. I am also in the MS/BS program for cybersecurity.
     </p>
-    <ul>
+    <p>
+      I have taken racket, java, systems, OS, assembly, algos, software eng, discrete, foundations, embedded systems
+    </p>
+    </section>
+    
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>
+        HTML-none<br>
+        CSS-some<br>
+        Java-alot<br>
+        JavaScript-some<br>
+        Ruby-none<br>
+        Python-some<br>
+        unit testing-alot
+      </p>
+        <ul>
       <li>IBM/Rational</li>
       <li>WPI</li>
     </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Adelynn</p>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        let h1 = document.querySelector('h1');
+        let colors = ['#FF9AA2', '#FFB7B2', '#FFDAC1', '#E2F0CB', '#B5EAD7'];
+        let i = 0;
+
+        setInterval(function() {
+          h1.style.color = colors[i];
+          i = (i + 1) % colors.length;
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
