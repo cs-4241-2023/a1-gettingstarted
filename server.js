@@ -23,7 +23,7 @@ server.listen( process.env.PORT || port )
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
     if( err !== null ) {
-      response.end('file not found.')
+      response.end( 'file not found.' )
     }
     else {
       response.end( content, 'utf-8' )
