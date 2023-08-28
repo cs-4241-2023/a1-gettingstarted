@@ -6,14 +6,14 @@ This project serves as a comprehensive personal portfolio. It provides an in-dep
 
 ## Live Demo
 
-[Insert Link to Live Page Here]
+[Glitch Webpage Link](https://a1-amitai5.glitch.me)
 
 ## Technical Achievements
 
 ### Tailwind CSS
 
-- **Why Tailwind?**: Tailwind CSS is a utility-first CSS framework that promotes rapid UI development. It provides a set of utility classes that can be applied directly in the HTML, making it easier to build responsive and maintainable designs without writing custom CSS.
-- **Tailwind Config**: The project setup would have allowed for customization of Tailwind's configuration. However, I considered this out of scope for this assignment and opted for direct CSS imports for custom colors.
+- **Why Tailwind?**: Tailwind CSS is a utility-first CSS framework that promotes rapid UI development. It provides a set of utility classes that can be applied directly in HTML, making it easier to build responsive and maintainable designs without writing custom CSS.
+- **Tailwind Config**: The project setup would have allowed to customize Tailwind's configuration. However, I considered this out of scope for this assignment and opted for direct CSS imports for custom colors.
 
 ### JavaScript Animation
 
@@ -21,7 +21,7 @@ This project serves as a comprehensive personal portfolio. It provides an in-dep
 
 ### Semantic HTML Tags
 
-- **Footer**: The `footer` HTML tag is used to create a footer section at the bottom of the webpage. This footer contains a copyright notice and a direct link to my portfolio website, serving as a formal closure to the webpage content.
+- **Footer**: The `footer` HTML tag creates a footer section at the bottom of the webpage. This footer contains a copyright notice and a direct link to my portfolio website, serving as a formal closure to the webpage content.
 
 ## Design Achievements
 
@@ -29,7 +29,7 @@ This project serves as a comprehensive personal portfolio. It provides an in-dep
 
 - A custom color palette was chosen to give the website a unique and cohesive look. These colors were directly imported using CSS to maintain the design consistency across the website.
 
-  ![Insert Image of Color Palette Here]
+  ![Color Palette](ColorWheel.png)
 
 ### Google Fonts
 
