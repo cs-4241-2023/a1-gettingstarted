@@ -5,8 +5,8 @@ This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**: Added style rules to the body, p, h2, h3, li, and ul selectors 
-- **JavaScript Animaiton**: Added a fade-in JavaScript animation for the content shown on my website, which runs each time the website is loaded. Also added a CSS slide-in-and-out animation for the list items describing my work experience.
-- **Additional HTML Tags**: Used img, u, div, a, and b tags
+- **JavaScript Animaiton**: Added a fade-in JavaScript animation for the content shown on my website and a JavaScript progress bar loading animation for each of the different programming skills. Animations run each time the website is loaded. 
+- **Additional HTML Tags**: Used footer, img, u, div, a, and b tags
 
 ### Design Achievements
 - **Color Palette**: Created a color palette design scheme using Adobe Color and incorporated it into my website. An image showcasing the different colors is in the repo. 

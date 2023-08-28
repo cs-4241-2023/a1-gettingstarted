@@ -1,271 +1,328 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-      body{
-        background-color: rgb(248, 248, 248);
-        margin: 0;
-        padding-top: 70px;
-        opacity: 1;
-	      transition: 4s opacity;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: rgb(248, 248, 248);
+      margin: 0;
+      padding-top: 70px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transition: none;
+    }
+
+    .header {
+      display: flex;
+      height: 70px;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      flex-direction: row;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: white;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: rgb(240, 240, 240);
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    ul {
+      font-family: Roboto, 'Times New Roman', Times, serif;
+    }
+
+    .right-side-container li {
+      animation: slide-out-slide-in 1s ease-in-out;
+      animation-delay: 0.75s;
+    }
+
+    @keyframes slide-out-slide-in {
+      100% {
+        transform: translateX(5%);
       }
+    }
 
-      .fade-in{
-	      opacity: 0;
-	      transition: none;
-      }
- 
-      .header{
-        display: flex;
-        height: 70px;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-        flex-direction: row;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        background-color: white;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: rgb(240, 240, 240);
-      }
-      
-      p, h1, h2, h3, ul{
-      font-family: Roboto, 'Times New Roman', Times, serif; 
-      }
+    li {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0 0 5px 0;
+    }
 
-      .right-side-container li {
-        animation: slide-out-slide-in 1s ease-in-out;
-        animation-delay: 0.75s;
-      }
+    ul {
+      list-style-type: square;
+    }
 
-      @keyframes slide-out-slide-in {
-        100% { 
-          transform: translateX(5%);
-        }
-      }
+    h2 {
+      background-color: #6CB3DF;
+      color: #E1341E;
+      display: inline-block;
+      padding: 15px;
+      border-radius: 7.5px;
+    }
 
-      li {
-        font-family: 'Times New Roman', Times, serif;
-        margin:0 0 5px 0;   
-      }
+    h3 {
+      background-color: black;
+      color: #F5F245;
+      display: inline-block;
+      padding: 15px;
+      margin-bottom: 0;
+      margin-top: 0;
+      border-radius: 7.5px;
+    }
 
-      ul {
-        list-style-type: square;
-      }
+    .wpi-logo,
+    .linkedin-logo {
+      height: 50px;
+      cursor: pointer;
+    }
 
-      h2 {
-        background-color: #6CB3DF;
-        color: #E1341E;
-        display: inline-block;
-        padding: 15px;
-        border-radius: 7.5px;
-      }
+    .wpi-logo {
+      margin-left: 10px;
+    }
 
-      h3 {
-        background-color: black;
-        color: #F5F245;
-        display: inline-block;
-        padding: 15px;
-        margin-bottom: 0;
-        margin-top: 0;
-        border-radius: 7.5px;
-      }
+    .linkedin-logo {
+      margin-right: 10px;
+    }
 
-      .wpi-logo, .linkedin-logo {
-        height: 50px;
-        cursor: pointer;
-      }
+    .profile-picture {
+      margin-top: 10px;
+      border-radius: 150px;
+    }
 
-      .wpi-logo{
-        margin-left: 10px;
-      }
+    .profile-image-container {
+      margin-top: 10px;
+    }
 
-      .linkedin-logo{
-        margin-right: 10px;
-      }
+    .profile-picture,
+    .car-picture {
+      width: 300px;
+      cursor: pointer;
+    }
 
-      .profile-picture{
-        margin-top: 10px;
-        border-radius: 150px;
-      }
+    .left-side-container {
+      text-align: center;
 
-      .profile-image-container{
-        margin-top: 10px;
-      }
+    }
 
-      .profile-picture, .car-picture{
-        width: 300px;
-        cursor: pointer;
-      }
+    .left-side-container {
+      padding-left: 35px;
+      padding-right: 50px;
+      border-right: 1px solid rgb(240, 240, 240);
+      ;
+    }
 
-      .left-side-container{
-        text-align: center;
-        
-      }
+    .right-side-container {
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-left: 10px;
+    }
 
-      .left-side-container{
-        padding-left: 35px;
-        padding-right: 50px;
-        border-right: 1px solid  rgb(240, 240, 240);;
-      }
-      .right-side-container{
-        margin-top: 10px;
-        margin-right: 20px;
-        margin-left: 10px;
-      }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 16px;
+      row-gap: 40px;
+      z-index: 0;
+      border-bottom: 1px solid rgb(240, 240, 240);
+    }
 
-      .content-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 40px;
-        z-index: 0;
-        border-bottom: 1px solid  rgb(240, 240, 240);     
-      }
-    </style>
-  </head>
-  <body class="fade-in">
-    <script>
+    .footer {
+      display: flex;
+      flex-direction: column;
+      height: 65px;
+      background-color: rgb(108, 179, 223);
+      text-align: center;
+      justify-content: center;
+    }
 
-      function setFadeIn(){
-        document.body.className = 'fade-in'
-        setInterval(setFadeOut(), 1)
-      }
+    .footer-text {
+      margin: 0;
+      font-weight: bold;
+    }
 
-      function setFadeOut(){
-	      document.body.className = 'body';
-      }
+    progress {
+      margin-left: 10px;
+      width: 250px;
+      height: 12px;
+      border: 2px solid rgb(240, 240, 240);
+      ;
+      border-radius: 12.25px;
+    }
 
-      window.onload=function(){
-        setFadeIn();
-      }
- 
-    </script>
+    progress::-webkit-progress-bar {
+      background-color: white;
+      border-radius: 12.25px;
+    }
 
-    <div class="header">
-      <a href="https://www.wpi.edu" target="_blank" rel="noopener noreferrer">
-        <img class="wpi-logo"
-          src="https://www.robotevents.com/uploads/events/43801/2967db072957c38db74eef2ce92670a9.png">
-      </a>
-      <h1 class="primary-header">Information about Nikola Grozdani</h1>
-      <a href="https://linkedin.com/in/nikola-grozdani-787612228"
-        target="_blank" rel="noopener noreferrer">
-        <img class="linkedin-logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png">
-      </a>
-    </div>
+    progress::-webkit-progress-value {
+      background-color: #E1341E;
+      border-radius: 12.25px;
+    }
+  </style>
+</head>
 
-    <div class="content-grid">
+<body class="fade-in">
+  <script>
+    function animateProgressBars() {
+      const progressBars = document.querySelectorAll('.skill-progress');
+      progressBars.forEach((progressBar) => {
+        const targetValue = parseInt(progressBar.getAttribute('value'));
+        let currentValue = 0;
 
-      <!-- Left Side of Page Container -->
-      <div class="left-side-container">
-        <div class="profile-image-container">
-          <a href="https://linkedin.com/in/nikola-grozdani-787612228"
-            target="_blank" rel="noopener noreferrer">
-            <img class="profile-picture"
-              src="https://media.licdn.com/dms/image/D4D03AQH5VuEX8WWrkg/profile-displayphoto-shrink_400_400/0/1692121542048?e=1698278400&v=beta&t=KcDvbXhwPNTQhcoQ4G7Zvs9XwB9ed0x7f84834JJN7o">
-          </a>
-        </div>
+        const increment = targetValue / 100; // bar load speed
+        const interval = setInterval(() => {
+          currentValue += increment;
+          progressBar.value = currentValue;
 
-        <!-- Self-Introduction -->
-        <p>
-          Hello! I'm Nikola, a dedicated individual
-          who is passionate about the dynamic field of
-          software development.
-        </p>
+          if (currentValue >= targetValue) {
+            clearInterval(interval);
+          }
+        }, 5);
+      });
+    }
 
-        <!-- Major -->
-        <p>
-          I'm a <u>senior</u> <b>Computer Science</b>
-          student at <b>Worcester Polytechnic Institute</b>.
-          Ever since I was young, I've been captivated
-          by the world of software development. As the
-          years have gone by, my passion has only deepened,
-          and I've eagerly embraced every opportunity to
-          expand my skills and tackle new challenges.
-          My journey has taken me from building small
-          coding projects to contributing to larger,
-          impactful software applications. I'm currently
-          immersing myself in the theoretical realm of
-          data structures, algorithms, and fundamental
-          computer science concepts through my CS degree,
-          all while honing my practical abilities in crafting
-          full-stack applications.
-        </p>
+    function setFadeIn() {
+      document.body.className = 'fade-in';
+      setInterval(setFadeOut, 1);
+      animateProgressBars(); // Call the animation function
+    }
 
-        <!-- Other Information -->
-        <p>
-          I'm also an active member of the car community club at WPI.
-        </p>
+    function setFadeOut() {
+      document.body.style.opacity = 1;
+      document.body.style.transition = 'opacity 4s';
+    }
 
-        <!-- Car Club Image -->
-        <div class="car-image-container">
-          <a href="https://www.wpi.edu/news/wpi-s-got-what-motorsports-club"
-            target="_blank" rel="noopener noreferrer">
-            <img class="car-picture"
-              src="https://www.newenglandautoshows.com/wp-content/uploads/2018/01/18121268_1001966899939823_7185507469836190963_o1.jpg">
-          </a>
-        </div>
+    window.onload = function () {
+      setFadeIn();
+    }
+  </script>
 
+  <div class="header">
+    <a href="https://www.wpi.edu" target="_blank" rel="noopener noreferrer">
+      <img class="wpi-logo" src="https://www.robotevents.com/uploads/events/43801/2967db072957c38db74eef2ce92670a9.png">
+    </a>
+    <h1 class="primary-header">Information about Nikola Grozdani</h1>
+    <a href="https://linkedin.com/in/nikola-grozdani-787612228" target="_blank" rel="noopener noreferrer">
+      <img class="linkedin-logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png">
+    </a>
+  </div>
+
+  <div class="content-grid">
+
+    <!-- Left Side of Page Container -->
+    <div class="left-side-container">
+      <div class="profile-image-container">
+        <a href="https://linkedin.com/in/nikola-grozdani-787612228" target="_blank" rel="noopener noreferrer">
+          <img class="profile-picture"
+            src="https://media.licdn.com/dms/image/D4D03AQH5VuEX8WWrkg/profile-displayphoto-shrink_400_400/0/1692121542048?e=1698278400&v=beta&t=KcDvbXhwPNTQhcoQ4G7Zvs9XwB9ed0x7f84834JJN7o">
+        </a>
       </div>
 
-      <!-- Right Side of Page Container -->
-      <div class="right-side-container">
-        <div class="experience-container">
-          <h2>Experience</h2>
-        </div>
-        <h3> Working Experience</h3>
-        <ul>
-          <li>WPI: Computer Science Research Intern</li>
-          <li>Citizens Bank: Full-Stack Software Developer Intern</li>
-        </ul>
+      <!-- Self-Introduction -->
+      <p>
+        Hello! I'm Nikola, a dedicated individual
+        who is passionate about the dynamic field of
+        software development.
+      </p>
 
-        <h3> Course Experience</h3>
-        <ul>
-          <li>Software Engineering (CS 3733)</li>
-          <li>Object-Oriented Analysis and Design (CS 4233)</li>
-          <li>Introduction to Artificial Intelligence (CS 4341)</li>
-          <li>Operating Systems (CS 3013)</li>
-          <li>Introduction to Cryptography and Communication Security (CS 4801)</li>
-          <li>Foundations of Computer Science (CS 3133)</li>
-          <li>Algorithms (CS 2223)</li>
-          <li>Machine Organization and Assembly (CS 2011)</li>
-          <li>Systems Programming Concepts (CS 2303)</li>
-          <li>Discrete Mathematics (CS 2022)</li>
-          <li>Object-Oriented Design Concepts (CS 2102)</li>
-        </ul>
+      <!-- Major -->
+      <p>
+        I'm a <u>senior</u> <b>Computer Science</b>
+        student at <b>Worcester Polytechnic Institute</b>.
+        Ever since I was young, I've been captivated
+        by the world of software development. As the
+        years have gone by, my passion has only deepened,
+        and I've eagerly embraced every opportunity to
+        expand my skills and tackle new challenges.
+        My journey has taken me from building small
+        coding projects to contributing to larger,
+        impactful software applications. I'm currently
+        immersing myself in the theoretical realm of
+        data structures, algorithms, and fundamental
+        computer science concepts through my CS degree,
+        all while honing my practical abilities in crafting
+        full-stack applications.
+      </p>
 
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>HTML - Basic</li>
-          <li>CSS - Basic</li>
-          <li>JavaScript - Basic</li>
-          <li>Java - Proficient</li>
-          <li>C/C++ - Basic</li>
-          <li>Python - Proficient</li>
-          <li>Dart - Basic</li>
-          <li>SQL - Basic</li>
-          <li>React - Basic</li>
-        </ul>
+      <!-- Other Information -->
+      <p>
+        I'm also an active member of the car community club at WPI.
+      </p>
+
+      <!-- Car Club Image -->
+      <div class="car-image-container">
+        <a href="https://www.wpi.edu/news/wpi-s-got-what-motorsports-club" target="_blank" rel="noopener noreferrer">
+          <img class="car-picture"
+            src="https://www.newenglandautoshows.com/wp-content/uploads/2018/01/18121268_1001966899939823_7185507469836190963_o1.jpg">
+        </a>
       </div>
 
     </div>
-    <!-- eof grid tag -->
-  </body>
+
+    <!-- Right Side of Page Container -->
+    <div class="right-side-container">
+      <div class="experience-container">
+        <h2>Experience</h2>
+      </div>
+      <h3> Working Experience</h3>
+      <ul>
+        <li>WPI: Computer Science Research Intern</li>
+        <li>Citizens Bank: Full-Stack Software Developer Intern</li>
+      </ul>
+
+      <h3> Course Experience</h3>
+      <ul>
+        <li>Software Engineering (CS 3733)</li>
+        <li>Object-Oriented Analysis and Design (CS 4233)</li>
+        <li>Introduction to Artificial Intelligence (CS 4341)</li>
+        <li>Operating Systems (CS 3013)</li>
+        <li>Introduction to Cryptography and Communication Security (CS 4801)</li>
+        <li>Foundations of Computer Science (CS 3133)</li>
+        <li>Algorithms (CS 2223)</li>
+        <li>Machine Organization and Assembly (CS 2011)</li>
+        <li>Systems Programming Concepts (CS 2303)</li>
+        <li>Discrete Mathematics (CS 2022)</li>
+        <li>Object-Oriented Design Concepts (CS 2102)</li>
+      </ul>
+
+      <h3>Technical Skills</h3>
+      <ul>
+        <li class="quick-test">HTML <progress class="skill-progress" value="40" max="100"></progress></li>
+        <li>CSS <progress class="skill-progress" value="40" max="100"></progress></li>
+        <li>Java <progress class="skill-progress" value="75" max="100"></progress></li>
+        <li>JavaScript <progress class="skill-progress" value="40" max="100"></progress></li>
+        <li>Ruby <progress class="skill-progress" value="10" max="100"></progress></li>
+        <li>Python <progress class="skill-progress" value="60" max="100"></progress></li>
+        <li>Unit Testing<progress class="skill-progress" value="65" max="100"></progress></li>
+        <li>SQL <progress class="skill-progress" value="55" max="100"></progress></li>
+        <li>React <progress class="skill-progress" value="45" max="100"></progress></li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- eof grid tag -->
+  <footer class="footer">
+    <p class="footer-text">&copy; 2023 Nikola Grozdani. All rights reserved.</p>
+  </footer>
+</body>
+
 </html>
