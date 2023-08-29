@@ -49,6 +49,11 @@ body {
     text-align: center;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 
 /* 
 Color palette: ##000000 black,
