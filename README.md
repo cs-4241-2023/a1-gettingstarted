@@ -1,6 +1,7 @@
 Adish Jain
+https://a1-adish007.glitch.me
 
-
+This project shows:
 ## Technical Achievements
 - **Styled page with CSS**:  I used a total of five rules.
 1. The first rule I used was to make the body have two different colors using a gradient. 
