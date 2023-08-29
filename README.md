@@ -10,6 +10,7 @@ Adish Jain
 
 - **Added JavaScript Animation**
 I added a Javascript animation which moves a block at the bottom of the page from one corner of a canvas to the opposite corner. You can try it out by pressing the "Click Me for Animation" Button
+I also added another animation which changes the color of the h3 from when the page is loaded from yellow to red
 
 ### Design Achievements
 - **Created a color palette using color.adobe.com**
