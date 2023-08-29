@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+$indent-size: 30px;
+$vertical-padding-size: 10px;
+$black: #141414;
+$blue: #456990;
+$purple: #9E768F;
+$green: #869D7A;
+$white: #FFFFFF;
+
+body {
+    margin: 0;
+    font-family: 'Courier Prime', monospace;
+    background-color: $purple;
+}
+
+header {
+    padding-top: $vertical-padding-size;
+    padding-bottom: $vertical-padding-size;
+    background-color: $blue;
+    text-align: center;
+}
+
+section {
+    padding-left: $indent-size;
+    padding-top: $vertical-padding-size;
+    padding-bottom: $vertical-padding-size;
+    margin-right: $indent-size;
+
+    h2 {
+        margin-top: $vertical-padding-size;
+    }
+
+    article {
+        padding-left: $indent-size;
+        padding-top: $vertical-padding-size;
+        padding-bottom: $vertical-padding-size;
+        background-color: $green;
+
+        li {
+            margin-left: $indent-size;
+        }
+    }
+}
+
+table {
+    border: 1px solid $black;
+    margin-left: $indent-size;
+
+    tr {
+        text-align: center;
+
+        td, th {
+            margin-left: $indent-size;
+            margin-left: $indent-size;
+            border: 1px solid $black;
+        }
+    }
+}
+
+footer {
+    padding: 1px;
+    background-color: $black;
+    color: $white;
+    text-align: center;    
+    font-size: small;
+}

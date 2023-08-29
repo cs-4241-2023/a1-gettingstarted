@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+body {
+  margin: 0;
+  font-family: "Courier Prime", monospace;
+  background-color: #9E768F;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #456990;
+  text-align: center;
+}
+
+section {
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 30px;
+}
+section h2 {
+  margin-top: 10px;
+}
+section article {
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #869D7A;
+}
+section article li {
+  margin-left: 30px;
+}
+
+table {
+  border: 1px solid #141414;
+  margin-left: 30px;
+}
+table tr {
+  text-align: center;
+}
+table tr td, table tr th {
+  margin-left: 30px;
+  margin-left: 30px;
+  border: 1px solid #141414;
+}
+
+footer {
+  padding: 1px;
+  background-color: #141414;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: small;
+}/*# sourceMappingURL=style.css.map */

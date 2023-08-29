@@ -3,26 +3,146 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Courier+Prime?query=courier">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <header>
+      <h1>Information about <div id="name">Thea Caplan</div></h1>
+    </header>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <ul>Class of 2025</ul>
+    </section>
+      <section>
+        <h2>Majors and Minors</h2>
+        <article>
+          <p>Majors:</p>
+            <li>Computer Science</li>
+        </article>
+        <article>
+          <p>Minors:</p>
+            <li>RBE</li>
+            <li>ECE (Computer Engineering Focus)</li>
+        </article>
+      </section>
+      <!-- <p>
+        [Other things]
+      </p> -->
+
+      <section>
+        <h2>Experience</h2>
+        <article>
+          <p>Skill Levels</p>
+          <table>
+            <tr>
+              <th>Technology/Method</th>
+              <th>None</th>
+              <th>Some</th>
+              <th>A Lot</th>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td></td>
+              <td>&#x2713;</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td></td>
+              <td>&#x2713;</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td></td>
+              <td></td>
+              <td>&#x2713;</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td></td>
+              <td>&#x2713;</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ruby</td>
+              <td>&#x2713;</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td></td>
+              <td>&#x2713;</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Unit Testing</td>
+              <td></td>
+              <td>&#x2713;</td>
+              <td></td>
+            </tr>
+          </table>
+        </article>
+        <article>
+          <p>Completed CS Course Work at WPI</p>
+          <ol>
+            <li>CS 1102</li>
+            <li>CS 2103</li>
+            <li>CS 2011</li>
+            <li>CS 2022</li>
+            <li>CS 2223</li>
+            <li>CS 3013</li>
+            <li>CS 3516</li>
+            <li>CS 3733</li>
+            <li>CS 3431</li>
+            <li>CS 3041</li>
+            <li>CS 3043</li>
+            <li>CS 3133</li>
+          </ol>
+        </article>
+        <article>
+          <p>Working Experience</p>
+          <li>DevOps Intern - Web Dev</li>
+          <li>WPI CS SA</li>
+        </article>
+      </section>
+    </main>
+    
+    <footer>
+      <p>Copyright 2023</p>
+    </footer>
   </body>
+  
+  <script>
+    function typeAnimation(index, speed, txt, element, hasCursor) {
+      if (index < txt.length) {
+        if(hasCursor) {
+          element.innerHTML = txt.substring(0, index+1);
+        } else {
+          element.innerHTML += txt.charAt(index) + '|';
+        }
+        setTimeout(function () {
+          typeAnimation(index+1, speed, txt, element, !hasCursor);
+        }, speed);
+      } else if(hasCursor) {
+        setTimeout(function () {
+          typeAnimation(index, speed, txt, element, false);
+        }, speed);
+      }
+    }
+    window.onload = function() {
+      var i = 0;
+      var speed = 150; /* speed in milliseconds */
+      var element = document.getElementById('name');
+      var txt = element.innerHTML;
+      txt = `${txt}`;
+      element.innerHTML = '|';
+      typeAnimation(i, speed, txt, element, true);
+    };
+  
+  </script>
 </html>
