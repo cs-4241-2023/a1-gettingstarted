@@ -1,24 +1,32 @@
 const http = require('http'),
-      fs   = require('fs'),
-      port = 3000
+      fs = require('fs'),
+      path = require('path'),
+      port = 3000;
 
-const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
-    default:
-      response.end( '404 Error: File Not Found' )
-  }
-})
+const server = http.createServer(function(request, response) {
+  let filePath = '.' + request.url;
+  if (filePath == './') filePath = './index.html';
 
-server.listen( process.env.PORT || port )
+  const extname = String(path.extname(filePath)).toLowerCase();
+  const mimeTypes = {
+    '.html': 'text/html',
+    '.css': 'text/css',
+    '.js': 'text/javascript',
+    '.png': 'image/png',
+    '.ttf': 'font/ttf'
+  };
 
-const sendFile = function( response, filename ) {
-   fs.readFile( filename, function( err, content ) {
-     response.end( content, 'utf-8' )
-   })
-}
+  const contentType = mimeTypes[extname] || 'application/octet-stream';
+
+  fs.readFile(filePath, function(error, content) {
+    if (error) {
+      response.writeHead(500);
+      response.end();
+    } else {
+      response.writeHead(200, { 'Content-Type': contentType });
+      response.end(content, 'utf-8');
+    }
+  });
+});
+
+server.listen(process.env.PORT || port);  
