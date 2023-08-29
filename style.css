@@ -1,0 +1,88 @@
+:root{
+  --lilac: #CCBEF2;
+  --deepBlue: #5D5CFA;
+  --grey: #A6B5E3;
+  --lightBlue: #AAD2FA;
+  --seafoam: #A3DDF0;
+}
+
+body {
+  background-image: linear-gradient(to bottom, var(--lilac), var(--lightBlue), var(--seafoam));
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1591181520189-abcb0735c65d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1917&q=80');
+}
+
+h2 {
+  color: var(--lilac);
+  text-align: center;
+  background-color: var(--deepBlue);
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-image: linear-gradient(to bottom, var(--grey), var(--lightBlue));
+}
+
+#topRight {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: var(--seafoam);
+}
+
+#topRightCorner {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: var(--seafoam);
+}
+
+#topLeft {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: var(--seafoam);
+}
+
+#topLeftCorner {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: var(--seafoam);
+}
+
+#bottomRight {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: var(--seafoam);
+}
+
+#bottomRightCorner {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: var(--seafoam);
+}
+
+#bottomLeft {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: var(--seafoam);
+}
+
+#bottomLeftCorner {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: var(--seafoam);
+}

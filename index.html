@@ -1,28 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h1>Information About<br>Julie Vieira</h1>
+    <h2>Introduction</h2>
+    <p>[Self introduction]</p>
+    <p>[Major and other information]</p>
+    <p>[Other things]</p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <p>Working Experience</p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Example</li>
+    </ul>
+    <p>Completed Courses</p>
+    <ul>
+      <li>Example</li>
+    </ul>
+
+    <h2>Extracurricular Activities</h2>
+    <p>Example</p>
+    <ul>
+      <li>Position</li>
     </ul>
   </body>
+
+  <div id="container">
+    <div id="topRight"></div>
+    <div id="topRightCorner"></div>
+    <div id="topLeft"></div>
+    <div id="topLeftCorner"></div>
+    <div id="bottomRight"></div>
+    <div id="bottomRightCorner"></div>
+    <div id="bottomLeft"></div>
+    <div id="bottomLeftCorner"></div>
+  </div>
+
+  <script>
+    var id = null;
+    function animation() {
+      var container = document.getElementById("container");
+      var elemTR = document.getElementById("topRight");
+      var elemTRC = document.getElementById("topRightCorner");
+      var elemTL = document.getElementById("topLeft");
+      var elemTLC = document.getElementById("topLeftCorner");
+      var elemBR = document.getElementById("bottomRight");
+      var elemBRC = document.getElementById("bottomRightCorner");
+      var elemBL = document.getElementById("bottomLeft");
+      var elemBLC = document.getElementById("bottomLeftCorner");
+      var pos = 0;
+      const dim = container.offsetWidth - elemTR.offsetWidth;
+
+      elemTR.style.left = dim + "px";
+      elemTRC.style.left = dim + "px";
+
+      elemBR.style.left = dim + "px";
+      elemBR.style.top = dim + "px";
+      elemBRC.style.left = dim + "px";
+      elemBRC.style.top = dim + "px";
+
+      elemBL.style.top = dim + "px";
+      elemBLC.style.top = dim + "px";
+
+      id = setInterval(frame, 10);
+      change = false;
+      function frame() {
+        if (pos == dim) {
+          change = true;
+        } else if (pos == 0) {
+          change = false;
+        }
+        if (change) {
+          pos--;
+        } else {
+          pos++;
+        }
+        elemTR.style.left = dim - pos + "px";
+        elemTRC.style.left = dim - pos + "px";
+        elemTRC.style.top = pos + "px";
+        
+        elemTL.style.top = pos + "px";
+        elemTLC.style.top = pos + "px";
+        elemTLC.style.left = pos + "px";
+        
+        elemBR.style.top = dim - pos + "px";
+        elemBRC.style.top = dim - pos + "px";
+        elemBRC.style.left = dim - pos + "px";
+        
+        
+        elemBL.style.left = pos + "px";
+        elemBLC.style.left = pos + "px";
+        elemBLC.style.top = dim - pos + "px";
+      }
+    }
+
+    window.onload = function () {
+      animation();
+    };
+  </script>
 </html>
