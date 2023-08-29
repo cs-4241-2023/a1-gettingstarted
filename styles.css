@@ -1,0 +1,42 @@
+* {
+  background-color: #91bbf2;
+  font-family: "Shantell Sans", sans-serif;
+}
+
+h1 {
+  color: #011526;
+}
+
+h2 {
+  color: #023059;
+}
+
+p,
+li {
+  color: #035aa6;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #011526;
+}
+
+th,
+td {
+  color: #011526;
+  text-align: center;
+}
+
+.button {
+  background-color: #91bbf2;
+  color: #0367a6;
+}
+
+#movingButton {
+  border: 1px solid black;
+  position: absolute;
+  left: 10px;
+}
