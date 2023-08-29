@@ -1,11 +1,37 @@
 aside {
+    margin-left: 15px;
+    font-style: italic;
+    background-color: lightgray;
+    text-align: center;
+  }
+
+  #quote{
     width: 50%;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: 15px;
     float: right;
     font-style: italic;
-    background-color: lightgray;
+  }
+
+  #skills{
+    width: 25%;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+  }
+
+  #links{
+    width: 25%;
+    float: left;
+    font-style: normal;
+  }
+
+  #prev_courses{
+    text-align: center;
+  }
+
+  ul.centered_list{
+    text-align: left;
+    display: inline-block;
   }
 
 body{
