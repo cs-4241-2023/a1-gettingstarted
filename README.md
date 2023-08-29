@@ -1,3 +1,5 @@
+Colin Fyock https://a1-cfyock.glitch.me/
+
 ## Technical Achievements
 - **Styled page with CSS**: Added a general rule to the whole website that applies a background color from my color palette and changes the font to the google font Shantell Sans.
 I also added ruled for h1, h2, p, li, table, th, td changing the color of the text of these elements. 
