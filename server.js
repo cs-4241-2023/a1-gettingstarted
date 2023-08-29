@@ -1,6 +1,6 @@
 const http = require('http'),
-      fs   = require('fs'),
-      port = 3000
+    fs   = require('fs'),
+    port = 3000
 
 const server = http.createServer( function( request,response ) {
   switch( request.url ) {
@@ -18,7 +18,7 @@ const server = http.createServer( function( request,response ) {
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
-   fs.readFile( filename, function( err, content ) {
-     response.end( content, 'utf-8' )
-   })
+  fs.readFile( filename, function( err, content ) {
+    response.end( content, 'utf-8' )
+  })
 }

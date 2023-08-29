@@ -1,0 +1,82 @@
+:root{
+    --mainColor:#354651;
+    --secondaryColor:#3F5E6D;
+    --mainText: #E1C89D;
+    --headerText: #E8BC78;
+    --linkColor:#E2694C;
+}
+
+@font-face {
+    font-display: block;
+    font-family:"Proxima-N-W01-Reg";
+    src: url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.eot");
+    src: url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/55c4f556836775174bfac94178a3fe82.svg#Proxima N W01 Reg")format("svg");
+}
+html,body{
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--headerText);
+    font-family: Lato,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+p, li {
+    color: var(--mainText);
+    font-family: Lato,Arial,Helvetica,sans-serif;
+}
+
+a:hover{
+    color: var(--linkColor);
+
+}
+
+.header{
+    background-color:var(--mainColor);
+    text-align: center;
+    margin:0;
+    padding:.67em;
+}
+
+body, .header h1, .info h2, h3, h4, h5, h6{
+    margin:0;
+}
+
+.info{
+    background-color:var(--secondaryColor);
+    margin:0;
+    padding:.67em;
+    min-height:100%;
+    height:fit-content;
+}
+
+.section{
+    margin: .67em;
+}
+
+img, iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+img {
+    width: 50%;
+}
+
+button{
+    color:var(--mainColor);
+    background-color: var(--headerText);
+}
+
+button:Hover{
+    background-color: var(--linkColor);
+    color: var(--headerText);
+}
