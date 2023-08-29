@@ -1,0 +1,39 @@
+
+h1 {
+  color: #4379E6;
+}
+
+p {
+  color: #81E643;
+  font-family: Black Ops One;
+}
+
+p1{
+  color:#56FCCA;
+}
+
+li{
+  color:#FFE365;
+  margin-top: 20px;
+  
+}
+
+header {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer{
+  background-color:#4379E6; color:#FFE365;
+}
+
+aside {
+  width: 40%;
+  padding-left: 50px;
+  margin-left: 50px;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #BA4AFE;
+  font-style: italic;
+  color: #BA4AFE;
+}
