@@ -88,10 +88,10 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Tucker Raymond
+http://a1-traymodn.glitch.me
 
-This project shows that I know how to download and clone a Git repository, create and edit code to style the appearance of an HTML page, and deploy that web page onto Glitch
+This project shows that I know how to download and clone a Git repository, create and edit code to style the appearance of an HTML page, and deploy that web page onto Glitch.
 
 ## Technical Achievements
 - **Styled page with CSS**: added in rules for the h1, p, body, ul, li, footer, img, and button tags
