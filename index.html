@@ -1,44 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <style>
-    #container {
-      width: 400px;
-      height: 400px;
-      position: relative;
-      background: pink;
-    }
-    #animate {
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      background-color: blue;
-    }
-    </style>
   <head>
+    
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: pink;
+      }
+      #animate {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-color: blue;
+      }
+ </style>
   </head>
+  
   <body>
     <h1>Information about Adish Jain</h1>
+    <p>Self introduction</p>
+    <p>Major: Computer Science third year student</p>
     <p>
-      Self introduction
-    </p>
-    <p>
-      Major: Computer Science third year student
-    </p>
-    <p>
-      I have taken Machine Learning, Big Data Management, AI, Algorithms, and some other Computer Science classes
+      I have taken Machine Learning, Big Data Management, AI, Algorithms, and
+      some other Computer Science classes
     </p>
 
-    <h2> Working Experience</h2>
+    <h2>Working Experience</h2>
     <p>
-      Working experience: This past summer I worked at State Street as a Software Engineer intern. I worked on their reporting application. The summer before that I was also doing Software Engineering at an private airplane software maintenance company.
-
+      Working experience: This past summer I worked at State Street as a
+      Software Engineer intern. I worked on their reporting application. The
+      summer before that I was also doing Software Engineering at an private
+      airplane software maintenance company.
     </p>
-    <h3>
-      Skills Experience:
-    </h3>
+    <h3>Skills Experience:</h3>
 
     <p>
       <li>HTML - Some</li>
@@ -53,15 +52,15 @@
       <li>IBM/Rational</li>
       <li>WPI</li>
     </ul> -->
-    <p><button onclick="myMove()">Click Me for Animation</button></p> 
+    <p><button onclick="myMove()">Click Me for Animation</button></p>
 
-    <div id ="container">
-    <div id ="animate"></div>
+    <div id="container">
+      <div id="animate"></div>
     </div>
     <script>
       function myMove() {
         let id = null;
-        const elem = document.getElementById("animate");   
+        const elem = document.getElementById("animate");
         let pos = 0;
         clearInterval(id);
         id = setInterval(frame, 5);
@@ -69,12 +68,12 @@
           if (pos == 370) {
             clearInterval(id);
           } else {
-            pos++; 
-            elem.style.top = pos + "px"; 
-            elem.style.left = pos +"px"; 
+            pos++;
+            elem.style.top = pos + "px";
+            elem.style.left = pos + "px";
           }
         }
       }
-      </script>
+    </script>
   </body>
 </html>
