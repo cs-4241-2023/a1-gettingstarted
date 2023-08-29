@@ -17,5 +17,6 @@ I referenced the following resources to learn how to create a dot and a simple a
 
 ### Design Achievements
 - **Created a color palette and used all colors in the webpage**: Shown in the AdobeColorPaletteTriadRule.jpg image in this repository, I created a color palette on color.adobe.com and used all five colors in my webpage. To generate the palette, I selected a Triad rule and adjusted the RGB scales. Color #592302 (A) is used to style the h1 tags, #C6FFBD (B) is used to style the body tag, #FF731F (C) is used to style the color of the container, #1505FA (D) is used to style the p tags, and #5C52F3 (E) is used to style the color of the dot.
+- **Used Roboto Font from Google Fonts**: To style the h1 HTML tag displaying the text "Information about Matthew McAlarney", I used the Roboto Font from Google Fonts. I accomplished this by linking to the Google Fonts stylesheet where Roboto is listed and then setting the style of the h1 tag in index.html to "font-family: Roboto;".
 
 
