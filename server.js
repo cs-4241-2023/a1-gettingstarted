@@ -7,7 +7,7 @@ const server = http.createServer( function( request,response ) {
     case '/':
       sendFile( response, 'index.html' )
       sendFile( response,'styles.css')
-      sendFile(response,'WPI_Seal.jpeg')
+      sendFile(response,'ColorPalette.png')
       break
     case '/index.html':
       sendFile( response, 'index.html' )
@@ -15,8 +15,8 @@ const server = http.createServer( function( request,response ) {
     case '/styles.css':
       sendFile(response, 'styles.css')
      break
-    case '/WPI_Seal.jpeg':
-     sendFile(response, 'styles.css')
+    case '/ColorPalette.png':
+      sendFile(response, 'ColorPalette.png')
       break;
     default:
       response.end( '404 Error: File Not Found' )

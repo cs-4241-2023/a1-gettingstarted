@@ -22,10 +22,14 @@ header {
   font-size: 20px;
   margin-top: 20px;
   text-align: center;
+  background-color: #BA4AFE;
+  color: white ;
 }
 
 footer{
+  font-size: 20px;
   background-color:#4379E6; color:#FFE365;
+  text-align: left;
 }
 
 aside {
@@ -36,4 +40,9 @@ aside {
   box-shadow: inset 5px 0 5px -5px #BA4AFE;
   font-style: italic;
   color: #BA4AFE;
+}
+
+img{
+  height: 25%;
+  width: 25%;
 }
