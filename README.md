@@ -1,4 +1,4 @@
-Aarsh Zadaphiya http://a1-charlieroberts.glitch.me
+Aarsh Zadaphiya http://a1-AarshZadaphiya.me
 
 This project shows an HTML webpage that includes some information about myself as well as the class I am taking, and images and testing various semantic HTML tags.
 
