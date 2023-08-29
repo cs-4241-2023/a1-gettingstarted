@@ -10,8 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <h1>Information About Brandon Vuong</h1>
+    <!-- Container holding the card -->
+    <div class="card">
+      <div class="card-front"></div>
+      <header>
+        <h1>Information About Brandon Vuong</h1>
+      </header>
       <p>
         <h2>
           Class of: 2020
@@ -20,17 +24,19 @@
       <p class="major">
         Major: Computer science
       </p>
-      <h2>Experience</h2>
-      <ul>
-        <li>HTML: some</li>
-        <li>CSS: some</li>
-        <li>Java: a lot</li>
-        <li>JavaScript: a lot</li>
-        <li>Python: a lot</li>
-        <li>unit testing: a lot</li>
-      </ul>
-      <h2>Courses Taken</h2>
-      <p>Software Engineering, Database Systems, HCI, etc.</p>
+      <div card="card-back">
+        <h2>Experience</h2>
+        <ul>
+          <li>HTML: some</li>
+          <li>CSS: some</li>
+          <li>Java: a lot</li>
+          <li>JavaScript: a lot</li>
+          <li>Python: a lot</li>
+          <li>unit testing: a lot</li>
+        </ul>
+        <h2>Courses Taken</h2>
+        <p>Software Engineering, Database Systems, HCI, etc.</p>
+      </div>
     </div>
   </body>
 </html>

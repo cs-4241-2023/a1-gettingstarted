@@ -1,10 +1,11 @@
 * {
     /* Make the entire page use Open Sans */
     font-family: 'Open Sans', sans-serif;
+    /* color: #c0e2ff; */
 }
 
 body {
-    background-color: #3c6dd6;
+    background-color: #c0e2ff;
 }
 
 /* styling for h1, h2, and the major paragraphs */
@@ -16,9 +17,14 @@ h2 {
     text-decoration-line: underline;
 }
 
+header {
+
+}
+
 /* The container class handles all of the styling for our main content without modifying the body */
-.container {
-    margin: 0 auto;
+.card {
+    /* center the card to the middle of the page */
+    margin: 100px auto 0;
 
     /* set the width of the card */
     width: 400px;
@@ -29,6 +35,6 @@ h2 {
     /* add padding to the container */
     padding: 20px; 
 
-    /* change the color of  */
-    background-color: white;
+    /* change the color of the card */
+    background-color: #d6a53c;
 }
