@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
+    <header>What do you call the spiritual leader of all rodents?</header>
+    <br></br>
     <h1>Information about Sarah Olson</h1>
     <p class="borders">
       Hi my name is Sarah, and I am part of the class of 2025!
@@ -109,24 +111,29 @@
     <p>This is best way to play <a href="https://www.free-spider-solitaire.com/">spider solitare</a> for free!</p>
     
     <br></br>
+    
 
-    <div class="spin">
 
-      <img id="smile" src="/smile_backpack.png" alt="Smiley Face on a Yellow Background">
+    <img id="smile" class="spin" src="/smile_backpack.png" alt="Smiley Face on a Yellow Background">
 
-    </div>
+    <p class="warning">WARNING: BUTTON OF MYSTERY, IRREVERSIBLE!</p>
     <br></br>
+    <button id="mystery" onclick="revealAns()">ooooo button of mystery</button>
 
     <script>
-      const picToSpin = document.getElementById("smile");
-
-      let spinAmt = 0;
-
-      function spinImage(){
-        
-        
+      function revealAns() {
+          let visib = document.getElementById('smile').style.visibility;
+          if(visib === "hidden"){
+            document.getElementById('smile').style.visibility = "visible"
+          }
+          else{
+            document.getElementById('smile').style.visibility = "hidden"
+          }
+    
       }
     </script>
+
+    <footer>cheesus mice</footer>
   </body>
 </html>
 

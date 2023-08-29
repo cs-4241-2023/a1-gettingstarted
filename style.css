@@ -6,15 +6,15 @@ body{
     padding: 70px;
 }
 
+p{
+    color: black
+}
+
 h1 {
 
     outline-width: 10px;
     color: #FF99BC;
     background-color: #FFFDAE;
-}
-
-p{
-    color: black
 }
 
 h2 {
@@ -28,6 +28,15 @@ h3 {
 
 li {
     background-color: #CAFFCE;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+header {
+    text-align: center;
 }
 
 .borders {
@@ -48,6 +57,12 @@ li {
     border-color: #FFED90;
 
 
+}
+
+.warning {
+    background-color: red;
+    color: white;
+    display:inline-block;
 }
 
 th {
@@ -73,11 +88,7 @@ td {
     left: 40%
 }
 
-.spinButton {
-    margin: 0;
-    position: absolute;
-    left: 50%
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
     img {
