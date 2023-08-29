@@ -1,7 +1,6 @@
 Thea Caplan
 TODO: link
 
-===
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 DUE: Thursday, August 31st by 11:59 AM
