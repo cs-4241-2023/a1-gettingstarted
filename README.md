@@ -95,6 +95,12 @@ This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, li, and a selectors...
+I used multiple rules:
+    ~ added dashed border to li
+    ~ changed the list style type for li
+    ~ changed the font color of the h
+    ~ added a background color of pink to the body
+    ~ made the font size larger for p
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Roboto Font from Google Fonts**: I used Tulpin as the font for the headers in my site.
