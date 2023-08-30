@@ -1,28 +1,25 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Charlie Roberts
+Nicholas Heineman
 http://a1-charlieroberts.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS(2 Points)**:
--edited margins of h3 and p to fix spacing
--changed styling of table
-- **Experimented with semantic HTML tags (2 Points)** : 
--Added a table
--Used <br> for formatting  
--**created javascript gradual color-shifting animation(5 Points)**
--starting with the code from class, I created a program that:
--takes in the current color of the text
--generates a random value
--shifts the color of the text gradually to the next chosen color
+- **Styled page with CSS(3 Points)**:<br>
+-edited margins of h3 and p to fix spacing<br>
+-changed styling of outer table<br>
+-styled the inner cells of table <br>
+- **Experimented with semantic HTML tags (2 Points)** : <br>
+-Added a table<br>
+-Used <br> for formatting  <br>
+-**created javascript gradual color-shifting animation(5 Points)**<br>
+-starting with the code from class, I created a program that:<br>
+-takes in the current color of the text<br>
+-generates a random value<br>
+-shifts the color of the text gradually to the next chosen color<br>
 
 
 ### Design Achievements
-- **Used the Trirong Font from Google Fonts(5 Points)**: I used Trirong as the font for the primary copy text in my site.
+- **Used the Trirong Font from Google Fonts(5 Points)**: I used Trirong as the font for the primary copy text in my site.<br>
