@@ -9,14 +9,14 @@
 
 <body>
   <header>
-    <h1>Information about Andrew Hariyanto</h1>
+    <h1>Andrew Hariyanto</h1>
   </header>
   <main>
-    <section>
+    <section id="'background_info">
       <h2>Background Info</h2>
-      <aside id="quote">
-        <blockquote>
-          "When the world turns its back on you, stab it" <br> - Andrew Hariyanto 2023
+      <aside>
+        <blockquote id="quote">
+          
         </blockquote>
       </aside>
       <p>
@@ -25,7 +25,7 @@
         He loves exploring new games, new music, VFX, and world-building.
       </p>
     </section>
-    <section>
+    <section id="experience">
       <h2>Experience</h2>
       <h3>
         Working experience
@@ -64,75 +64,108 @@
         <tr>
           <td class="media_embed">
             <div>
-              <img id="innerdiv" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/WPI_logo.svg/640px-WPI_logo.svg.png" alt="WPI Logo">
+              <img id="innerdiv"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/WPI_logo.svg/640px-WPI_logo.svg.png"
+                alt="WPI Logo">
             </div>
           </td>
           <td class="media_desc">
             <h2>Worcester Polytechnic Institute</h2>
-            <ul>
+            <ul class="centered_list">
               <li>ARC Tutor</li>
               <li>Peer Learning Assistant</li>
             </ul>
           </td>
         </tr>
       </table>
-      <aside id="skills">
-        <h3>Technologies and Methods Experience</h3>
-        <ul>
-          <li>HTML - Some</li>
-          <li>CSS - None</li>
-          <li>Java - A Lot</li>
-          <li>JavaScript - Some</li>
-          <li>Ruby - None</li>
-          <li>Python - A Lot</li>
-          <li>Unit Testing - A Lot</li>
-        </ul>
-      </aside>
-      <aside id="links">
-        <h3>Links</h3>
-        <nav>
-          <ul class="centered_list">
-            <li> 
-              <a href="https://www.andrewhariyanto.com/">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/andrewhariyanto">
-                Github
-              </a>
-            </li>
-            <li>
-              <a href="https://app.thexplace.ai/app/talent/6393d0c878761ef0faf9b85a/about">
-                TheXPlace
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-      <section id="prev_courses">
-        <h3>Previous CS Courses</h3>
-        <ul class="centered_list">
-          <li>CS4233 - OOAD</li>
-          <li>CS4341 - Intro to AI</li>
-          <li>IMGD4099 - Ethics of Creative AI</li>
-          <li>CS3043 - Social Implications</li>
-          <li>CS3041 - HCI</li>
-          <li>CS3013 - OS</li>
-          <li>CS3133 - Foundations</li>
-          <li>CS3733 - Software Engineering</li>
-          <li>CS2223 - Algorithms</li>
-          <li>CS3431 - Database Systems I</li>
-          <li>CS2303 - Systems</li>
-          <li>CS2102 - OOP</li>
-          <li>CS1101 - Program Design</li>
-        </ul>
-      </section>
+      <table>
+        <tr>
+          <td>
+            <section>
+              <h3>Technologies and Methods Experience</h3>
+              <ul class="centered_list">
+                <li>HTML - Some</li>
+                <li>CSS - None</li>
+                <li>Java - A Lot</li>
+                <li>JavaScript - Some (close to none)</li>
+                <li>Ruby - None</li>
+                <li>Python - A Lot</li>
+                <li>Unit Testing - A Lot</li>
+              </ul>
+            </section>
+          </td>
+          <td>
+            <section>
+              <h3>Previous CS Courses</h3>
+              <ul class="centered_list">
+                <li>CS4233 - OOAD</li>
+                <li>CS4341 - Intro to AI</li>
+                <li>IMGD4099 - Ethics of Creative AI</li>
+                <li>CS3043 - Social Implications</li>
+                <li>CS3041 - HCI</li>
+                <li>CS3013 - OS</li>
+                <li>CS3133 - Foundations</li>
+                <li>CS3733 - Software Engineering</li>
+                <li>CS2223 - Algorithms</li>
+                <li>CS3431 - Database Systems I</li>
+                <li>CS2303 - Systems</li>
+                <li>CS2102 - OOP</li>
+                <li>CS1101 - Program Design</li>
+              </ul>
+            </section>
+          </td>
+          <td>
+            <h3>Links</h3>
+            <section>
+              <nav>
+                <ul class="centered_list">
+                  <li>
+                    <a href="https://www.andrewhariyanto.com/">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/andrewhariyanto">
+                      Github
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://app2.thexplace.ai/sharing?id=T-Y5PQyHh2HvD6-bha">
+                      TheXPlace
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </td>
+        </tr>
+      </table>
     </section>
   </main>
   <footer>
     <p>Copyright 2023</p>
   </footer>
+  <canvas id="canvas" width="640" height="480"></canvas>
 </body>
+
+<script>
+
+  var i = 0;
+  var text = '"When the world turns its back on you, stab it" - Andrew Hariyanto';
+  var speed = 30;
+
+  function type(){
+    if(i<text.length){
+      document.getElementById("quote").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+
+  window.onload = function(){
+    type();
+  }
+
+</script>
 
 </html>

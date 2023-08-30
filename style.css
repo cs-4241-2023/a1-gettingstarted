@@ -3,50 +3,33 @@ aside {
     font-style: italic;
     background-color: lightgray;
     text-align: center;
-  }
-
-  #quote{
-    width: 50%;
-    margin-left: 15px;
     float: right;
-    font-style: italic;
-  }
+    width: 30%;
+    height: 86px;
+}
 
-  #skills{
-    width: 25%;
-    margin-left: 15px;
-    float: right;
-    font-style: italic;
-  }
-
-  #links{
-    width: 25%;
-    float: left;
-    font-style: normal;
-  }
-
-  #prev_courses{
+td {
+    vertical-align: top;
     text-align: center;
-  }
+}
 
-  ul.centered_list{
+ul.centered_list {
     text-align: left;
     display: inline-block;
-  }
+}
 
-body{
+body {
     max-width: 960px;
     margin: auto;
 }
 
-h1{
+h1 {
     text-align: center;
-    font-style: bold;
 }
 
-footer{
+footer {
     text-align: center;
-
+    font-style: italic;
 }
 
 .media_embed {
@@ -63,6 +46,7 @@ footer{
     height: 100%;
 }
 
-.media_desc {
+td.media_desc {
     padding-left: 20px;
+    text-align: left;
 }
