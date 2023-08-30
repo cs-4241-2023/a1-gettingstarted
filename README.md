@@ -34,7 +34,7 @@ To do so, I used all the technical and design achievements, described in detail 
 - **Created a color palette using [coolors.co](https://coolors.co/).**: I created a color palette using coolors.co and implemented the appropriate CSS throughout the 
 web page. They can be seen in h1, h2, h3, and h4. They can also be seen in the background, in various borders, and in the table hover feature. 
 
-  The color palette values can be found here: #344e41, #3a5a40, #588157, #a3b18a, #dad7cd.
+  The color palette values can be found here: #344e41, #3a5a40, #588157, #a3b18a, #dad7cd. The actual colors can be found in the CoolorPalette.png.
 
 - **Used the DM Serif Display & DM Sans Fonts from [Google Fonts](https://fonts.google.com/)**: I used [DM Sans](https://fonts.google.com/specimen/DM+Sans?query=DM+Sans) 
 as the font for all paragraph, table, and list text on my site and [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display?query=DM+Serif+Display) for all 
