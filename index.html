@@ -1,28 +1,289 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Title of assignment -->
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+  <body>
+    <div class="background-box">
+      <!-- Semantic HTML tag #1: header -->
+      <header>
+        <h1>Information about Juliana Porto</h1>
+        <img
+          class="headshot"
+          src="https://cdn.glitch.global/4b744604-4ed0-4ffe-bce8-137a8d0ed9ee/JulianaPorto_HeadShot.JPG?v=1693248616076"
+          align="right"
+          alt="Headshot of Juliana Porto"
+          height="200px"
+          width="160px"
+        />
+        <p>
+          Hi everyone! I am currently a senior student at Worcester Polytechnic
+          Institute (WPI). Over the summer I worked with Acadia National Park to
+          redesign the Acadia Trails website which holds a collection of 360&deg
+          panoramic images along all of Acadia's beautiful hiking trails. Learn
+          more about my work and project experience, campus involvements, and
+          more below!
+        </p>
+        <br />
+        <p><i>BS of Computer Science '24 and MS of Management '25</i></p>
+      </header>
+
+      <!-- Semantic HTML tag #2: main -->
+      <main>
+        <br />
+        <h2>Experience</h2>
+        <h3>Working Experience</h3>
+        <!-- Semantic HTML tag #3: table -->
+        <table>
+          <tr>
+            <th>Position</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Date Range</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Residential Advisor</td>
+            <td>WPI</td>
+            <td>Worcester, MA</td>
+            <td>Mar 2023 – Present</td>
+            <td>
+              <ul>
+                <li>
+                  Aided in conflict resolution by engaging in creative problem
+                  solving.
+                </li>
+                <li>Conducted various floor meetings to enhance community.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Club Sports Intern</td>
+            <td>WPI</td>
+            <td>Worcester, MA</td>
+            <td>Aug 2021 – Present</td>
+            <td>
+              <ul>
+                <li>
+                  Managed club statistics and student safety forms using
+                  Microsoft Excel.
+                </li>
+                <li>Designed marketing for all club sports teams.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Cloud Computing Software Intern</td>
+            <td>Pegasystems</td>
+            <td>Salem, NH</td>
+            <td>May 2022 – Aug 2022</td>
+            <td>
+              <ul>
+                <li>
+                  Developed with and implemented various cloud engineering tools
+                  and concepts such as AWS, Docker, Kubernetes, Golang, Scrum,
+                  and Agile Methodologies.
+                </li>
+                <li>
+                  Helped team with tasks such as provisioning architecture using
+                  GOC, creating docker images, and editing SOPs.
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>POP Launch Teaching Assistant</td>
+            <td>WPI</td>
+            <td>Worcester, MA</td>
+            <td>June 2021 – July 2021</td>
+            <td>
+              <ul>
+                <li>
+                  Taught high school students how to use Adobe Software
+                  (Photoshop and Illustrator).
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <h3>Project Experience</h3>
+        <!-- Semantic HTML tag #4: article -->
+        <article class="project">
+          <h4>
+            <a
+              href="https://acadiatrails.wpi.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Acadia Trails Website Redesign</a
+            >
+          </h4>
+          <p>
+            In the modern era, websites are the preeminent method for connecting
+            people to new experiences and perspectives. For Acadia National
+            Park, inequalities in accessibility, safety concerns, and
+            environmental changes motivated the development of an interactive
+            online tool to share its stunning hiking trails with the world. In
+            this project, the
+            <b>Acadia Trails</b> website was transformed into a state-of-the-art
+            hub for immersive panoramic tours of the 125+ miles of trails in the
+            park. To accomplish this, the website was reconstructed with a
+            user-focused design perspective, and many panoramic tours were
+            recaptured or reprocessed to improve their quality. Using several
+            evaluative methods, the updated website was found to be navigable,
+            informative, and compelling for a wide audience.
+          </p>
+        </article>
+        <article class="project">
+          <h4>
+            <a
+              href="https://wpihci.wordpress.com/2022/12/07/grocery-aid/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Grocery Aid</a
+            >
+          </h4>
+          <p>
+            Everyone that shops for groceries and cooks their own meals knows
+            how difficult it can be to buy the right amount of food for the week
+            without ending up with things being wasted. Expiration dates seem to
+            slip through our fingers when we least expect them to, and spoiled
+            milk ends up in our morning cup of coffee. There seems to be no way
+            to keep track of what is going bad when and making sure that we use
+            those ingredients before it’s too late – until now!
+          </p>
+          <p>
+            Thanks to <b>Grocery Aid</b>, you no longer have to spend hours
+            checking the fridge looking at those tiny expiration dates or
+            worrying about accidentally wasting food. Grocery Aid is your
+            personal grocery assistant, keeping track of all those aggravations
+            for you.
+          </p>
+          <p><b>Grocery Aid</b> – because your time and your food matter.</p>
+        </article>
+        <article class="project">
+          <h4>Intel Sponsored Assessing UX in Games Research Study</h4>
+          <p>
+            This research study was conducted to investigate how the magnitude
+            and frequency of frame time display affect user gaming experience
+            and performance. This was done using a racing car game known as
+            SuperTuxKart. All findings were shared with project sponsors from
+            Intel and further studies are being done to expand upon said
+            findings.
+          </p>
+        </article>
+        <article class="project">
+          <h4>
+            <a
+              href="https://jvp-projects-2634987252.s3.amazonaws.com/pegaInternProjectSummer2022/AutismHiringProgramPresentation.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Pega Summer 2022 Intern Group Project - PwD ERG</a
+            >
+          </h4>
+          <p>
+            An intern team project based on creating an autism friendly hiring
+            program to enrich Pega’s People with Disabilities Employee Resource
+            Group (PwD ERG).
+          </p>
+          <p>The project received an honorable mention award.</p>
+        </article>
+        <article class="project">
+          <h4>
+            <a
+              href="https://devpost.com/software/bob-the-plant-moisture-monitor-and-sms-notification-system"
+              target="_blank"
+              rel="noopener noreferrer"
+              >HACK@WPI Hackathon</a
+            >
+          </h4>
+          <p>
+            With busy schedules due to classwork, sports, and other activities,
+            college students tend to neglect their house plants. But what if
+            there was a system that helped keep you and your plants happy?
+          </p>
+          <p><b>Bob</b> is here to help!</p>
+          <p>
+            <b>Bob</b> is two parts: a soil moisture monitor and an SMS
+            notification system. When Bob measures your plant's soil and it's
+            dry, he will text you a notification that it needs to be watered.
+            Bob will also inform you of the last time you watered your plant.
+          </p>
+        </article>
+        <article class="project">
+          <h4>
+            <a
+              href="https://www.figma.com/proto/OhtC1W01laQBxRLLbxmf2Y/Bagel-Time---iPhone?node-id=103%3A247&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >HUA Practicum: Website Design Project</a
+            >
+          </h4>
+          <p>
+            Currently, over 1.7 billion websites exist, but what makes a good
+            website? How can we engage a user with combinations of computer
+            science and art? These were the main questions examined in my
+            website redesign of a local small business in Worcester, MA. Over a
+            period of seven weeks, I developed and followed my own design
+            process which included research, ideation, design, and prototyping
+            for both a web and a mobile design. I have now created two fully
+            functional prototypes with user flow videos to accompany them.
+          </p>
+        </article>
+        <br />
+        <h2>Campus Involvements</h2>
+        <h3>Clubs and Activities</h3>
+        <!-- Semantic HTML tags #5 & #6: details & summary -->
+        <details>
+          <summary>Resident Hall Association</summary>
+          <p><i>Member status: PR Chair</i></p>
+          <p>A club at WPI dedicated to advocating for student issues.</p>
+        </details>
+        <details>
+          <summary>Competitive Climbing Team</summary>
+          <p><i>Member status: Secretary</i></p>
+          <p>A club sport at WPI for competitive rock climbing.</p>
+        </details>
+        <details>
+          <summary>Photography Club</summary>
+          <p><i>Member status: Secretary</i></p>
+          <p>
+            A media club at WPI for students interested in photography. Holds
+            weekly workshops, holds photo contests, and runs occasional
+            campus-wide photo galleries.
+          </p>
+        </details>
+        <details>
+          <summary>Women in Computer Science</summary>
+          <p><i>Member status: General Member</i></p>
+          <p>
+            A social club at WPI for female identifying computer science
+            students to support each other.
+          </p>
+        </details>
+      </main>
+
+      <!-- Semantic HTML tag #7: footer -->
+      <footer>
+        <h2>Contact Information</h2>
+        <p>Email: jvporto@wpi.edu</p>
+        <a
+          class="socials"
+          href="https://www.linkedin.com/in/juliana-porto-2002/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </footer>
+    </div>
   </body>
+
+  <!-- Animation for h1 cycling color change can be found in script.js -->
+  <script src="script.js"></script>
 </html>
