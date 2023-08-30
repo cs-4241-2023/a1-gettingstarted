@@ -101,7 +101,7 @@ This project shows ...
 
 Andrew Hariyanto
 
-This project shows a brief introduction of myself and my experience in CS and IMGD. I included my majors, graduation year, hobbies, and experience for content. On the technical side, I used a variety of semantic tags to experiment with what they did.
+This project shows a brief introduction of myself and my experience in CS and IMGD. I included my majors, graduation year, hobbies, and experience for content. On the technical side, I used a variety of semantic tags to experiment with what they did including nav, tables, aside, and different semantic text tags. I also added a type writer animation for one of the quotes I have on the site.
 
 ### Technical Achievements
 - **Styled page with CSS**: Added rules for
@@ -118,3 +118,4 @@ This project shows a brief introduction of myself and my experience in CS and IM
     - blockquote: I included a quote for myself
     - aside: houses the quote and looks like a sidenote of some sort
 - **Javascript Animation**
+    - I made a type writer animation for my quote. It was challenging for me to get situated with the language as I am not too familiar with it. Here is a guide I followed to make this animation. https://www.w3schools.com/howto/howto_js_typewriter.asp
