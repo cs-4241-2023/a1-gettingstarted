@@ -13,9 +13,13 @@ This project shows my computer science experience at wpi, my experience with cer
 4. Added font, font weight and color to li and a
 5. Added javascript animation to first header. It creates a typewriter effect
 6. Added links to websites that I've worked on.
+7. Added image of myself
+8. Added footer
+9. Added header
+10. Added main
 
 ### Design Achievements
 
-- **Used the Rubik Font from Google Fonts**: I used Rubik as the font for the primary copy text in my site.
+- **Used the Rubik Font from Google Fonts**: I used the Rubik font for the primary copy text in my site.
 
 - **Created a color palette with adobe color**: --white-green: #F8FFF8, --light-green: #C1E1C1, --dark-blue: #2F4858;
