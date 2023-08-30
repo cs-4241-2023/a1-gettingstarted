@@ -15,15 +15,24 @@ const direction = {
 let animateElement = (element, speed, animationDirection) => {
 
     let pos = 0;
-    if(animationDirection === direction.Horizontal) pos = element.getBoundingClientRect().x;
-    else if(animationDirection === direction.Vertical) pos = element.getBoundingClientRect().y;
+    let elementSize = 0;
 
-    let headerLength = element.getBoundingClientRect().width;
+    if(animationDirection === direction.Horizontal) {
+        pos = element.getBoundingClientRect().x;
+        elementSize = element.getBoundingClientRect().width;
+    } else if(animationDirection === direction.Vertical) {
+        pos = element.getBoundingClientRect().y;
+        elementSize = element.getBoundingClientRect().height;
+    } else {
+        alert("Error: Unknown Animation Direction!");
+        return;
+    }
+
     let screenWidth = screen.width;
     let state = 0;
 
     setInterval(() => {
-        if(pos < screenWidth - headerLength && state === 0) {
+        if(pos < screenWidth - elementSize && state === 0) {
             pos = pos + speed;
         } else {
             state = 1;
