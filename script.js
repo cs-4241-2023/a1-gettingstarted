@@ -61,6 +61,9 @@ let rgbElement = (element, speed) => {
     }, speed)
 }
 
+/**
+ * Initializes the mouse over even that increases text size
+ */
 let initMouseOverFont = () => {
     let elementArray = [
         document.getElementById("course-title"),
@@ -69,16 +72,12 @@ let initMouseOverFont = () => {
     ];
 
     elementArray.forEach((element) => {
-
-        // init to medium
         element.style.fontSize = "medium";
 
-        // set to large on moues over
         element.addEventListener("mouseover", () =>{
             element.style.fontSize = "large";
         })
 
-        // set to small on mouse off
         element.addEventListener("mouseout", () =>{
             element.style.fontSize = "medium";
         });
