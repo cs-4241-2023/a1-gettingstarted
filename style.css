@@ -1,0 +1,28 @@
+body {
+  background-color:rgba(118,181,197, 0.4);
+}
+
+h1 {
+  text-shadow:2px 2px #acacac;
+  text-align:center;
+}
+
+h2 {
+  text-align:center;
+  color:rgb(0, 0, 139);
+  padding-top:25px;
+}
+
+button {
+  border-radius:5px;
+  background-color:rgba(0, 0, 139, 0.4);
+  color:black;
+}
+
+ul {
+  font-style:italic;
+}
+
+h1, h2, p, li {
+  font-family: "Nunito", sans-serif;
+}
