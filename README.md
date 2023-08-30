@@ -13,7 +13,7 @@ This project shows my computer science experience at wpi, my experience with cer
 4. Added font, font weight and color to li and a
 5. Added javascript animation to first header. It creates a typewriter effect
 6. Added links to websites that I've worked on.
-7. Added image of myself
+7. Added image of myself. styled image width as well as border radius
 8. Added footer
 9. Added header
 10. Added main
