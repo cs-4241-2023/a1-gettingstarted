@@ -14,6 +14,7 @@ h1 {
 h2 {
   color: #7C9990;
   padding: 7px;
+  margin-top: 100px;
   border: 3px solid #7C9990;
   background-color: #DCE6E3;
   text-align: center;
@@ -32,9 +33,22 @@ ul {
   color: #7C9990;
 }
 
-.grid {
+table, td {
+  border: 3px solid #7C8399;
+  padding: 3px;
+  border-collapse: collapse;
+  color: #7C8399;
+}
+
+.grid-container {
   display: grid;
-  padding: 10px;
+  gap: 50px 50px;
+  grid-template-columns: auto auto;
+}
+
+.box {
+  display: grid;
+  padding: 20px;
   background-color: rgb(147, 147, 255);
   animation: imageGridAni  1s infinite;
 }
