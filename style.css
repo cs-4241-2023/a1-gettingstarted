@@ -29,8 +29,8 @@ body {
 }
 
 .cursor-outline {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border: 2px solid white;
     /* background-color: white; */
 }
@@ -62,7 +62,7 @@ li {
     margin-bottom: 5px;
 }
 
-body:hover~.cursor-outline {
+h1:hover~.cursor-outline {
     transform: scale(20);
 }
 
