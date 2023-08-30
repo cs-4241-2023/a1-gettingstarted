@@ -10,3 +10,4 @@ This project shows ...
 
 ### Design Achievements
 - **Color palette created using color.adobe.com. screenshot in repo
+![colorWheelScreenshot](https://github.com/mlacadie/a1-gettingstarted/assets/93140416/6d269b6b-2b73-49f6-8a8f-9733aac948c1)
