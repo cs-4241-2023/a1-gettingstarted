@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    padding: 70px;
+}
+
+p{
+    color: black
+}
+
+h1 {
+
+    outline-width: 10px;
+    color: #FF99BC;
+    background-color: #FFFDAE;
+}
+
+h2 {
+    background-color: #A6BDFF;
+}
+
+h3 {
+    background-color:#FF99BC;
+
+}
+
+li {
+    background-color: #CAFFCE;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+.borders {
+    border-width:3px;
+    border-style:solid;
+    border-color: #A6BDFF;
+}
+
+.bordersList {
+    border-width:3px;
+    border-style:solid;
+    border-color: #FFB3CC;
+}
+
+.major {
+    border-width:3px;
+    border-style:solid;
+    border-color: #FFED90;
+
+
+}
+
+.warning {
+    background-color: red;
+    color: white;
+    display:inline-block;
+}
+
+th {
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
+    border-color:#FF9EBC;
+    background-color: #FFED90;
+}
+
+td {
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
+    border-color:#FFB3CC;
+    background-color: #FFFDAE;
+
+}
+
+.spin {
+    margin: 0;
+    position: absolute;
+    left: 40%
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+    img {
+        animation: spinSmile infinite 10s linear;
+    }
+}
+
+@keyframes spinSmile {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+

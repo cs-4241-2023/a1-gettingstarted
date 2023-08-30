@@ -1,28 +1,139 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    <title>Sarah Olson: CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+    <header>What do you call the spiritual leader of all rodents?</header>
+    <br></br>
+    <h1>Information about Sarah Olson</h1>
+    <p class="borders">
+      Hi my name is Sarah, and I am part of the class of 2025!
+      <br></br>
+      </p>
+    
+      <ul class="bordersList">
+
+        <p>      Previous WPI CS Courses that I have taken include:</p>
+        
+        <li>CS 3733: Software Engineering</li>
+        <li>CS 3133: Foundations of CS</li>
+        <li>CS 3013: Operating Systems</li>
+        <li>CS 2303: Systems Programming Concepts</li>
+        <li>CS 2223: Algorithms</li>
+        <li>CS 2022: Discrete Mathematics</li>
+        <li>CS 2011: Intro. to Machine Org. and Assembly</li>
+        <li>CS 2103: Accelerated Object-Oriented Design</li>
+        <li>CS 1102: Accelerated Intro. to Program Design</li>
+      </ul>
+
+    </p>
+    <p class="major">
+      Major: Computer Science
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      My favorite extinct animal is of course dinosaurs and my favorite alive animal 
+      is tied between cats and sharks
     </p>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+      <ul>
+        <li>HTML: more than some but not alot</li>
+        <li>CSS:  more than some but not alot</li>
+        <li>Jave: alot</li>
+        <li>JavaScript: alot</li>
+        <li>Ruby: none</li>
+        <li>Python: some</li>
+        <li>unit testing: some</li>
+      </ul>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+
+    <h3>Warning: Aviation Nonesense</h3>
+
+    <p>Another fact about me is that I love airplanes and I fly alot as my extended family does 
+      not live nearby. 
+    </p>
+    <p> 
+      Below are my top 6 most flown on planes that can be confirmed with old boarding passes and  Flightera.net:
+    </p>
+
+    <table>
+      <tr>
+        <th>Plane</th>
+        <th>Number of Times I Have Officially Flown</th>
+        <th>My Most Popular Route</th>
+      </tr>
+      <tr> 
+        <td>A320-200</td>
+        <td>13</td>
+        <td>DFW-BOS</td>
+      </tr>
+      <tr> 
+        <td>737-800</td>
+        <td>6</td>
+        <td>HHN-STN 
+          <br></br>
+            HHN-PSA</td>
+      </tr>
+      <tr> 
+        <td>A380-800</td>
+        <td>5</td>
+        <td>FRA-JFK</td>
+      </tr>
+      <tr> 
+        <td>A330-200</td>
+        <td>4</td>
+        <td>BOS-FRA
+          <br></br>
+          BOS-HHN</td>
+      </tr>
+      <tr> 
+        <td>767-300ER</td>
+        <td>4</td>
+        <td>PVD-FRA
+          <br></br>
+          JFK-MAD</td>
+      </tr>
+      <tr> 
+        <td>747-8</td>
+        <td>3</td>
+        <td>BOS-FRA</td>
+      </tr>
+
+    </table>
+
+    <br><br>
+
+
+    <p>This is best way to play <a href="https://www.free-spider-solitaire.com/">spider solitare</a> for free!</p>
+    
+    <br></br>
+    
+
+
+    <img id="smile" class="spin" src="/smile_backpack.png" alt="Smiley Face on a Yellow Background">
+
+    <p class="warning">WARNING: BUTTON OF MYSTERY, IRREVERSIBLE!</p>
+    <br></br>
+    <button id="mystery" onclick="revealAns()">ooooo button of mystery</button>
+
+    <script>
+      function revealAns() {
+          let visib = document.getElementById('smile').style.visibility;
+          if(visib === "hidden"){
+            document.getElementById('smile').style.visibility = "visible"
+          }
+          else{
+            document.getElementById('smile').style.visibility = "hidden"
+          }
+    
+      }
+    </script>
+
+    <footer>cheesus mice</footer>
   </body>
 </html>
+
