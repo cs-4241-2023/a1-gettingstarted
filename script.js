@@ -64,7 +64,8 @@ let rgbElement = (element, speed) => {
 let initMouseOverFont = () => {
     let elementArray = [
         document.getElementById("course-title"),
-        document.getElementById("skill-title")
+        document.getElementById("skill-title"),
+        document.getElementById("class-number")
     ];
 
     elementArray.forEach((element) => {
