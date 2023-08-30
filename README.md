@@ -3,7 +3,7 @@ Samuel Karkache - Assignment 1
 ---
 This is the first project for CS 4241 Webware. 
 
-## Technical Achievements
+## Technical and Design Achievements
 - **Created JavaScript Animation for the Header and Footer**: Created a function called `animateElement` that animates 
 a given element either vertically or horizontally at a given speed. The function takes three arguments. The `element` argument
 is the HTML element that is going to be animated. This is typically obtained in JavaScript by using the `document.getElementById`
@@ -14,5 +14,16 @@ Inside this closure/function, the position of the element is set and then subseq
 is obtained to ensure the element does not leave the screen completely. Once the element has reached the edge of the screen, the position
 is decreased.
 
-### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used 'mouseover' and 'mouseout' Events to Change Text Size**: When the user hovers their mouse over the 'course title', 
+'skill title' or the 'class number' the text size of these elements increase. When the mouse is taken off of these elements,
+the text size reverts back to the default size. To try this out, hover your mouse over the text that says 'Class of 2024',
+'CS Courses Completed at WPI:' and 'Experience with the following technologies:'. This was implemented via a function I created 
+called `initMouseOverFont`. This function loops over an array of elements and for each element, it creates an event listener for
+the 'mouseover' and 'mouseout' events. For the 'mouseover' event the text size is set to large while for the 'mouseout' event the
+text size is set back to the default value of 'medium'.
+
+- **Created JavaScript Function to Dynamically Change Text Color**: The text contents of the course list and skill list change color
+dynamically. This was implemented with a JavaScript function I created called `rgbElement`. This function takes two arguments. The
+`element` argument is the element that will be affected and `speed` is the speed in which the color changes in ms. Similar to the 
+animation, this function utilizes the `setInterval` function. The `setInterval` function allows for different colors to be set every
+few milliseconds using `element.style.color`.

@@ -73,7 +73,8 @@ let initMouseOverFont = () => {
     ];
 
     elementArray.forEach((element) => {
-        element.style.fontSize = "medium";
+
+        element.style.fontSize = "medium"; // set default for when the page loads
 
         element.addEventListener("mouseover", () =>{
             element.style.fontSize = "large";
