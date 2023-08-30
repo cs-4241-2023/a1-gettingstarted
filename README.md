@@ -5,7 +5,7 @@ This project shows an HTML webpage that includes some information about myself a
 Technical Achievements
 * Styled page with CSS: Added 
 Rules like color, font-family, margin-top, font-size, text-align, background-color, height, width, padding, float, box-shadow and font-style for h1, p, p1, li, a, header, footer, aside selectors.
-
+Added a basic JavaScript animation where a square of 150px is made to change between the colors of the color palette chosen using keyframes.
 Other semantic HTML tags that I used are header, footer, aside, images and links.
 
 Design Achievements
