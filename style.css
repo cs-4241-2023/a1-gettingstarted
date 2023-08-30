@@ -1,6 +1,16 @@
-h1 {
+#header {
     font-weight: bold;
+    position: absolute;
+    width: 600px;
 }
+#animation {
+    position: relative;
+}
+
+#content {
+    padding: 50px;
+}
+
 html {
     font-family: Consolas, serif;
     background: black;
