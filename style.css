@@ -1,0 +1,116 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=DM+Serif+Display&display=swap");
+
+.background-box {
+  padding: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #a3b18a;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.headshot {
+  padding-left: 30px;
+}
+
+a {
+  color: #a3b18a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "DM Serif Display", serif;
+}
+
+h1 {
+  color: #344e41;
+  font-size: 40px;
+  border-bottom: 3px solid #dad7cd;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: #3a5a40;
+  font-size: 30px;
+  border-bottom: 2px solid #dad7cd;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #588157;
+  font-size: 22px;
+}
+
+h4 {
+  color: #a3b18a;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #dad7cd;
+  text-align: left;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+th {
+  height: 50px;
+}
+
+td {
+  vertical-align: top;
+}
+
+tr:nth-child(even) {
+  background-color: #dad7cd;
+}
+
+tr:hover {
+  background-color: #a3b18a;
+}
+
+.project {
+  border-style: solid;
+  border-color: #dad7cd;
+  border-radius: 25px;
+  margin: 5px;
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.project > h4,
+p {
+  margin: 5px;
+  font-size: 90%;
+}
+
+.socials {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: black;
+  font-size: 18px;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: #a3b18a;
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
