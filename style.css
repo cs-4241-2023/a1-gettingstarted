@@ -1,0 +1,25 @@
+h1,h2 {
+    color: purple;
+    font-size: xx-large;
+    font-family: 'Tulpen One', cursive;
+}
+
+p {
+    font-size: larger ;
+}
+
+body {
+    background-color: pink;
+}
+
+h3 {
+    font-size: medium;
+    font-family: 'Noto Naskh Arabic', serif;
+}
+
+ul {
+    list-style-type: circle;
+    border-style: dashed;
+    border-width: 3px;
+}
+
