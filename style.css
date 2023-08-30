@@ -7,6 +7,15 @@
 #animation {
     position: relative;
 }
+#footer {
+    color: red;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+}
+#footer-container {
+    position: relative;
+}
 
 #class-list {
     width: 85px;

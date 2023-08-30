@@ -61,16 +61,6 @@ let rgbElement = (element, speed) => {
     }, speed)
 }
 
-/**
- * Run functions when the page loads
- */
-document.addEventListener("DOMContentLoaded", () => {
-    animateElement(document.getElementById("header"), 25, direction.Horizontal);
-    rgbElement(document.getElementById("class-list"), 250);
-    rgbElement(document.getElementById("skill-list"), 250);
-    initMouseOverFont();
-});
-
 let initMouseOverFont = () => {
     let elementArray = [
         document.getElementById("course-title"),
@@ -93,3 +83,15 @@ let initMouseOverFont = () => {
         });
     })
 }
+
+/**
+ * Run functions when the page loads
+ */
+document.addEventListener("DOMContentLoaded", () => {
+    animateElement(document.getElementById("header"), 25, direction.Horizontal);
+    animateElement(document.getElementById("footer"), 10, direction.Horizontal);
+    rgbElement(document.getElementById("class-list"), 250);
+    rgbElement(document.getElementById("skill-list"), 250);
+    initMouseOverFont();
+});
+
