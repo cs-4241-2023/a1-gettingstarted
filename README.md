@@ -3,7 +3,7 @@ https://a1-bdvuong.glitch.me/
 
 This project shows a card displaying a basic description of who I am. The card, when hovered, will rotate horizontally to show more information about myself on the back of it. 
 ## Technical Achievements
-- **Styled page with CSS**: Added multiple classes/id's to stylize multiple elements of my page. 
+- **Styled page with CSS**: Added multiple classes/id's to stylize multiple elements of my page. In addition, I played around with CSS animations by making the card able to flip on hover.
     Classes: card, card-front, card-inner, card-front, card-back
     IDs: experiences
     Elements: *, h1, img, ul
