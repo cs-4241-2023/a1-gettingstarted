@@ -1,0 +1,59 @@
+body {
+  background-color: #DED9C1;
+}
+
+h1 {
+  display: flex;
+  color: #8783DE;
+  justify-content: center;
+}
+
+h2 {
+  color: #D68EDE;
+}
+
+h3 {
+  color: #8783DE;
+}
+
+b {
+  color: #DB7C70;
+}
+
+hr {
+  border-top: 4px solid #bbb;
+  border-radius: 5px;
+  border-color: #78DEAB;
+}
+
+.show {
+  opacity: 0;
+}
+
+.show2 {
+  opacity: 0;
+}
+
+.show3 {
+  opacity: 0;
+}
+
+.show4 {
+  opacity: 0;
+}
+
+.show5 {
+  opacity: 0;
+}
+
+.show6 {
+  opacity: 0;
+}
+
+.show7 {
+  opacity: 0;
+}
+
+.show8 {
+  opacity: 0;
+}
