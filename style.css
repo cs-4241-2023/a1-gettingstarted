@@ -1,19 +1,10 @@
 * {
-    /* Make the entire page use Open Sans */
-    font-family: 'Open Sans', sans-serif;
-    
+    /* Make the entire page use Roboto */
+    font-family: 'Roboto', sans-serif;
 }
 
-body {
-}
-
-/* styling for h1, h2, and the major paragraphs */
-h1, h2, .major {
-    /* text-align: center; */
-}
-
-h2 {
-    /* text-decoration-line: underline; */
+h1 {
+    font-weight: bold;
 }
 
 img {
@@ -21,28 +12,45 @@ img {
     height: auto;
 }
 
+/* List styling */
+ul {
+    /* Remove the bullet points */
+    list-style: none;
+
+    /* Remove the automatic indent inate with lists */
+    margin: 0;
+    padding: 0;
+}
+
 /* The container class handles all of the styling for our main content without modifying the body */
 .card {
     margin: 0 auto;
     background-color: transparent;
+    /* Size of the card */
     width: 400px;
-    height: 600px;
+    height: 700px;
+    /* Adds the 3d animation */
     perspective: 1000px;
 }
 
+/* Style the H1 within the front of the card */
 .card-front > h1 {
     margin: 0 auto;
-    background-color: #84ce42 ;
-    color: white;
-    padding: 10px;
+    background-color: #ceffc0 ;
+    color: black;
+    /* Give the banner some space */
+    padding: 20px;
 }
 
+/* Positioning for the fronts and backs of the card */
 .card-inner {
     position: relative;
+    /* Make the width and height for the inner card */
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
+    /* Preserves the front/back in their own 3d pace */
     transform-style: preserve-3d;
     margin: 0;
 }   
@@ -51,21 +59,22 @@ img {
     transform: rotateY(180deg);
 }
 
+/* Style for the front and back of the card */
 .card-front, .card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
+    /* Hides the "back of the card"  */
     backface-visibility: hidden;
 }
 
 .card-front {
-    background-color: #002f99;
-    color: black;
+    background-color: #0049be;
+    color: white;
 }
 
 .card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: #97aef7;
+    color: black;
     transform: rotateY(180deg);
 }
