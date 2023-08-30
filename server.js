@@ -1,5 +1,5 @@
-const http = require('http'), // get the http module
-    fs = require('fs') // get the file system module
+const http = require('http'), // get node http module
+    fs = require('fs') // get node file system module
 
 // create a local HTTP server on your computer
 // takes optional parameter of a function that will be called every time server gets a request
