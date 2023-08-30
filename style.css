@@ -4,6 +4,10 @@
             margin-bottom: 0px;
         }
         
+        h2 {
+            margin-bottom: 0px
+        }
+        
         body {
             background-color: black;
             font-family: 'Josefin Sans', sans-serif;
@@ -20,6 +24,7 @@
         ul {
             list-style-type: circle;
             list-style-position: outside;
+            margin-top: 5px;
         }
         
         li {
