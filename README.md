@@ -1,7 +1,7 @@
 Sarah Olson
 http://a1-sarahaolson.glitch.me
 
-This project shows ...
+This project highlights some information about me including major courses I have taken, my expirience with various coding languages, and other data related to my love of aviation. This page was completed using HTML and stylized with CSS.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, p, li, h1, h2, h3, th, td, header, footer, and button as well as played around with class styling as seen with borders, bordersList, warning, spin, and major.
