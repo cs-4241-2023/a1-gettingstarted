@@ -62,8 +62,8 @@ li {
     margin-bottom: 5px;
 }
 
-h1:hover~.cursor-outline {
-    transform: scale(20);
+h1:hover+.cursor-outline {
+    transform: scale(6);
 }
 
 
