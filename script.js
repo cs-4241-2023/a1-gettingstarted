@@ -8,10 +8,10 @@ const direction = {
 }
 
 /**
- *
- * @param element
- * @param speed
- * @param animationDirection
+ * animates a given element either vertically or horizontally at a given speed
+ * @param element the element to be animated
+ * @param speed the speed in which the element is animated
+ * @param animationDirection the direction in which the element is animated
  */
 let animateElement = (element, speed, animationDirection) => {
 
@@ -68,7 +68,28 @@ document.addEventListener("DOMContentLoaded", () => {
     animateElement(document.getElementById("header"), 25, direction.Horizontal);
     rgbElement(document.getElementById("class-list"), 250);
     rgbElement(document.getElementById("skill-list"), 250);
+    initMouseOverFont();
 });
 
-document.getElementById()
+let initMouseOverFont = () => {
+    let elementArray = [
+        document.getElementById("course-title"),
+        document.getElementById("skill-title")
+    ];
 
+    elementArray.forEach((element) => {
+
+        // init to medium
+        element.style.fontSize = "medium";
+
+        // set to large on moues over
+        element.addEventListener("mouseover", () =>{
+            element.style.fontSize = "large";
+        })
+
+        // set to small on mouse off
+        element.addEventListener("mouseout", () =>{
+            element.style.fontSize = "medium";
+        });
+    })
+}
