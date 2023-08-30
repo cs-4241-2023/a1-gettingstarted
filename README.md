@@ -1,6 +1,6 @@
 Sean Arackal
 
-http://a1-seanarackal.glitch.me
+https://a1-scriblesean.glitch.me/
 
 Webpage for a portfolio. Apologies for the messy code! I'm normally more organized but I got caught up in experimenting with different things in CSS.
 
