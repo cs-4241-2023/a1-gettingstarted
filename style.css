@@ -4,15 +4,18 @@
     width: 600px;
     color: green;
 }
+
 #animation {
     position: relative;
 }
+
 #footer {
     color: red;
     text-align: center;
     font-style: italic;
     position: absolute;
 }
+
 #footer-container {
     position: relative;
 }
