@@ -1,0 +1,21 @@
+body {
+    background-color: #1DE0D4;
+    font-family: Arial;
+}
+
+p {
+    color: #786925;
+    display: table;
+}
+
+ul {
+    background-color: #786925;
+    color: #E0D18D;
+    display: table;
+}
+
+#h1{
+    background-color: #521949; 
+    color: #DEAFD7;
+    display: table;
+}
