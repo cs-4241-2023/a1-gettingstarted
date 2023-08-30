@@ -4,16 +4,13 @@
   --grey: #A6B5E3;
   --lightBlue: #AAD2FA;
   --seafoam: #A3DDF0;
+  --containerSize: 200px;
+  --animationSize: 20px;
+  --animationColor: var(--seafoam);
 }
 
 body {
   background-image: linear-gradient(to bottom, var(--lilac), var(--lightBlue), var(--seafoam));
-}
-
-h1 {
-  color: white;
-  text-align: center;
-  background-image: url('https://images.unsplash.com/photo-1591181520189-abcb0735c65d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1917&q=80');
 }
 
 h2 {
@@ -22,67 +19,90 @@ h2 {
   background-color: var(--deepBlue);
 }
 
+.containerTitle {
+  position: relative;
+  text-align: center;
+  color: var(--lilac);
+}
+
+.containerTitle img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(0.9)
+}
+
+.title{
+  background-color:rgba(93, 92, 250, 0.75);
+  text-align:center;
+  position: absolute;
+  top:50%;
+  right:50%;
+  transform:translate(50%, -50%);
+  padding: 10px;
+}
+
 #container {
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
-  height: 300px;
+  width: var(--containerSize);
+  height: var(--containerSize);
   position: relative;
   background-image: linear-gradient(to bottom, var(--grey), var(--lightBlue));
 }
 
 #topRight {
-  width: 30px;
-  height: 30px;
+  width: var(--animationSize);
+  height: var(--animationSize);
   position: absolute;
-  background: var(--seafoam);
+  background: var(--animationColor);
 }
 
 #topRightCorner {
-  width: 30px;
-  height: 30px;
+  width: var(--animationSize);
+  height: var(--animationSize);
   position: absolute;
-  background: var(--seafoam);
+  background: var(--animationColor);
 }
 
 #topLeft {
-  width: 30px;
-  height: 30px;
+  width: var(--animationSize);
+  height: var(--animationSize);
   position: absolute;
-  background: var(--seafoam);
+  background: var(--animationColor);
 }
 
 #topLeftCorner {
-  width: 30px;
-  height: 30px;
+  width: var(--animationSize);
+  height: var(--animationSize);
   position: absolute;
-  background: var(--seafoam);
+  background: var(--animationColor);
 }
 
 #bottomRight {
-  width: 30px;
-  height: 30px;
+  width: var(--animationSize);
+  height: var(--animationSize);
   position: absolute;
-  background: var(--seafoam);
+  background: var(--animationColor);
 }
 
 #bottomRightCorner {
-  width: 30px;
-  height: 30px;
+  width: var(--animationSize);
+  height: var(--animationSize);
   position: absolute;
-  background: var(--seafoam);
+  background: var(--animationColor);
 }
 
 #bottomLeft {
-  width: 30px;
-  height: 30px;
+  width: var(--animationSize);
+  height: var(--animationSize);
   position: absolute;
-  background: var(--seafoam);
+  background: var(--animationColor);
 }
 
 #bottomLeftCorner {
-  width: 30px;
-  height: 30px;
+  width: var(--animationSize);
+  height: var(--animationSize);
   position: absolute;
-  background: var(--seafoam);
+  background: var(--animationColor);
 }
