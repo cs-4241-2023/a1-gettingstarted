@@ -1,8 +1,8 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
-Nicholas Heineman
-http://a1-charlieroberts.glitch.me
+Nicholas Heineman <br>
+https://a1-echo532.glitch.me
 
 This project shows ...
 
