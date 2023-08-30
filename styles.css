@@ -47,7 +47,7 @@ img{
   width: 25%;
 }
 
-{div 
+div {
   width:150px;
   height:150px;
   background-color: #4379E6;
@@ -55,9 +55,9 @@ img{
   animation-duration: 5s;
   }
 
-  @keyframesboxanimation {
-    0% {background-colour:#BA4AFE;}
-    25% {background-colour: #4379E6;}
+  @keyframes boxanimation {
+    0% {background-color:#BA4AFE;}
+    25% {background-color: #4379E6;}
     50% {background-color: #56FCCA;}
     75% {background-color: #81E643;}
     100% {background-color:#FFE365;}
