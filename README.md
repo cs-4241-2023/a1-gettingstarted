@@ -20,5 +20,5 @@ This project shows a webpage that acts as a protfolio for myself. On this webpag
 2. Added an `<a>` tag to redirect to my GitHub page (line 48 in index.html)
 
 ## Design Achievements
-- **Created a color page for the website**: Used a color palette from [Jordan Prindle Designs](https://www.jordanprindledesigns.com/blog/color-palettes) that includes five colors. All colors were used with h1 tags being `#0c2431`, the h2 tags being `#194a50`, the body background color being `#e1dad2`, the list elements being `#d37556`, and the additional info of list items being `#d8a28c`.
+- **Created a color page for the website**: Used a color palette from [Jordan Prindle Designs](https://www.jordanprindledesigns.com/blog/color-palettes) that includes five colors (color palette can also be found in this repository). All colors were used with h1 tags being `#0c2431`, the h2 tags being `#194a50`, the body background color being `#e1dad2`, the list elements being `#d37556`, and the additional info of list items being `#d8a28c`.
 - **Used the Ubuntu Font from Google Fonts**: I used Ubuntu Regular as the font for all body text in my site.
