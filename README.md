@@ -95,6 +95,10 @@ This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, li, and a selectors...
+------------------ Styled page with CSS: Added rules for h1 and h2 to have a top margin
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+
+------------------ Used Nunito Sans Font From Google Fonts: I used the Nunito Sans Font for all of my text on my website
+
