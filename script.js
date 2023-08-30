@@ -8,9 +8,10 @@ const direction = {
 }
 
 /**
- * Animates an element horizontally across the window
- *      element: element to be animated
- *      speed: horizontal speed of the element
+ *
+ * @param element
+ * @param speed
+ * @param animationDirection
  */
 let animateElement = (element, speed, animationDirection) => {
 
@@ -45,8 +46,29 @@ let animateElement = (element, speed, animationDirection) => {
         element.style.left = pos + 'px';
     }, 100);
 }
+/**
+ * rotates the color of a given element between red, green, and blue
+ * @param element the element to change the color of
+ * @param speed the speed of the color change in ms
+ */
+let rgbElement = (element, speed) => {
+    let rgbArray = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+    let currentColor = 0;
+
+    setInterval(() => {
+        element.style.color = rgbArray[currentColor];
+        currentColor = (currentColor + 1) % rgbArray.length;
+    }, speed)
+}
 
 /**
- * Run horizontal animation on the header when document content has loaded with speed value of 25
+ * Run functions when the page loads
  */
-document.addEventListener("DOMContentLoaded", () => { animateElement(document.getElementById("header"), 25, direction.Horizontal)});
+document.addEventListener("DOMContentLoaded", () => {
+    animateElement(document.getElementById("header"), 25, direction.Horizontal);
+    rgbElement(document.getElementById("class-list"), 250);
+    rgbElement(document.getElementById("skill-list"), 250);
+});
+
+document.getElementById()
+

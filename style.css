@@ -2,9 +2,18 @@
     font-weight: bold;
     position: absolute;
     width: 600px;
+    color: green;
 }
 #animation {
     position: relative;
+}
+
+#class-list {
+    width: 85px;
+}
+
+#skill-list {
+    width: 200px;
 }
 
 #content {
@@ -14,5 +23,5 @@
 html {
     font-family: Consolas, serif;
     background: black;
-    color: green;
+    color: white;
 }
