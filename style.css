@@ -1,36 +1,73 @@
-        h1 {
-            position: relative;
-            font-size: 5rem;
-            margin-bottom: 0px;
-        }
-        
-        h2 {
-            margin-bottom: 0px
-        }
-        
-        body {
-            background-color: black;
-            font-family: 'Josefin Sans', sans-serif;
-            color: white;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        
-        p {
-            text-align: left;
-        }
-        
-        ul {
-            list-style-type: circle;
-            list-style-position: outside;
-            margin-top: 5px;
-        }
-        
-        li {
-            margin-bottom: 5px;
-        }
-        /* 
+html {
+    cursor: none;
+    /* hide normal cursor */
+}
+
+h1 {
+    position: relative;
+    font-size: 5rem;
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-bottom: 0px
+}
+
+body {
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.cursor-dot {
+    width: 3px;
+    height: 3px;
+    background-color: white;
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    /* background-color: white; */
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: 0.1s;
+}
+
+p {
+    text-align: left;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-top: 5px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+body:hover~.cursor-outline {
+    transform: scale(20);
+}
+
+
+/* 
 Color palette: ##000000 black,
 #4E85F2 dark blue,
 #52A4DC blue,
