@@ -22,3 +22,33 @@ const sendFile = function( response, filename ) {
      response.end( content, 'utf-8' )
    })
 }
+
+// in class 8/28 -----------------------------------------------------------------------
+
+// const http = require("http"),
+//         fs = require("fs")
+// const server = http.createServer(function(request, response){
+//   const url = request.url.slice(1)
+//     switch (url) {
+//       case "":
+//         sendFile("index.html",response);
+//         break;
+
+//       default:
+//         sendFile(url,response);break;
+//     }
+//     // response.end("THis is response.")
+//   })
+// .listen(3000);
+
+// const sendFile = function (filename, response) {
+//   fs.readFile (filename, (err, content) => {
+//     if(err === null){
+//       response.end('file not found')
+//     }else{
+//     response.end( content, 'utf-8')
+//   }})
+// };
+
+// this one better than one in porject? can pick which one is better i guess
+// dont use == in JS 
