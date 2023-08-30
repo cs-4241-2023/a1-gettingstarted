@@ -1,0 +1,74 @@
+body {
+  background: content-box radial-gradient(#FA91AE,#CA76DB,#B6A1F0,#869ED9,#CBF6FF);
+  padding: 0 20px 20px 20px;
+}
+
+
+.dark-mode{
+  background: black;
+  color: white;
+}
+
+a{
+  font-size: 20px;
+  font-family: "Figtree", sans-serif;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px 20px 20px;
+}
+
+
+h1{
+  font-size: 60px;
+  text-align: center;
+  font-family: "Noto Sans Display", sans-serif; 
+}
+
+h2{
+   text-align: center;
+   font-family: "Figtree", sans-serif;
+}
+
+
+h3{
+  font-size: 20px;
+  background: white;
+  border: solid transparent;
+  margin: 0 auto;
+  font-family: "Figtree", sans-serif;
+}
+
+img{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding: 0 20px 20px 20px;
+}
+
+
+p{
+  font-family: "Figtree", sans-serif;
+}
+
+ul li{
+  padding: 0 20px 10px 20px;
+  font-family: "Figtree", sans-serif;
+}
+
+button{
+  background-color:#FA91AE;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
