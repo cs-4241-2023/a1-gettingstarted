@@ -18,12 +18,6 @@ for (i = 0; i < coll.length; i++) {
     })(i);
 }
 
-// if clicked on background, hide everything
-var background = document.getElementById("body");
-document.addEventListener("click", function() {
-    console.log("clicked background");
-    toggleSectionByIdAndHideOthers("");
-});
 
 function toggleSectionByIdAndHideOthers(id) {
 
