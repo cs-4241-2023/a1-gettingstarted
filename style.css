@@ -1,0 +1,20 @@
+body {
+    background-color: #A81400;
+    color: #F3EAF3;
+    font-family: 'Roboto Mono', serif;
+  }
+  button{
+    color: #F3EAF3;
+    background-color:#A81400;
+    border: 2px solid black;
+    font-family: 'Roboto Mono',serif;
+    
+  }
+  
+  li{
+    font-style: italic;
+  
+  }
+  a{
+    color:#F3EAF3;
+  }
