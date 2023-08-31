@@ -10,6 +10,9 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+    case '/style.css':
+      sendFile( response, 'style.css' )
+      break;
     default:
       response.end( '404 Error: File Not Found' )
   }
@@ -22,3 +25,31 @@ const sendFile = function( response, filename ) {
      response.end( content, 'utf-8' )
    })
 }
+
+
+// id = setInterval(frame, 5);
+
+// function frame() {
+//   if (/* test for finished */) {
+//     clearInterval(id);
+//   } else {
+//     /* code to change the element style */ 
+//   }
+// }
+
+// function myMove() {
+//   let id = null;
+//   const elem = document.getElementById("animate");
+//   let pos = 0;
+//   clearInterval(id);
+//   id = setInterval(frame, 5);
+//   function frame() {
+//     if (pos == 350) {
+//       clearInterval(id);
+//     } else {
+//       pos++;
+//       elem.style.top = pos + 'px';
+//       elem.style.left = pos + 'px';
+//     }
+//   }
+// }
