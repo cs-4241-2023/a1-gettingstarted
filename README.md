@@ -8,13 +8,13 @@ Sameer Desai https://sameer-test-glitch.glitch.me/
 ### CSS
 1. Body 
     - Black background, white text, center aligned content
-2. List ul
+2. List `<ul>`
     - Removed default bullets, changed margin top spacing
-3. List item li
+3. List item `<li>`
     - Changed margin bottom spacing 
 4. Cursor dot and outline styling
     - Size and color
-5. Header hover h1
+5. Header hover `<h1>`
     - When h1 is hovered over, make cursor outline larger
 
 ### JavaScript Animation
