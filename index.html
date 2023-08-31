@@ -1,28 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information About Josh Jahnz</h1>
     <p>
-      [Self introduction]
+      My name is
+      <a href="https://www.linkedin.com/in/josh-jahnz/">Josh Jahnz</a>. I am a
+      part of the Class of 2024 and I am from
+      <a
+        href="https://www.google.com/search?q=rhode+island&rlz=1C1VDKB_enUS935US935&oq=rhode+island&aqs=chrome.0.0i271j46i131i433i512j69i64j0i131i433i512j46i131i433i512j0i131i433i512j0i433i512j46i512.1442j0j7&sourceid=chrome&ie=UTF-8"
+        >Rhode Island</a
+      >.
     </p>
     <p>
-      [Major and other information]
+      I am a Computer Science Major, and I am also looking into possibly getting
+      a minor in Data Science and/or FinTech.
     </p>
     <p>
-      [Other things]
+      Some of the previous Computer Science courses that I have taken include
+      Foundations of Computer Science (CS3133), Social Implications of
+      Information Processing (CS3034), and Introduction to Cryptography and
+      Communication Security (CS4801).
     </p>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+      I have some experience working with a variety of different coding
+      languages, including HTML, CSS, Java, Javascript, and Python, all through
+      the classes that I have taken here at
+      <a href="https://www.wpi.edu/">WPI</a>.
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+
+    <footer>
+      <p>
+        Author: Josh Jahnz<br />
+      </p>
+    </footer>
+
+    <p><button onclick="resetAndAnimateBox()">Move Square</button></p>
+    <div id="box"></div>
+    <script>
+      const box = document.getElementById("box");
+      let position = 0;
+      const speed = 2;
+
+      function animateBox() {
+        position += speed;
+        box.style.left = position + "px";
+
+        if (position < window.innerWidth - box.clientWidth) {
+          requestAnimationFrame(animateBox);
+        }
+      }
+      function resetAndAnimateBox() {
+        position = 0;
+        box.style.left = "0";
+        animateBox();
+      }
+    </script>
   </body>
 </html>
