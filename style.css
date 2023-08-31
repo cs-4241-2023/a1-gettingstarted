@@ -1,0 +1,88 @@
+h1{
+    font-family:"Oswald", serif;
+    font-size: 48px;
+    background-color: #D9B591;
+    
+}
+h2{
+    background-color: #F04D86;
+    font-weight: bolder;
+    text-decoration: wavy;
+}
+p{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    background-color: #00D3FA;
+}
+ul{
+    background-color: grey;
+    font-style: italic;
+}
+iframe{
+    background-color: #491ADB;
+}
+footer{
+    background-color: #FFF9A2;
+}
+.icon{
+    position:absolute;
+    top: 32px;
+    right: 8px;
+    width: 71;
+    height: 71px;
+}
+.rgb{
+    animation: rainbow 15s linear;
+    animation-play-state:paused;
+    animation-iteration-count: infinite;
+    color:red
+}
+.rrgb{
+    animation: rainbow 15s linear;
+    animation-play-state: paused;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    color:rebeccapurple
+}
+#try_me{
+    display: "none"
+}
+
+@keyframes rainbow{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    6%{
+        color: #D9B591;
+    }
+    14%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(150,255,0);
+    }
+    33%{
+        color: #FFF9A2;
+    }
+    42%{
+        color: rgb(0,255,150);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    59%{
+        color: #00D3FA;
+    }
+    67%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: #491ADB;
+    }
+    82%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: #F04D86;
+    }
+}
