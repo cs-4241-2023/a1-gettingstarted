@@ -1,24 +1,3 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
-
-*DUE: Monday, August 29th by 11:59 AM (before the start of class!)*  
-
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great! 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. Don't just get your website up and done, as
-you'll need skills with these tools throughout the rest of the course.
-
-Assignment details
----
-
-This assignment requires that your website is both contained in a GitHub repository and hosted in Glitch. There are two ways to do this:
-
-1. Fork this repo and clone it to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into Glitch.
-2. Fork this repo and then import it directly to Glitch, use the Glitch editor to make changes, and then export your repo from Glitch back to GitHub.
-3. Same as #1, but instead of importing from Github to Glitch you just upload the files (or copy/paste) them directly to Glitch.
 
 ## Option 1 - Clone to computer, push to Github, import to Glitch (recommended)
 
@@ -88,13 +67,15 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
+Nandita Kumar
 http://a1-charlieroberts.glitch.me
 
-This project shows ...
+This project, written in HTML and CSS, describes a bit about my previous CS and work experience. It makes use of a compound color palette generated using [color.adobe.com](https://color.adobe.com).
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the header, body, h1, table, td, th, p, footer, and mark selectors, as well as for custom classes.
+- **Explored other semantic HTML tags**: Based on the definition and examples of semantic elements given [here](https://www.w3schools.com/html/html5_semantic_elements.asp), the header, footer, mark, time, table (and subsequently table header, table row, table cell, etc.) tags were included in this project.
 
-### Design Achievements
-- **Used the Tourney and Marck Script Fonts from Google Fonts**: Tourney was used as the main font for the page (though this perhaps creates readability issues
+## Design Achievements
+- **Created Adobe Color palette**: A compound color palette, a screenshot of which can be seen in the palette_adobe.jpg file in this repo, was generated for and used in this project.
+- **Used the Tourney and Marck Script Fonts from Google Fonts**: Tourney was used as the main font for the page, with Marck Script being used for the footer. (These fonts perhaps create readability issues and may need to be reworked later.) 
