@@ -10,7 +10,7 @@ This project shows ...
 - all the sections start collapsed, except the first one
 - Slight padding to table rows, and set text align to left
 - Javascript animation to toggle collapsing sections so that only one section shows at a time
-- Use the following semantic tags for better readability: header, section, table, ul, footer
+- Use the following semantic tags for better readability: header, section, table, ul, footer. Also, used a hyperlink to my github page
 
 ### Design Achievements
 - Used Adobe's monochromatic palette with a blueish hue
