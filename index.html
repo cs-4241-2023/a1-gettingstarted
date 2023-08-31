@@ -4,35 +4,133 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Vollkorn+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stoke:wght@300&family=Vollkorn+SC:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="containerTitle">
-      <img src="https://wallpapercrafter.com/desktop/72475-purple-flowers-hd-4k-5k.jpg">
-      <div class="title">
-        <h1>Information About<br>Julie Vieira</h1>
-      </div>
+    <h1>Information About<br />Julie Vieira</h1>
+    <div class="information">
+      <h2>Introduction</h2>
+      <p>
+        Hi! My name is Julie Vieira. I am a junior working toward my bachelor’s degree in
+        computer science with the intention of pursuing my masters degree. I’ve
+        really enjoyed my time at WPI so far and have had the opportunity to
+        engage with a varitey of groups on campus. Below, you can
+        find my course history, involvements on campus, hobbies, and more!
+      </p>
+      <h2>Academic History</h2>
+      <ul>
+        <li>General Information</li>
+        <ul>
+          <li>Major: Computer Science</li>
+          <li>Minor: N/A</li>
+          <li>Class Year: 2025</li>
+        </ul>
+        <li>Familiarity With Technologies and Methods</li>
+        <ul>
+          <li>HTML: None</li>
+          <li>CSS: None</li>
+          <li>Java: A Lot</li>
+          <li>JavaScript: Very Little</li>
+          <li>Ruby: None</li>
+          <li>Python: A Lot</li>
+          <li>Unit Testing: Some</li>
+        </ul>
+        <li>Non Major Related Projects</li>
+        <ul>
+          <li>What's the Buzz About Honey Bees?</li>
+          <ul>
+            <li>
+              Completed research and created an open source textbook chapter with the above
+              title regarding the historical significance of honeybees as well as their impact on society
+            </li>
+          </ul>
+          <li>The Mourning Behaviors and Funeral Rituals of Animals</li>
+          <ul>
+            <li>
+              Contributed to the research and publication of animal mourning
+              behaviors and rituals
+            </li>
+            <li>
+              <a href="https://oercommons.org/courseware/lesson/103320"
+                >OER Commons</a
+              >
+            </li>
+          </ul>
+        </ul>
+        <li>Completed CS Courses</li>
+        <table>
+          <tr>
+            <th></th>
+            <th>Freshman</th>
+            <th>Sophomore</th>
+            <th>Junior (In Progress)</th>
+          </tr>
+          <tr>
+            <th>A Term</th>
+            <td>CS1102</td>
+            <td>CS3133</td>
+            <td>CS4241<br />CS542<br />CS534</td>
+          </tr>
+          <tr>
+            <th>B Term</th>
+            <td>CS2103</td>
+            <td>CS3431<br />CS2011</td>
+            <td>CS3733<br />CS4120<br />CS542<br />CS534</td>
+          </tr>
+          <tr>
+            <th>C Term</th>
+            <td>CS2303</td>
+            <td>CS3013<br />CS4032</td>
+            <td>CS4433</td>
+          </tr>
+          <tr>
+            <th>D Term</th>
+            <td>CS2223</td>
+            <td>CS3043<br />CS4342</td>
+            <td>N/A</td>
+          </tr>
+        </table>
+      </ul>
+
+      <h2>Experience</h2>
+      <ul>
+        <li>Working Experience</li>
+        <ul>
+          <li>Student Assitant for the Computer Science Department at WPI</li>
+          <li>Walmart Digital Personal Shopper</li>
+          <li>Gompei's Goat Cheese Sales Associate</li>
+        </ul>
+        <li>Peer Mentor for the Computer Science Department at WPI</li>
+      </ul>
+
+      <h2>Extracurricular Activities</h2>
+      <ul>
+        <li>On Campus Involvements</li>
+        <ul>
+          <li>Alpha Gamma Delta Women's Fraternity</li>
+          <li>A Moment of Magic</li>
+        </ul>
+        <li>Hobbies</li>
+        <ul>
+          <li>Puzzles</li>
+          <li>Crafts</li>
+          <li>Photography</li>
+        </ul>
+      </ul>
     </div>
-    
-    <h2>Introduction</h2>
-    <p>[Self introduction]</p>
-    <p>[Major and other information]</p>
-    <p>[Other things]</p>
-
-    <h2>Experience</h2>
-    <p>Working Experience</p>
-    <ul>
-      <li>Example</li>
-    </ul>
-    <p>Completed Courses</p>
-    <ul>
-      <li>Example</li>
-    </ul>
-
-    <h2>Extracurricular Activities</h2>
-    <p>Example</p>
-    <ul>
-      <li>Position</li>
-    </ul>
   </body>
 
   <div id="container">
@@ -43,8 +141,9 @@
     <div id="bottomRight"></div>
     <div id="bottomRightCorner"></div>
     <div id="bottomLeft"></div>
-    <div id="bottomLeftCorner"></div></div>
-  
+    <div id="bottomLeftCorner"></div>
+  </div>
+
   <script>
     var id = null;
     function animation() {
@@ -87,15 +186,15 @@
         elemTR.style.left = dim - pos + "px";
         elemTRC.style.left = dim - pos + "px";
         elemTRC.style.top = pos + "px";
-        
+
         elemTL.style.top = pos + "px";
         elemTLC.style.top = pos + "px";
         elemTLC.style.left = pos + "px";
-        
+
         elemBR.style.top = dim - pos + "px";
         elemBRC.style.top = dim - pos + "px";
         elemBRC.style.left = dim - pos + "px";
-        
+
         elemBL.style.left = pos + "px";
         elemBLC.style.left = pos + "px";
         elemBLC.style.top = dim - pos + "px";
