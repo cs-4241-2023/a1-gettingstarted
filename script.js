@@ -13,7 +13,13 @@ window.addEventListener("mousemove", (e) => {
             top: `${posY}px`,
         }, { duration: 400, fill: "forwards" })
         // https: //www.youtube.com/watch?v=UMdvufdewD8
-
-
-
 });
+
+
+// Three.js background
+let scene, camera, renderer;
+
+function init() {
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
+}

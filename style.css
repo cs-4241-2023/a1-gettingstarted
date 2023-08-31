@@ -13,14 +13,43 @@ h2 {
     margin-bottom: 0px
 }
 
+/* Reset default margin and padding for body */
 body {
+    margin: 0;
+    padding: 0;
     background-color: black;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the container */
+  .container {
+    width: 30%; /* Adjust the width of the centered box */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    text-align: center; /* Center the content horizontally */
+    box-sizing: border-box; /* Include padding in the width */
+  }
+  
+  /* Style the horizontal line */
+  footer hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px auto;
+  }
+  
+  /* Style the footer text */
+  footer p {
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
 
 .cursor-dot {
     width: 3px;
@@ -52,15 +81,29 @@ p {
     text-align: left;
 }
 
+
 ul {
-    list-style-type: circle;
-    list-style-position: outside;
     margin-top: 5px;
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    text-align: left; /* Align the text to the left */
 }
 
 li {
-    margin-bottom: 5px;
+    display: flex; /* Use Flexbox for alignment */
+    align-items: center; /* Vertically center bullet points and text */
+    margin-bottom: 10px;
 }
+
+li::before {
+    content: "\2022"; /* Bullet point character (•) */
+    color: white;
+    margin-right: 10px; /* Space between bullet point and text */
+    display: inline-block; /* Align bullet points horizontally */
+    width: 1.2em; /* Adjust the width for consistent alignment */
+    text-align: center;
+}
+
 
 h1:hover+.cursor-outline {
     transform: scale(6);
