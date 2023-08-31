@@ -94,9 +94,8 @@ http://a1-charlieroberts.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, h1, h2, ul, img, body, and a selectors. For the Image I added a CSS animation.
-I also added a navbar and linked the items to the homepage of google. For the body I added a gradient background to the website. I italicized my name and styled it as crimson
-
+- **Added rules for the p, li, h1, h2, ul, img, body, and a selectors. For the Image I added a CSS animation.
+I also added a navbar and linked the items to the homepage of google. For the body I added a gradient background to the website. I italicized my name and styled it as crimson**
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Black Ops One as the font for the primary copy text in my site. I also used a color pallette from https://coolors.co/ to get the background gradient and font colors
+- **I used Black Ops One as the font for the primary copy text in my site. I also used a color pallette from https://coolors.co/ to get the background gradient and font colors**
