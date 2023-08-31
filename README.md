@@ -88,8 +88,8 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Marek Garbaczonek
+https://a1-mareksgarbaczonek.glitch.me
 
 This project shows ...
 
