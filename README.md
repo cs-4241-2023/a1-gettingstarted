@@ -1,3 +1,7 @@
+Glitch URLs:
+Project: https://glitch.com/edit/#!/a1-alexmarrinan
+Live site: https://a1-alexmarrinan.glitch.me
+
 Technical achievments:
 
 Style your page using CSS (style rules):
