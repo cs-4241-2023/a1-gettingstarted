@@ -1,0 +1,20 @@
+body {
+  font-style:italic;
+}
+
+h1{
+  font-family: "Trirong", serif;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 15px;
+}
+
+image{
+  width:500px;
+  height:350px;
+}
