@@ -103,6 +103,7 @@ a {
     background: none;
     font-weight: bold;
     color: #6F97AD;
+    cursor: pointer;
 }
 
 .helloworld:hover {

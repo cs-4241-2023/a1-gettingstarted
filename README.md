@@ -1,5 +1,6 @@
 Jade Logan
-Glitch: 
+
+Glitch: https://a1-jdlogan0.glitch.me/
 
 This project shows a webpage with some information about me including CS classes I've taken and experience with different coding languages. The page was made using HTML and stylized with CSS, using JavaScript to make the it more interactive.
 
