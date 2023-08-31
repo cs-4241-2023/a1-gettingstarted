@@ -3,26 +3,134 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oswald">
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #A0FAD1;
+        color:#AD685E;
+        box-shadow: 5px 5px 12px 4px #4CAD81;
+        
+    }
+      h3 {
+        font-family: "Oswald", sans-serif;
+        text-shadow: 1px 1px 1px #FAADA1;
+  }
+    h2 {
+      text-shadow: 1px 1px 1px#FFC6BD
+    }
 
+    footer {
+      background-color: black;
+    }
+
+    </style>
+  </head>
+  <body> 
+    <header>
+      <img align="right" src="https://i.imgur.com/XFcQ28M.jpeg" width = "280" height = "200" alt="frog">
+    <h1>Information about Niralya Sundararajan</h1>
+    <p>
+      My name is Niralya Sundararajan and I am a senior in the class of 2024. 
+    </p>
+    <p>
+      I double major in <Strong> CS </Strong> and <Strong> IMGD </Strong>and I have a minor in <Strong>Creative Writing</Strong>.
+    </p>
+    <p>
+      My hobbies include various ecological activities (<em>hiking, insect watching, and photographing endangered species</em>) and playing video games.
+    </p>
+  </header>
+    <br>
+    <hr color=#4CAD81>
+    
     <h2>Experience</h2>
     <p>
-      Working experience
+      I have taken the following technical classes at WPI:
     </p>
+    <article>
+    <h3>
+    Computer Science
+    </h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS 1102</li>
+      <li>CS 2103</li>
+      <li>CS 2223</li>
+      <li>CS 2303</li>
+      <li>CS 2011</li>
+      <li>CS 3133</li>
+      <li>CS 2022</li>
+      <li>CS 3013</li>
+      <li>CS 3043</li>
+      <li>CS 3733</li>
+      <li>CS 3431</li>
+      <li>CS 4341</li>
+      <li>CS 4731</li>
     </ul>
+    </article>
+    <article>
+    <h3>
+      Game Design:
+    </h3>
+      <ul>
+        <li>IMGD 3000</li>
+        <li>IMGD 2905</li>
+        <li>IQP: Over the 7 weeks of IQP, I coded a game in Godot.</li>
+      </ul>
+    </article>
+    <article>
+    <h3>
+      Work Experience:
+    </h3>
+    <p>
+      I have worked as a technology consultant in  <a href=https://www.pwc.com/us/en.html>Price Waterhouse-Cooper</a>  for the Summers of 2022 and 2023.
+    </p>
+  </article>
+  <article>
+    <h3>
+      Language experience:
+    </h3>
+    <p>
+      <ul>
+        <li>HTML: Very little</li>
+        <li>CSS: None</li>
+        <li>Java: A lot</li>
+        <li>Javascript: Some</li>
+        <li>Ruby: None</li>
+        <li>Python: Some</li>
+        <li>unit testing: a lot</li>
+      </ul>
+    </p>
+  </article>
   </body>
+  <hr color=#4CAD81>
+
+
+  <div id = "Footer">
+    <footer>
+      <p>
+        Thanks for visiting my site!
+      </p>
+    </footer>
+  </div>
+<script>
+  const footertext =
+      document.getElementById("Footer");
+  let hue = 0;
+
+  const animateText = () => {
+    hue = ((hue + 1) % 360);
+      if (hue % 30 == 0) {
+      const color = `hsl(${hue}, 100%, 50%)`;
+      const shadowColor = `hsla(${hue}, 100%, 50%, 0.3)`;
+      footertext.style.color = color;
+      footertext.style.textShadow 
+      = `2px 2px 4px ${shadowColor}`;
+      }
+    requestAnimationFrame(animateText);
+     
+  };
+
+  // Start the animation
+  animateText(); 
+</script>
 </html>
