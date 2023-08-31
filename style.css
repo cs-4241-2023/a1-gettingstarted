@@ -32,6 +32,17 @@ h2 {
     margin-bottom: 0px
 }
 
+ul {
+    margin-top: 5px;
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
 .cursor-dot {
     width: 3px;
     height: 3px;
@@ -53,17 +64,6 @@ h2 {
     pointer-events: none;
     mix-blend-mode: difference; /* cool effect */
     transition: 0.1s;
-}
-
-ul {
-    margin-top: 5px;
-    list-style-type: none;
-    /* Remove bullet points */
-    padding: 0;
-}
-
-li {
-    margin-bottom: 5px;
 }
 
 h1:hover~.cursor-outline {
