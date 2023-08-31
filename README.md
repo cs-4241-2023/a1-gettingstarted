@@ -1,11 +1,13 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
-*DUE: Thursday, August 31st by 11:59 AM (before the start of class!)*  
+*DUE: Monday, August 29th by 11:59 AM (before the start of class!)*  
 
-First assignment! You will deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
+This assignment is a "warm-up" exercise. 
+You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
 
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch, as well as experiment some with HTML/CSS/JS. If you already know these, great! 
+Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
+If you already know these, great! 
 However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. Don't just get your website up and done, as
 you'll need skills with these tools throughout the rest of the course.
 
@@ -67,16 +69,14 @@ Achievements
 ---
 Below are some suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the assignment to your personal interests. These are recommended acheivements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README and why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
 
-Note that if you want to load resources besides your index.html file (images, an CSS file, a JS file) you'll need to modify server.js to point to these. For now it's easiest to just hardcode paths to the resources, but we'll look at ways to optimize this shortly.
-
 *Technical*
 1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
 2. (5 points) Add a simple JavaScript animation to the page.
-3. (max 5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the tags you use in your README.
+3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README.
 
 *Design*
 1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website.
+2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
 
 Resources
 ---
@@ -94,7 +94,7 @@ http://a1-charlieroberts.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Added rules for the header, body, h1, table, td, th, p, footer, and mark selectors, as well as for custom classes.
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Tourney and Marck Script Fonts from Google Fonts**: Tourney was used as the main font for the page (though this perhaps creates readability issues
