@@ -6,13 +6,18 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+
+  <header>
     <h1>Ansel Chang</h1>
     <p>
       Hi there! I'm a Junior at WPI majoring in Computer Science, class of 2025. I love working on different programming projects,
       tutoring high school students, and like to decompress with bowling, rock climbing, tetris, and weightlifting.
     </p>
+  </header>
 
+  <section class="collapse" id="coursework">
     <h2>Previous Coursework</h2>
+    <div class = "content first">
     <ul>
       <li>Accelerated Object-Oriented Design Concepts</li>
       <li>Algorithms</li>
@@ -20,8 +25,12 @@
       <li>Discrete Mathematics</li>
       <li>Foundations of Computer Science</li>
     </ul>
+    </div>
+  </section>
 
-    <h2>Programming Experience</h2>
+  <section class="collapse" id="languages">
+    <h2>Programming Languages</h2>
+    <div class = "content">
     <table>
       <tr>
         <th>Language</th>
@@ -52,8 +61,13 @@
         <td>Some experience when developing large codebases</td>
       </tr>
     </table>
+    </div>
+  </section>
 
-<h2>Experience</h2>
+  <section class="collapse" id="experience">
+    <h2>Experience</h2>
+
+    <div class = "content">
     <h3>
       Work Experience
     </h3>
@@ -68,8 +82,8 @@
     <h3>
       Projects
     </h3>
-    <ul>
-      <li>Software lead for WPI VEXU Robotics team, developing Path Generation and Autonomous maker Software
+    <ul class>
+      <li>Software lead for WPI VEXU Robotics team, developing Path Generation and Autonomous maker software
         that allows for fully coding autonomous paths in a graphical interface (2021 - 2022)</li>
       <li>Developed the world’s first NES Tetris video processing and analysis tool, using OpenCV OCR and an expectimax-based tetris
         AI to give player feedback and top move recommendations. Popular in the tetris community as a training tool (2021)</li>
@@ -78,6 +92,18 @@
         score of 999,999 under human-realistic conditions (2020)</li>
       </li>
     </ul>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>Contact me:<br>
+      aychang@wpi.edu<br>
+      201-981-0418<br>
+    <a href="https://github.com/AnselChang">https://github.com/AnselChang</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 
   </body>
 </html>
