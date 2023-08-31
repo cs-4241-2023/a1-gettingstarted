@@ -1,4 +1,4 @@
-# CS4241 Assignment 1 - Achievements
+# CS4241 Assignment 1 - Progress Report
 ## Technical Achievements
 ### Styled Page Using CSS (5 points)
 
