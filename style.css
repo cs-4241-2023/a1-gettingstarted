@@ -96,8 +96,7 @@ li {
 
 }
 
-
-h1:hover+.cursor-outline {
+h1:hover ~ .cursor-outline {
     transform: scale(6);
 }
 
