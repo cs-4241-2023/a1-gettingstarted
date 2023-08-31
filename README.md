@@ -4,7 +4,15 @@ http://a1-charlieroberts.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- Use background-color to set page background to light blue and each section to a slightly darker blue
+- Hovering over a section darkens it a little, to hint at clicking to toggle collapse
+- Add margin and padding to give some space for sections, and round corners to look more smooth
+- all the sections start collapsed, except the first one
+- Slight padding to table rows, and set text align to left
+- Javascript animation to toggle collapsing sections so that only one section shows at a time
+- Use the following semantic tags for better readability: header, section, table, ul, footer
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- Used Adobe's monochromatic palette with a blueish hue
+- Used the Ubuntu Font from Google Fonts, with a fallback font of sans-serif
+
