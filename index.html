@@ -1,28 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+    <title>Sameer Desai CS4241 Assignment 1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sameer Desai</h1>
+        <div class="cursor-dot" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
+        <hr> <!-- Horizontal line -->
+        <h2>Class of 2024 | Computer Science</h2>
+        <p>
+            My name is Sameer. I play volleyball and make music in my free time, and I'm excited to learn more about web
+            development. I am most interested in creating interactive webpages with audiovisual elements.
+        </p>
+        <h2>Relevant Coursework:</h2>
+            <ul>
+                <li>CS543: Computer Graphics</li>
+                <li>CS4233: Object Oriented Analysis</li>
+                <li>CS3431: Database Systems</li>
+            </ul>
+        <h2>Experience:</h2>
+            <ul>
+                <li>JavaScript - some</li>
+                <li>HTML - some</li>
+                <li>CSS - some</li>
+                <li>Java - some</li>
+                <li>Python - none</li>
+                <li>Ruby - none</li>
+                <li>Unit Testing - none</li>
+            </ul>
+        <hr> <!-- Horizontal line -->
+    </div>
+
+    <script>const cursorDot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
+        
+        window.addEventListener("mousemove", (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+        
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+        
+            cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`,
+                }, { duration: 600, fill: "forwards" })
+        });
+    </script>
+
+</body>
+
 </html>

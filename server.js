@@ -1,24 +1,31 @@
-const http = require('http'),
-      fs   = require('fs'),
-      port = 3000
+const http = require('http'), // get node http module
+    fs = require('fs') // get node file system module
 
-const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
-    default:
-      response.end( '404 Error: File Not Found' )
-  }
-})
+// create a local HTTP server on your computer
+// takes optional parameter of a function that will be called every time server gets a request
+const server = http.createServer((request, response) => { // creating arrow fxn w/no name
+        const cleanURL = request.url.slice(1) // get the url of the request
+            // request is made by client trying to access a resource on server
+            // in this case, the resource is a file
 
-server.listen( process.env.PORT || port )
+        // do url.slice(1) to remove the first character of the url which is a forward slash
+        switch (cleanURL) {
+            case '':
+                sendFile('index.html', response);
+                break;
+            default:
+                sendFile(cleanURL, response);
+                break;
+        }
+    })
+    .listen(3000)
 
-const sendFile = function( response, filename ) {
-   fs.readFile( filename, function( err, content ) {
-     response.end( content, 'utf-8' )
-   })
+const sendFile = function(filename, response) {
+    fs.readFile(filename, (error, content) => {
+        if (error !== null) { // error
+            response.end('file not found.')
+        } else { // success
+            response.end(content, 'utf-8')
+        }
+    })
 }
