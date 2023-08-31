@@ -6,6 +6,8 @@ const server = http.createServer( (request,response) => {
   switch( url ) {
     case '':
       sendFile('index.html', response); break; 
+    case '/IMG_4641.JPG':
+      sendFile(response, 'IMG_4641.JPG'); break;
     default:
       sendFile(url, response); break;
   }
