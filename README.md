@@ -2,7 +2,7 @@ README
 ===
 
 Thomas Pianka
-http://a1-charlieroberts.glitch.me
+https://a1-thomaspianka.glitch.me/
 
 This project shows an autobiography page, including some computer science classes I have taken and my experience with various skills. My page was organized using HTML and stylized using CSS. My HTML file also includes a small amount of JavaScript to provide function for the button.
 
