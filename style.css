@@ -1,0 +1,108 @@
+/*palette colors, for ref
+- light green
+   #BDF0A1
+   rgb(189, 240, 161)
+- middle green
+   #6CBD83
+   rgb(108, 189, 131)
+- dark green
+   #258A42
+   rgb(37, 138, 66)
+- light purple
+   #CD66F2
+   rgb(205, 102, 242)
+- dark purple
+   #906CBD
+   rgb(144, 108, 189)
+*/
+
+@font-face {
+    font-family: 'Tourney';
+    src: url('Tourney/Tourney-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'MarckScript';
+    src: url('Marck_Script/MarckScript-Regular.ttf');
+}
+
+header{
+    font-family: 'Tourney';
+}
+
+body{
+    font-family: 'Tourney';
+    font-size: 3vh;
+    background-color: #BDF0A1;
+}
+
+h1{
+    color: #FFFFFF;
+    background-color: #906CBD;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 0;
+    border: 5px double #CD55F2;
+}
+
+table{
+    width: 80vw;
+    position: relative;
+    margin-left: 10vw;
+}
+
+td{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0%;
+    padding-bottom: 1px;
+    border-right: 1px solid #258A42;
+    background-color: #6CBD83;
+    width: 30vw;
+    border-bottom:2px dotted #CD55F2;
+}
+
+th{
+    font-size: 3vh;
+    padding: 1%;
+}
+
+.title_row th{
+    background-color: #258A42;
+    font-size: 4vh;
+    color:#6CBD83;
+}
+
+.header_row th{
+    font-weight: normal;
+    border-top:1px solid #258A42;
+    border-bottom:2px dotted #CD55F2;
+    padding: 0;
+    font-size:3vh;
+}
+
+p{
+    padding: 0;
+    text-align: center;
+    margin-top:0;
+}
+
+.work_ex{
+    width: 40vw;
+}
+
+footer{
+    font-family: 'MarckScript';
+    color: #CD55F2;
+    text-align: center;
+    font-size: 2vh;
+}
+
+mark{
+    background-color:#6CBD83;
+    color: #BDF0A1;
+    text-shadow: #FFFFFF;
+}
+
+
