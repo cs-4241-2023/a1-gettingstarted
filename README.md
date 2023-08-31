@@ -20,8 +20,9 @@ This project shows:
     [Cursor](https://www.youtube.com/watch?v=UMdvufdewD8) and [Hover Animation](https://www.youtube.com/watch?v=nMGVwP3ww2M)
 
 ### HTML tags
-1. Aligned content with `<div class="container">`
-2. Added horizontal lines `<hr>`
+1. Aligned content with: `<div class="container">`
+2. Added horizontal lines: `<hr>`
+3. Divs to create cursor: `<div class="cursor-dot" data-cursor-dot></div> and <div class="cursor-outline" data-cursor-outline></div>`
 
 ## Design Achievements
 
