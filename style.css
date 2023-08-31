@@ -1,11 +1,57 @@
-h1 {
-  background-color: blue;
+
+header{
+  background-color:#CEC2FA;
+  font-family:'Poppins', sans-serif;
 }
 
 body {
-  color: blue;
+  background-color:#CEC2FA;
+  color: black;
+  font-family:'Poppins', sans-serif;
+
 }
 
-p {
-  color: red;
+
+h1 {
+  color: black;
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+
 }
+
+h1 span {
+  background-color: #7965DB;
+}
+
+
+
+h3{
+  color: #7965DB;
+  font-family:'Poppins', sans-serif;
+  text-decoration: underline #FFFFFF 2px;
+}
+
+
+
+
+p {
+  margin-top: -10px;
+  color: black;
+  font-family:'Poppins', sans-serif;
+
+}
+
+
+img {
+  height: 300px;
+  width: auto;
+
+}
+
+table, th, td {
+  border: 1px solid #999999;
+  border-radius: 10px;
+  border-collapse: collapse;
+  width: 40%
+}
+
