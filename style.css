@@ -7,3 +7,10 @@ h2 {
 h3 {
     background-color: blueviolet;
 }
+p {
+    background-color: darkslateblue;
+}
+em {
+    background-color:black;
+    color:deeppink;
+}
