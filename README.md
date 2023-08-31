@@ -1,5 +1,5 @@
 # a1-SmeeBoi
-Sameer Desai https://sameer-test-glitch.glitch.me/
+Sameer Desai https://a1-smeeboi.glitch.me/
 
 ![](https://github.com/SmeeBoi/a1-SmeeBoi/blob/main/cursor.gif)
 
