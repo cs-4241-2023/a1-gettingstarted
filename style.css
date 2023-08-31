@@ -1,0 +1,45 @@
+
+/* Set the background color of the body */
+body {
+  background: black;
+  text-align: center;
+}
+
+/* Style the heading 1 */
+h1 {
+  color: #A14AF7;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style the paragraph */
+p {
+  color: #43C6E0;
+  font-size: 16px;
+}
+
+/* Style the heading 2 */
+h2 {
+  color: #87F757;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style the unordered list */
+ul {
+  color: #E0B143;
+  font-size: 14px;
+}
+
+/* Style the list items */
+li {
+  color: #FF615E;
+  font-size: 12px;
+}
+
+/* Style the link */
+a {
+  color: #cc0000;
+  text-decoration: none;
+  
+}
