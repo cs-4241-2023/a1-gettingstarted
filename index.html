@@ -2,27 +2,130 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Oswald" type="text/css">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Rubik+Iso" type="text/css">
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Will Ryan</h1>
+    <a href="https://github.com/wfryan" target="_blank"><img src="./assets/DiscordPFP.png" class="icon"></a>
     <p>
-      [Self introduction]
+      Hi I'm Will! I'm the president of the Computer and Technology Club and I manage the Club Hockey team here at WPI
     </p>
     <p>
-      [Major and other information]
+      I'm a Computer Science major in the class of 2024.
     </p>
     <p>
-      [Other things]
+      Some of the classes I've taken here at WPI are:
+      <ul>
+        <li>Software Engineering</li>
+        <li>Operating Systems</li>
+        <li>Computer Graphics</li>
+        <li>Computer Networks</li>
+      </ul>
     </p>
+    
+    <button type="button" onclick="doTextAnimations()">Make text change!</button>
+    <button type="button" onclick="unhideBox();">Random Button (background color should change)</button>
+    <iframe id="try_me" width="480" height="480" src="" hidden="true"></iframe>
+
+    <script>
+      function unhideBox(){
+        let x = document.getElementById("try_me");
+        if(x.style.display === "none")
+        {
+          x.style.display = "block";
+          x.setAttribute("src", "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1")
+          x.setAttribute("hidden", "false")
+          document.body.style = `background: grey`
+          let h1s = document.getElementsByTagName("h1");
+          for(i = 0; i < h1s.length; i++)
+          {
+            h1s[i].style.backgroundColor = "#611ADB"
+          }
+          
+        }
+        else{
+          x.style.display = "none"
+          x.setAttribute("src", "")
+          x.setAttribute("hidden", "true")
+          document.body.style = 'background: white'
+          let h1s = document.getElementsByTagName("h1");
+          for(i = 0; i < h1s.length; i++)
+          {
+            h1s[i].style.backgroundColor = "#D9B091"
+          }
+        }
+      }
+
+      function doTextAnimations(){
+          document.body.getElementsByTagName("h1")[0].style = `font-family: 'Rubik Iso', serif; font-size: 48px`
+          let rgb = document.getElementsByClassName("rgb");
+          for(i = 0; i < rgb.length;i++){
+            if(rgb[i].style.animationPlayState == "paused")
+            {
+              rgb[i].style.animationPlayState = "running";
+              document.body.style.backgroundColor = "grey"
+            }
+            else{
+              rgb[i].style.animationPlayState = "paused";
+              document.body.style.backgroundColor = "white"
+            }
+          } 
+          let rrgb = document.getElementsByClassName("rrgb");
+          for(i = 0; i < rgb.length;i++){
+            if(rrgb[i].style.animationPlayState == "paused")
+            {
+              rrgb[i].style.animationPlayState = "running";
+            }
+            else{
+              rrgb[i].style.animationPlayState = "paused";
+              document.body.getElementsByTagName("h1")[0].style = `font-family: 'Oswald', serif; font-size: 48px`
+            }
+          }
+          let h2s = document.getElementsByTagName("h2");
+          switch(document.body.style.backgroundColor){
+            case "grey":
+              for(i = 0; i < h2s.length; i++)
+              {
+                h2s[i].style.backgroundColor = "#611ADB"
+              }
+              break;
+            default:
+              for(i = 0; i < h2s.length; i++)
+              {
+                h2s[i].style.backgroundColor = "#F04D86"
+              }
+              break;
+          }
+
+      
+      }
+    </script>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li class="rgb">Python: I write a lot of python....</li>
+      <li class="rgb">Java: Some experience</li>
+      <li class="rgb">HTML: Some experience</li>
+      <li class="rgb">CSS: Some experience, more experience with using CSS Selectors than actual CSS</li>
+      <li class="rgb">JavaScript: Some experience</li>
+      <li class="rgb">Ruby: Whats this?</li>
+      <li class="rgb">Unit Testing: Some experience</li>
+    </ul>
+    <h2>
+      Working experience
+    </h2>
+    <ul>
+      <li class="rrgb"> <a href ="https://www.xceptance.com/en/" class="rrgb">Xceptance: Load Test Intern</a></li>
+    </ul>
+    <h2>Other Projects</h2>
+    <ul>
+      <li class="rrgb">Project BT: An SMS Budget tracking app</li>
+      <li class="rrgb">Project CR: An SMS Calendar Remindar App (Because we all know Outlook isn't the most reliable)</li>
     </ul>
   </body>
 </html>

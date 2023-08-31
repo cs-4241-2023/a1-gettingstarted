@@ -70,13 +70,13 @@ Below are some suggested technical and design achievements. You can use these to
 Note that if you want to load resources besides your index.html file (images, an CSS file, a JS file) you'll need to modify server.js to point to these. For now it's easiest to just hardcode paths to the resources, but we'll look at ways to optimize this shortly.
 
 *Technical*
-1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (max 5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the tags you use in your README.
+1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README. Needs Description but Check
+2. (5 points) Add a simple JavaScript animation to the page. Check
+3. (max 5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the tags you use in your README. 2 buttons, iframe, script? image -> working, link/anchor
 
 *Design*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website.
+1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo. Check
+2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website. Check
 
 Resources
 ---
