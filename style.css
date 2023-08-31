@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Rubik+Iso&display=swap');
+
+
+
+header{
+  background-color:#473730;
+  outline-style: solid;
+  outline-color: #7C9FD6;
+  animation-name: Cblock;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  font-family: 'Rubik Iso', cursive;
+  color:#7C9FD6;
+  
+}
+body{
+  background-color:#B5A280;
+  font-family: 'Eczar', serif;
+  color:#C21202;
+}
+
+h2{
+  color:#000000;
+}
+
+img{
+  outline-style: solid;
+  outline-color: #7C9FD6;
+  animation-name: Cblock;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+}
+@keyframes Cblock {
+  from {outline-color: #7C9FD6;}
+  to {outline-color: green;}
+}
