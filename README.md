@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 Randy Huang
-http://a1-charlieroberts.glitch.me
+https://a1-huangrandy.glitch.me/
 
 This project shows a webpage with basic information about me, such as major and year, as well as previous experiences. It also has some additional design and technical touches to it, which are listed below.
 
