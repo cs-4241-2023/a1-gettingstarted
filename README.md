@@ -1,12 +1,10 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
 
 Marek Garbaczonek
 https://a1-mareksgarbaczonek.glitch.me
 
-This project shows ...
+This project showcases a bit of who I am, my experience with several technologies, and the past computer science courses I have taken. 
 
 ## Technical Achievements
 - Styled page with CSS:
