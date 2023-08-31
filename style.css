@@ -1,0 +1,28 @@
+body {
+    background-color: #B3D6E6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+    border-radius: 10px;
+    margin: 13px;
+    padding: 10px;
+    background-color: #6CBDE0;
+}
+
+section:hover {
+    background-color: #54b1d8;
+}
+
+.content {
+    display: none;
+}
+
+.content.first {
+    display: block;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
