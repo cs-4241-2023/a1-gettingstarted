@@ -91,7 +91,7 @@ ul {
 li {
     display: flex; /* Use Flexbox for alignment */
     align-items: center; /* Vertically center bullet points and text */
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     justify-content: center; /* Horizontally center content */
 
 }
