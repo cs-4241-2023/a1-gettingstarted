@@ -6,7 +6,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 DUE: Thursday, August 31st by 11:59 AM
 ===
 
-This project shows ... TODO 
+This project shows the basic ability to properly fork the assignment repo, make edits to the files, use Git and GitHub, upload to Glitch, start a server with the proper files, and use HTML, CSS, and JavaScript. The assignment creates a simple website with basic information.
 
 ## Technical Achievements
 - **Styled page with CSS**:
