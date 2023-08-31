@@ -1,4 +1,5 @@
-# Sameer Desai https://sameer-test-glitch.glitch.me/
+# a1-SmeeBoi
+Sameer Desai https://sameer-test-glitch.glitch.me/
 
 This project shows ...
 
@@ -14,8 +15,9 @@ This project shows ...
 
 ### JavaScript Animation:
 1) Created circle cursor with slight delay animation
-Cursor: https://www.youtube.com/watch?v=UMdvufdewD8
-Cursor hover animation: https://www.youtube.com/watch?v=nMGVwP3ww2M
+    Tutorials Referenced:
+    Cursor: https://www.youtube.com/watch?v=UMdvufdewD8
+    Cursor hover animation: https://www.youtube.com/watch?v=nMGVwP3ww2M
 
 
 ### HTML tags:
