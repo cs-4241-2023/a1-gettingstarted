@@ -22,3 +22,9 @@ p {
   background-color: rgb(196, 138, 255);
   position: absolute;
 }
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(105, 255, 220);
+}
