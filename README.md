@@ -9,6 +9,8 @@ Engjell Ramadani
 
 https://a1-eramadani3.glitch.me
 
+https://glitch.com/edit/#!/a1-eramadani3
+
 I added the css to my html file because it wasnt working at first but I also have the css file
 
 This project shows ...
