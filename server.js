@@ -3,15 +3,14 @@ const http = require('http'),
       port = 3000
 
 const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
+  const url = request.url.slice(1)
+  switch( url ) {
+    case '':
+      sendFile( response, 'index.html' ); 
+      break;
     default:
-      response.end( '404 Error: File Not Found' )
+      sendFile( response, url ); 
+      break;
   }
 })
 
@@ -19,6 +18,10 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     response.end( content, 'utf-8' )
+     if( err !== null ) {
+       response.end( 'file not found.')
+     }else{
+       response.end( content, 'utf-8' )
+     }
    })
 }
