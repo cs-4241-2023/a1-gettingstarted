@@ -8,8 +8,8 @@ This project shows...
 
 ## Technical Achievements
 - **JavaScript**: JavaScript animation to draw the text onto the screen
-- **HTML**: Added a button that reloads the page
-- **CSS**: Used CSS to make the background green and change font size
+- **HTML**: Added a custom button that reloads the page using div
+- **CSS**: Used CSS to make the background green, as well as make the font VT323, and style the custom button
 
 ### Design Achievements
 - **Used the VT323 Font from Google Fonts**: I used VT323 as the primary font for my site.
