@@ -6,14 +6,14 @@ const server = http.createServer(function (request, response) {
   switch (request.url) {
     case "/":
       sendFile(response, "index.html");
-      sendFile(response, "style.css");
+      sendFile(response, "styles.css");
       sendFile(response, "WPI_Logo.png");
       break;
     case "/index.html":
       sendFile(response, "index.html");
       break;
-    case "/style.css":
-      sendFile(response, "style.css");
+    case "/styles.css":
+      sendFile(response, "styles.css");
       break;
     case "/WPI_Logo.png":
       sendFile(response, "WPI_Logo.png");
