@@ -1,28 +1,77 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+</head>
+
+<body>
+    <header>
+        <h1>Information about Randy Huang (Class of 2024)</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Introduction</h2>
+            <p>Welcome to my website</p>
+        </article>
+    </main>
     <p>
-      [Self introduction]
+        Computer Science Major, Data Science Minor
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+        Previous CS courses taken: 3041, 4342, 4341, 2103, 3733, 2303
     </p>
 
-    <h2>Experience</h2>
+    <h2>Experience (out of 5)</h2>
     <p>
-      Working experience
+        HTML: 4
+        CSS: 3
+        Java: 4
+        JavaScript: 3
+        Ruby: 0
+        Python: 2
+        unit testing: 4
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+
+    <div id="animate"></div>
+    <script>
+        const animateElement = document.getElementById("animate");
+
+        function animate() {
+            let position = 0;
+            const interval = setInterval(() => {
+                position += 2;
+                animateElement.style.left = position + "px";
+                if (position >= window.innerWidth - 100) {
+                    clearInterval(interval);
+                }
+            }, 10);
+        }
+
+        animate();
+    </script>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="https://github.com/huangrandy">GitHub</a></li>
+        </ul>
+    </aside>
+
+
+    <footer>
+        <p>&copy; 2023 Randy Huang</p>
+    </footer>
+</body>
+
 </html>
