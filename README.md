@@ -25,7 +25,7 @@ Sameer Desai https://sameer-test-glitch.glitch.me/
 1. Aligned content with: `<div class="container">` 
     - I put all the content in a div to vertically and horizontally align it.
 2. Added horizontal lines: `<hr>` 
-    - I added horizontal lines to make the page more stylish and compact.
+    - I added horizontal lines to make the page feel more compact.
 3. Divs to create cursor: `<div class="cursor-dot">` and `<div class="cursor-outline">` 
     - From description above, I had to add two divs in the HTML for the dot and outline of the cursor.
 
