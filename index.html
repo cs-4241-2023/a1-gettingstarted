@@ -1,28 +1,336 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS4241 Assignment 1</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      padding: 3%;
+    }
+    .profile-card {
+      display: flex;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px;
+    }
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+    .profile-content {
+      flex: 1;
+    }
+    h1, h2 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+      color: #555;
+    }
+    .courses-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 100%;
+    }
+    .course-box {
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #2980b9;
+      color: #fff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .three-columns {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .two-columns {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .proficiencies {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .proficiency-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .proficiency-item {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #2980b9;
+      color: #fff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .modal {
+      display: none;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .mdtesseract {
+      display: block;
+      padding: 20px;
+    }
+    .modal-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .button-row {
+      display: table-row;
+    }
+    .button-cell {
+      display: table-cell;
+      padding: 10px;
+      background-color: #2980b9;
+      color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      text-align: center;
+      height: 40px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      background-color: #f5f5f5;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Media query for adjusting button height on smaller screens */
+    @media (max-width: 600px) {
+      .button-cell {
+        height: 30px;
+      }
+    }
+    
+    .spacer {
+      height: 20px;
+    }
+    
+    /* Tesseract animation */
+    .tesseract-container {
+      perspective: 500px;
+    }
+    
+    .tesseract {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotateTesseract 10s infinite linear;
+    }
+    
+    .face {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border: 1px solid #2980b9;
+      background-color: rgba(41, 128, 185, 0.7);
+      opacity: 0.8;
+    }
+    
+    .face:nth-child(1) {
+      transform: rotateX(0deg) translateZ(50px);
+    }
+    .face:nth-child(2) {
+      transform: rotateY(90deg) translateZ(50px);
+    }
+    .face:nth-child(3) {
+      transform: rotateY(180deg) translateZ(50px);
+    }
+    .face:nth-child(4) {
+      transform: rotateY(-90deg) translateZ(50px);
+    }
+    .face:nth-child(5) {
+      transform: rotateX(90deg) translateZ(50px);
+    }
+    .face:nth-child(6) {
+      transform: rotateX(-90deg) translateZ(50px);
+    }
+    .face:nth-child(7) {
+      transform: rotateX(180deg) translateY(-50px);
+    }
+    .face:nth-child(8) {
+      transform: rotateX(180deg) translateY(50px);
+    }
+    
+    @keyframes rotateTesseract {
+      0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+      100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Information about Michael McInerney</h1>
+    <div class="profile-card">
+      <img class="profile-image" src="https://media.discordapp.net/attachments/630283182830387229/1146664918687420566/IMG_4641.JPG?width=1028&height=1372" alt="Michael McInerney">
+      <div class="profile-content">
+        <p>My name is Michael McInerney, and I'm a senior at Worcester Polytechnic Institute.</p>
+        <p>I am currently pursuing a Bachelor's degree with a major in Computer Science and a minor in Biology.
+        </p>
+      </div>
+    </div>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <table>
+      <tr class="button-row">
+        <td class="button-cell" id="coursesButton">Courses Taken</td>
+        <td class="button-cell" id="proficienciesButton">Proficiencies</td>
+      </tr>
+    </table>
+    <div class="spacer"></div>
+    <div id="tesseract-container" class="mdtesseract" align="center">
+      <div class="tesseract">
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+      </div>
+    </div>
+    <table>
+      <tr id="contentRow">
+        <td colspan="3">
+          <div id="coursesContent" class="modal">
+            <h2>Courses Taken</h2>
+            <div class="courses-container three-columns">
+              <div class="course-box">
+                <div>CS 1101</div>
+                <div>Introduction To Program Design</div>
+              </div>
+              <div class="course-box">
+                <div>CS 3043</div>
+                <div>Social Implications Of Information Processing</div>
+              </div>
+              <div class="course-box">
+                <div>CS 2102</div>
+                <div>Object-Oriented Design Concepts</div>
+              </div>
+              <div class="course-box">
+                <div>CS 2303</div>
+                <div>Systems Programming Concepts</div>
+              </div>
+              <div class="course-box">
+                <div>CS 2223</div>
+                <div>Algorithms</div>
+              </div>
+              <div class="course-box">
+                <div>CS 3516</div>
+              <div>Computer Networks</div>
+              </div>
+            </div>
+            <div class="courses-container two-columns">
+              <div class="course-box">
+                <div>CS 3733</div>
+                <div>Software Engineering</div>
+              </div>
+              <div class="course-box">
+                <div>CS 2011</div>
+                <div>Introduction To Machine Organization And Assembly Language</div>
+              </div>
+              <div class="course-box">
+                <div>CS 548</div>
+                <div>Knowledge Discovery And Data Mining</div>
+              </div>
+              <div class="course-box">
+                <div>CS 546</div>
+                <div>Human-Computer Interaction</div>
+              </div>
+            </div>
+          </div>
+          <div id="proficienciesContent" class="modal">
+            <div class="modal-content">
+              <h2>Proficiencies</h2>
+              <div class="proficiencies">
+                <ul class="proficiency-list">
+                  <li class="proficiency-item">HTML - Some</li>
+                  <li class="proficiency-item">CSS - Some</li>
+                  <li class="proficiency-item">Java - A lot</li>
+                  <li class="proficiency-item">JavaScript - Some</li>
+                  <li class="proficiency-item">Ruby - None</li>
+                  <li class="proficiency-item">Python - Some</li>
+                  <li class="proficiency-item">Unit Testing - Some</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    const coursesButton = document.getElementById('coursesButton');
+    const coursesContent = document.getElementById('coursesContent');
+    const proficienciesButton = document.getElementById('proficienciesButton');
+    const proficienciesContent = document.getElementById('proficienciesContent');
+    const contentRow = document.getElementById('contentRow');
+
+    coursesButton.addEventListener('click', () => {
+      coursesContent.style.display = 'block';
+      proficienciesContent.style.display = 'none';
+    });
+
+    proficienciesButton.addEventListener('click', () => {
+      coursesContent.style.display = 'none';
+      proficienciesContent.style.display = 'block';
+    });
+  </script>
+</body>
 </html>
