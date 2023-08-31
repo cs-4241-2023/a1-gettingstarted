@@ -1,5 +1,7 @@
 body {
     font-family: 'Nunito Sans', sans-serif;;
+    background-color: #16515C;
+    color: #555D5E;
 }
 
 h1 {
@@ -10,21 +12,25 @@ h2 {
     padding: 25px 25px 0px;
 }
 
+.color-text{
+    color: #2895A8;
+}
+
 .container {
-    background-color: lightblue;
+    background-color: #9EE8F5;
     text-align: center;
     margin: 0px auto;
-    box-sizing: border-box;
     width: 90%;
     max-width: 900px;
+    box-shadow: 0 0 10px #35C2DB;
 }
 
 .container-body {
-    background-color: lightblue;
+    background-color: #9EE8F5;
     margin: 0px auto;
-    box-sizing: border-box;
     width: 90%;
     max-width: 900px;
+    box-shadow: 0 0 10px #35C2DB;
 }
 
 p {
@@ -38,3 +44,4 @@ p2 {
 ul {
     padding: 0px 25px 25px 50px;
 }
+
