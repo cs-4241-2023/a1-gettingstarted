@@ -20,9 +20,6 @@ I've utilized various semantic HTML tags to structure my webpage's content:
 - `<img>` for displaying profile images.
 
 ## Design Achievements
-### Created a Color Palette Using color.adobe.com (10 points)
-I've carefully selected a color palette using Adobe Color. The chosen colors are harmonious and contribute to a visually appealing design. I've implemented these colors throughout my webpage using appropriate CSS rules. You can view a screenshot of the color palette in the repository.
-
 ### Used a Font from Google Fonts (5 points)
 I've enhanced the typography of my webpage by utilizing the "Open Sans" font from Google Fonts. This font choice enhances readability and gives the content a professional appearance.
 
