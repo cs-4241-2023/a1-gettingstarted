@@ -3,12 +3,14 @@ http://a1-wfryan.glitch.me
 
 This project shows ...
 
+Note: Buttons may require a second click to work properly, not actually sure why, im guessing I have too much in the scripts for it to register properly the first time.
+
 ## Technical Achievements
 - **Styled page with CSS**: Rules added for h1, h2, p, ul, iframe, and footer selectors. I also took advantage of custom classes and utilized element IDs to give specific rules for specific elements.
 
-- **Simple Animation**: Made a simple color cycling animation using CSS and it gets triggered by JavaScript. 
+- **Simple Animation**: Made a simple color cycling animation using CSS and it gets triggered by JavaScript.
 
-- **Other Tags Used/Semantic Tags Used**: 
+- **Other Tags Used/Semantic Tags Used**:
   - 2 Buttons
   - image
   - footer
