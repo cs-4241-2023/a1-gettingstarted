@@ -3,9 +3,38 @@ body {
 }
 
 h1 {
-    margin-top: 50px;
+    padding: 25px 25px 0px;
 }
 
 h2 {
-    margin-top: 40px;
+    padding: 25px 25px 0px;
+}
+
+.container {
+    background-color: lightblue;
+    text-align: center;
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 900px;
+}
+
+.container-body {
+    background-color: lightblue;
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 900px;
+}
+
+p {
+    padding: 0px 25px 25px;
+}
+
+p2 {
+    padding: 0px 25px;
+}
+
+ul {
+    padding: 0px 25px 25px 50px;
 }
