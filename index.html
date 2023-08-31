@@ -3,26 +3,86 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&display=swap" rel="stylesheet">
   </head>
+  <link rel="stylesheet" href="style.css"/>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Nicole Burgess - Class of 2024</h1>
     <p>
-      [Self introduction]
+      I am a computer science major in the class of 2024, I also plan to get
+      my masters in computer science after my senior year. On campus I am a 
+      member of Alpha Gamma Delta where I am the Vice President of Recruitment
+      for the chapter. I also am a part of the dance team on campus.
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h2>
+      Previous CS Classes 
+    </h2>
+    
+    <table>
+      <tr>
+        <th>Freshman</th>
+        <th>Sophomore</th>
+        <th>Junior</th>
+      </tr>
+      <tr>
+        <td>CS1102</td>
+        <td>CS3043</td>
+        <td>CS3013</td>
+      </tr>
+      <tr>
+        <td>CS2102</td>
+        <td>CS2223</td>
+        <td>CS509</td>
+      </tr>
+      <tr>
+        <td>CS2303</td>
+        <td>CS3431</td>
+        <td>CS3133</td>
+      </tr>
+      <tr>
+        <td>CS2022</td>
+        <td>CS2011</td>
+        <td>CS5084</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>CS4432</td>
+        <td></td>
+      </tr>
+    </table>
+    <figure>
+      <img src="https://cdn.glitch.global/6ffc0fe6-ef41-43c7-8810-cb32b78ecd5e/dog.jpeg?v=1693439115980g">
+      <figcaption>This is my dog</figcaption>
+    </figure>
+
+    
 
     <h2>Experience</h2>
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML: a lot</li>
+      <li>CSS: a lot</li>
+      <li>Java: a lot</li>
+      <li>Javascript: some</li>
+      <li>Ruby: none</li>
+      <li>Python: a lot</li>
+      <li>Unit testing: some</li>
     </ul>
   </body>
+  <script>
+    const bgChange = function() {
+      const a = Math.round(Math.random() * 256)
+      const b = Math.round(Math.random() * 256)
+      const c = Math.round(Math.random() * 256)
+      document.body.style = `background: rgb(${a}, ${b}, ${c})`
+
+    }
+    window.onload = function() {
+      setInterval(bgChange, 1000)
+    }
+  </script>
 </html>
