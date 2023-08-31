@@ -2,8 +2,7 @@
 Sameer Desai https://sameer-test-glitch.glitch.me/
 
 This project shows:
-
-
+![](https://github.com/SmeeBoi/a1-SmeeBoi/blob/main/cursor.gif)
 
 ## Technical Achievements
 
