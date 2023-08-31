@@ -4,6 +4,8 @@ Glitch: https://a1-jdlogan0.glitch.me/
 
 This project shows a webpage with some information about me including CS classes I've taken and experience with different coding languages. The page was made using HTML and stylized with CSS, using JavaScript to make the it more interactive.
 
+Due to the styling I used, the page can look messier depending on the screen dimensions. I tested with different dimensions and with a smaller width the info boxes are cramped, but still readable by dragging or closing them.
+
 ### Technical Achievements
 - **Styled page with CSS**
     - Added rules for body, a, button, and added classes
