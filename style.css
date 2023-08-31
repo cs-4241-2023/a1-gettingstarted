@@ -3,6 +3,25 @@ html {
     /* hide normal cursor */
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    min-height: 100vh;
+    /* set min height to 100% of viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 30%;
+    /* Set width of the centered container with */
+}
+
 h1 {
     position: relative;
     font-size: 5rem;
@@ -12,44 +31,6 @@ h1 {
 h2 {
     margin-bottom: 0px
 }
-
-/* Reset default margin and padding for body */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Style the container */
-  .container {
-    width: 30%; /* Adjust the width of the centered box */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    padding: 20px;
-    text-align: center; /* Center the content horizontally */
-    box-sizing: border-box; /* Include padding in the width */
-  }
-  
-  /* Style the horizontal line */
-  footer hr {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 10px auto;
-  }
-  
-  /* Style the footer text */
-  footer p {
-    text-align: center;
-    font-size: 12px;
-    margin: 0;
-    padding: 10px;
-    background-color: #f0f0f0;
-  }
 
 .cursor-dot {
     width: 3px;
@@ -61,49 +42,30 @@ body {
     width: 20px;
     height: 20px;
     border: 2px solid white;
-    /* background-color: white; */
 }
 
 .cursor-dot,
 .cursor-outline {
     position: fixed;
-    top: 0;
-    left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     z-index: 1;
     pointer-events: none;
-    mix-blend-mode: difference;
+    mix-blend-mode: difference; /* cool effect */
     transition: 0.1s;
-}
-
-p {
-    text-align: left;
 }
 
 ul {
     margin-top: 5px;
-    list-style-type: none; /* Remove default bullet points */
+    list-style-type: none;
+    /* Remove bullet points */
     padding: 0;
-    text-align: left; /* Align the text to the left */
 }
 
 li {
-    display: flex; /* Use Flexbox for alignment */
-    align-items: center; /* Vertically center bullet points and text */
     margin-bottom: 5px;
-    justify-content: center; /* Horizontally center content */
-
 }
 
-h1:hover ~ .cursor-outline {
-    transform: scale(6);
+h1:hover~.cursor-outline {
+    transform: scale(5);
 }
-
-
-/* 
-Color palette: ##000000 black,
-#4E85F2 dark blue,
-#52A4DC blue,
-#4EDCF2 light blue,
-#4AE8D3 turqoise */
