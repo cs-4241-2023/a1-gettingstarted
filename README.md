@@ -1,100 +1,17 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
-
-*DUE: Thursday, August 31st by 11:59 AM (before the start of class!)*  
-
-First assignment! You will deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch, as well as experiment some with HTML/CSS/JS. If you already know these, great! 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. Don't just get your website up and done, as
-you'll need skills with these tools throughout the rest of the course.
-
-Assignment details
+Readme
 ---
 
-This assignment requires that your website is both contained in a GitHub repository and hosted in Glitch. There are two ways to do this:
+Julie Vieira
+http://a1-javieira.glitch.me
 
-1. Fork this repo and clone it to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into Glitch.
-2. Fork this repo and then import it directly to Glitch, use the Glitch editor to make changes, and then export your repo from Glitch back to GitHub.
-3. Same as #1, but instead of importing from Github to Glitch you just upload the files (or copy/paste) them directly to Glitch.
-
-## Option 1 - Clone to computer, push to Github, import to Glitch (recommended)
-
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-4. Complete some technical and/or design achievements (see below).
-5. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
-
-6. Modify the README file according to the specification below.
-7. Commit and push all your changes to GitHub. 
-8. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-9. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-9. Create and submit a Pull Request to the original repo.
-
-## Option 2 - Fork repo and import to Glitch, edit on Glitch, and then export back to GitHub
-Most of these steps are the same as option 1, except that you being by creating a new project Glitch using this repo as a staring point (just choose New Project > Import from GitHub for this and then paste in the link to your repo). At the end, you can export your Glitch project to GitHub by [following these instructions](https://www.youtube.com/watch?time_continue=77&v=aWJFbtrgW4E&feature=emb_logo). *Note that the location of the projecct export feature in Glitch has moved from what they show in this video.* It's now located in Tools > Import and Export (tools is located in the bottom left of the Glitch editor).
-
-## Option 3 - Clone to computer, edit locally, push to GitHub, upload to Glitch
-This is the same as option 1, except that for step 6 (Deploy to Glitch) you simply upload each file to your Glitch repository (using New File > Upload a File).
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Achievements
----
-Below are some suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the assignment to your personal interests. These are recommended acheivements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README and why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
-
-Note that if you want to load resources besides your index.html file (images, an CSS file, a JS file) you'll need to modify server.js to point to these. For now it's easiest to just hardcode paths to the resources, but we'll look at ways to optimize this shortly.
-
-*Technical*
-1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (max 5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the tags you use in your README.
-
-*Design*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [HTML & CSS](https://wpi.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9936730811904746&context=L&vid=01WPI_INST:Default&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,Jon%20Duckett&offset=0) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
+This project contains a variety of achievements described in the Technical and Design sections. I started by satisfying the requirements as detailed in Step 2 of this assignment and added sections in order to explore additional features. The “Non Major Related Projects” section was added so I could learn how to use a link tag, which is connected to OER Commons. In order to list the CS courses I have taken, I included a table, another kind of semantic HTML tag. I had to figure out how to structure the table as the row labels are added into HTML in the same way as cells, just having the difference that the tag changes from <td> to <th> for the first entry of each row. Additionally, tables do not initially include borders so I manipulated this in the CSS file. Further, I went to Adobe’s website and created a color palette with 5 colors as linked below. The lilac color is used in the gradient as well as the text color. The deep blue is used as the background for the headers. The light blue was used as a transition color between the lilac and seafoam gradient in the background as well as in the gradient from grey to light blue in the animation at the bottom of the page. The grey color was used in the gradient for the animation background and a deeper shade was used for the main text color. Finally, the seafoam color was utilized as the gradient color at the bottom of the page and the color of the blocks in the animation. This took a bit of time to figure out how to properly distribute the colors as there are a lot of lighter shades. Therefore, in order to reduce the monotony throughout the page, the gradient was used and the darker color was chosen for the background. The animation itself was challenging in the beginning to not only figure out how to make the figure move back and forth as I intended, but how to move it at all. I discovered through research that using the setInterval function we learned in class in combination with incrementing the horizontal and vertical positions at a small enough interval would make it appear as a smooth movement. I started with one block moving diagonally across the container, determined I needed a flag variable to change its direction, and applied this logic to the other seven blocks. Each block was unique in its initial positioning and directional movement. Next, I styled the page using CSS rules. I created an h1 rule for the background which created the gradient from lilac to light blue to seafoam. I manipulated the “Information About” label so it now includes a border, the text uses one of the colors from the Adobe palette, a background image was collected by using a url, the text has padding around the edge, and a shadow was included so the text wouldn’t get lost in the image. The h2 rule was similar in that it created a uniform background, text color, and font for the main labels such as “Introduction”. The paragraph has an altered opacity so it is slightly different from the bullet points below it as the paragraph falls on the lilac background and the bullet points stand against a blue background more so. The li rule was used to get rid of the given bullet points and li::before used the unicode for a curled arrow instead. This was interesting to learn as I found through research that the bullet point must be removed first before adding special characters. However, there are a couple other built in shapes. The table rule collapsed the borders so that there would not be duplicates within the cells and on the outside walls. Information was a class I created which contained the bullet points and main headers so there would be a uniform font color, size, and type across the page. I accomplished this using the <div> tag. Finally, I used multiple different fonts from Google in the title, headings, and bullet points. The fonts needed to be clear to read while fitting of the aesthetic of the rest of the page. Therefore, difficult to read cursive styles could not be used and basic block styles were not as visually appealing.
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
-
+- **Styled page with CSS**: Added rules for the body, h1/h2, p, li/li::before, table, information as described above
+- **JavaScript Animation**: Animation at the bottom of the screen has 8 blocks in a container, 4 of which move diagonally and 4 of which move up and down, in a repetitive manner starting at window onload
+- **Semantic HTML Tags**: links and table as stated above
+  
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Adobe Color Palette**: I used a color palette with 5 colors (lilac: #CCBEF2; deepBlue: #5D5CFA; grey: #A6B5E3; lightBlue: #AAD2FA; seafoam: #A3DDF0;) throughout this project. Here is the link to the color palette image which is uploaded in the Assets in Glitch: https://cdn.glitch.global/f21d831e-e18d-406f-adc7-76a5c5f58301/Color%20Wheel%20Blues.jpg?v=1693473341934
+- **Google Font**: I used 3 Google Fonts in the title (Vollkorn), headers (Cinzel), and bullet points/general text (Stoke)
+  

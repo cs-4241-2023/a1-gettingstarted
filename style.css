@@ -1,0 +1,126 @@
+:root{
+  --lilac: #CCBEF2;
+  --deepBlue: #5D5CFA;
+  --grey: #A6B5E3;
+  --lightBlue: #AAD2FA;
+  --seafoam: #A3DDF0;
+  --containerSize: 200px;
+  --animationSize: 20px;
+  --animationColor: var(--seafoam);
+}
+
+body {
+  background-image: linear-gradient(to bottom, var(--lilac), var(--lightBlue), var(--seafoam));
+}
+
+h1{
+  background-color:rgba(93, 92, 250, 0.75);
+  text-align:center;
+  color: var(--lilac);
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1591181520189-abcb0735c65d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHVycGxlJTIwZmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+  padding: 20px;
+  font-size:60px;
+  border:10px solid white;
+  background-size:cover;
+  text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+  color: var(--lilac);
+  text-align: center;
+  background-color: var(--deepBlue);
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+p{
+  text-align: center;
+  opacity: 0.75;
+}
+
+li {
+  list-style: none;
+}
+
+li::before{
+  content: "\21AC";
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  color: black;
+  font-size: 15px;
+}
+
+.information{
+  position: relative;
+  color: grey;
+  font-family: 'Stoke', serif;
+  font-size: 20px;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--containerSize);
+  height: var(--containerSize);
+  position: relative;
+  background-image: linear-gradient(to bottom, var(--grey), var(--lightBlue));
+}
+
+#topRight {
+  width: var(--animationSize);
+  height: var(--animationSize);
+  position: absolute;
+  background: var(--animationColor);
+}
+
+#topRightCorner {
+  width: var(--animationSize);
+  height: var(--animationSize);
+  position: absolute;
+  background: var(--animationColor);
+}
+
+#topLeft {
+  width: var(--animationSize);
+  height: var(--animationSize);
+  position: absolute;
+  background: var(--animationColor);
+}
+
+#topLeftCorner {
+  width: var(--animationSize);
+  height: var(--animationSize);
+  position: absolute;
+  background: var(--animationColor);
+}
+
+#bottomRight {
+  width: var(--animationSize);
+  height: var(--animationSize);
+  position: absolute;
+  background: var(--animationColor);
+}
+
+#bottomRightCorner {
+  width: var(--animationSize);
+  height: var(--animationSize);
+  position: absolute;
+  background: var(--animationColor);
+}
+
+#bottomLeft {
+  width: var(--animationSize);
+  height: var(--animationSize);
+  position: absolute;
+  background: var(--animationColor);
+}
+
+#bottomLeftCorner {
+  width: var(--animationSize);
+  height: var(--animationSize);
+  position: absolute;
+  background: var(--animationColor);
+}
