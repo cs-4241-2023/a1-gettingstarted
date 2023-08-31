@@ -1,7 +1,6 @@
 # a1-SmeeBoi
 Sameer Desai https://sameer-test-glitch.glitch.me/
 
-This project shows:
 ![](https://github.com/SmeeBoi/a1-SmeeBoi/blob/main/cursor.gif)
 
 ## Technical Achievements
@@ -23,7 +22,7 @@ This project shows:
 1. Aligned content with: `<div class="container">` 
     - I put all the content in a div to vertically and horizontally align it.
 2. Added horizontal lines: `<hr>` 
-    - I added horizontal lines to make the page more stylish and compact
+    - I added horizontal lines to make the page more stylish and compact.
 3. Divs to create cursor: `<div class="cursor-dot">` and `<div class="cursor-outline">` 
     - From description above, I had to add two divs in the HTML for the dot and outline of the cursor.
 
@@ -31,7 +30,7 @@ This project shows:
 
 ### Google Font
 1. Used Josefin Sans Font from Google Fonts: [Font Used](https://fonts.google.com/specimen/Josefin+Sans?query=josefin+sans)
-    - I used Josefin Sans for all the text on my page to give it a clean, modern vibe.
+    - I used Josefin Sans for all the text on my page to give it a clean, minimalist vibe.
 
 
 
