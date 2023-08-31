@@ -16,12 +16,11 @@ This project shows ...
 7. Cursor blend mode
 
 ### JavaScript Animation
-1. Custom cursor
-    Tutorials Referenced:
+1. Custom cursor using tutorials:
     [Cursor](https://www.youtube.com/watch?v=UMdvufdewD8) and [Hover Animation](https://www.youtube.com/watch?v=nMGVwP3ww2M)
 
 ### HTML tags
-1. To organize content used `<div class="container">`
+1. Aligned content with `<div class="container">`
 2. Added horizontal lines `<hr>`
 
 ## Design Achievements
