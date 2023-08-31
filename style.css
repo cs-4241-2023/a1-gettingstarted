@@ -93,16 +93,18 @@ li {
     display: flex; /* Use Flexbox for alignment */
     align-items: center; /* Vertically center bullet points and text */
     margin-bottom: 10px;
+    justify-content: center; /* Horizontally center content */
+
 }
 
-li::before {
+/* li::before {
     content: "\2022"; /* Bullet point character (•) */
-    color: white;
+    /* color: white;
     margin-right: 10px; /* Space between bullet point and text */
-    display: inline-block; /* Align bullet points horizontally */
-    width: 1.2em; /* Adjust the width for consistent alignment */
-    text-align: center;
-}
+    /* display: inline-block; /* Align bullet points horizontally */
+    /* width: 1.2em; /* Adjust the width for consistent alignment */
+    /* text-align: center;
+} */
 
 
 h1:hover+.cursor-outline {
