@@ -1,0 +1,53 @@
+
+
+/* Set the background color of the body */
+body {
+  background: black;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style the heading 1 */
+h1 {
+  color: #A14AF7;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style the paragraph */
+p {
+  color: #43C6E0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style the heading 2 */
+h2 {
+  color: #87F757;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style the unordered list */
+ul {
+  color: #E0B143;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style the list items */
+li {
+  color: #FF615E;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style the link */
+a {
+  color: #cc0000;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  
+}
