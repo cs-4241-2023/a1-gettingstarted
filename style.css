@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@keyframes spin-img {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(10000000000deg)}
+}
+
+body {
+  max-width: max-content;
+  margin: auto;
+  background-color: #FAB832;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #486EFA;
+}
+
+p {
+  text-align: center;
+  color: #F0323E;
+}
+
+.courses {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+ul {
+  max-width: max-content;
+  margin: auto;
+  color: #F547CB;
+}
+
+h2 {
+  text-align: center;
+  color: #486EFA;
+}
+
+a {
+  text-align: center;
+  display: block;
+}
+
+input {
+  margin: auto;
+  display: block;
+}
+
+img {
+  width: 25%;
+  margin: auto;
+  display: block;
+}
+
+.spin {
+  animation: spin-img 10000s ease-in 1;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+}

@@ -1,28 +1,73 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <header>
+      <h1>Information about Thomas Pianka</h1>
+    </header>
+    <main>
+      <p>
+        Hello, I am Thomas Pianka, a student from the class of 2025 studying at WPI.
+      </p>
+      <p>
+        Computer Science Major
+      </p>
+      <p class="courses">
+        Previous computer science courses at WPI:
+      </p>
+      <ul>
+        <li>CS1102 - Accelerated Introduction to Program Design</li>
+        <li>CS2011 - Introduction to Machine Organization and Assembly Language</li>
+        <li>CS2022 - Discrete Mathematics</li>
+        <li>CS2103 - Accelerated Object-Oriented Design Concepts</li>
+        <li>CS2223 - Algorithms</li>
+        <li>CS2303 - Systems Programming Concepts</li>
+        <li>CS3013 - Operating Systems</li>
+        <li>CS3041 - Human-Computer Interaction</li>
+        <li>CS3043 - Social Implications of Information Processing</li>
+        <li>CS3133 - Foundations of Computer Science</li>
+        <li>CS3733 - Software Engineering</li>
+      </ul>
+      <h2>Experience</h2>
+      <ul>
+        <li>HTML: a lot</li>
+        <li>CSS: some</li>
+        <li>Java: a lot</li>
+        <li>JavaScript: a lot</li>
+        <li>Ruby: none</li>
+        <li>Python: a lot</li>
+        <li>Unit testing: some</li>
+      </ul>
+      <br>
+      <a href="https://my.flightradar24.com/AsianWhale">Map of most of my flights since 2010!</a>
+      <br>
+      <script>
+        const controlSpin = () => {
+          let name = document.getElementById("kicia").className;
+          if (!name) {
+            document.getElementById("kicia").className = "spin";
+            document.getElementById("button").value = "Click again to stop";
+          } else {
+            document.getElementById("kicia").className = "";
+            document.getElementById("button").value = "Click for magic";
+          }
+        }
+      </script>
+      <input id="button" type="button" value="Click for magic" onclick=controlSpin()>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="kicia.jpg" id="kicia" alt="Image of my cat on her back, taken outdoors"/>
+    </main>
+    <footer>
+      Thomas Pianka 2023
+    </footer>
   </body>
 </html>
