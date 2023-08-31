@@ -1,0 +1,170 @@
+html {
+    font-family: 'Gaegu';
+    color: #AD8B5E;
+    background-color: #BAE3FA;
+  }
+
+body {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: #6F97AD;
+}
+
+.box {
+    color: #AD8B5E;
+    border: 6px inset #AD8B5E;
+    background-color: #EDF8FE;
+    margin: 15px;
+    overflow: scroll;
+    position: absolute;
+    width: max-content;
+}
+
+#box1 {
+    left: 56%;
+    top: 18%;
+    z-index: 0;
+}
+
+#box2 {
+    left: 23%;
+    top: 38%;
+    z-index: -1;
+}
+
+#box3 {
+    left: 73%;
+    top: 52%;
+}
+
+#box4 {
+    left: 4%;
+    top: 62%;
+}
+
+#box5 {
+    left: 13%;
+    top: 3%;
+}
+
+.bar {
+    background-color: #AD8B5E;
+    color: #FADEB9;
+    border: solid #AD8B5E;
+    margin-top: 0px;
+    padding: 2px;
+    text-indent: 5px;
+    cursor: move;
+}
+
+.bar p {
+    margin: 0px;
+    margin-left: 5px;
+}
+
+.boxtext{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    
+}
+
+.box img {
+    max-height: 150px;
+    padding: 10px;
+}
+
+.xbtn{
+    float: right;
+    background-color: #6F97AD;
+    color: #FADEB9;
+    border: 2px outset #6F97AD;
+
+}
+
+.xbtn:active {
+    border: 2px inset #6F97AD;
+}
+
+.helloworld {
+    font-family: 'Gaegu';
+    font-size: 5em;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 5px;
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: #6F97AD;
+}
+
+.helloworld:hover {
+    transition: 0.25s;
+    transform: scale(1.04);
+    text-shadow: 2px 2px #AD8B5E;
+    
+}
+
+
+
+.rain {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+    
+.drop {
+    position: fixed;
+    width: 3px;
+    border-radius: 20px;
+    height: 5%;
+    z-index: -1;
+    bottom: 100%;
+    background: #6F97AD;
+    animation: drop linear infinite;
+}
+    
+@keyframes drop {
+    0% {
+        transform: translateY(0vh);
+    }
+    
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+
+.water {
+  left: 0;
+  width: 100%;
+  z-index: -2;
+  overflow: hidden;
+  bottom: 0;
+  position: fixed;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 1.5s;
+  background: #6F97AD;
+}
+
+@keyframes fill {
+    0% {
+        height: 0%;
+    }
+    
+    100% {
+        height: 100%;
+    }
+
+}

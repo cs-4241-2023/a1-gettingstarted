@@ -1,28 +1,99 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+  <header>
+    <div id = rain></div>
+    <div class = "box" id = "box5">
+      <div class = "bar" id = "box5bar">
+        reset_and_rain.txt
+        <button id = "box5x" class = "xbtn">♥️</button>
+      </div>
+      <button onclick = "resetPage()" class = "helloworld">
+        HELLO
+      </button>
+
+      <button onclick = "toggleRain(true)" class = "helloworld">
+        WORLD!
+      </button>
+    </div>
+  </header>
+
+  <body>
+
+    <div class = "box" id = "box1">
+      <div class = "bar" id = "box1bar">
+        intro.txt
+        <button onclick = "hideBox(1)" id = "box1x" class = "xbtn">x</button>
+      </div>
+      <div class = "boxtext">
+        <h1>Jade Logan</h1>
+        <p>
+          Class of 2025
+        </p>
+        <p>
+          <a href = "https://www.wpi.edu/academics/departments/computer-science">CS</a> and <a href = "https://www.wpi.edu/academics/departments/interactive-media-game-development">IMGD</a> double major
+        </p>
+      </div>
+    </div>
+
+    <div class = "box" id = box2>
+      <div class = "bar" id = "box2bar">
+        classes.pdf
+        <button onclick = "hideBox(2)" id = "box2x" class = "xbtn">x</button>
+      </div>
+      <div class = "boxtext">
+        <h2>Previous <a href = "https://www.wpi.edu/academics/calendar-courses/course-descriptions/3776/computer-science">CS Classes</a></h2>
+        <ul>
+          <li>Introduction To Program Design (CS 1101)</li>
+          <li>Accelerated Object-Oriented Design Concepts (CS 2103)</li>
+          <li>Algorithms (CS 2223)</li>
+          <li>Systems Programming Concepts (CS 2303)</li>
+          <li>Introduction To Machine Organization And Assembly Language (CS 2011)</li>
+          <li>Operating Systems (CS 3013)</li>
+          <li>Computer Networks (CS 3516)</li>
+          <li>Computer Graphics (CS 4731)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class = "box" id = "box3">
+      <div class = "bar" id = "box3bar">
+        experience.txt
+        <button onclick = "hideBox(3)" id = box3x class = "xbtn">x</button>
+      </div>
+      
+      <div class = "boxtext">
+        <h2>Experience</h2>
+        <ul>
+          <li>HTML: Some</li>
+          <li>CSS : Some</li>
+          <li>Java: A lot</li>
+          <li>Javascript: Some</li>
+          <li>Ruby: None</li>
+          <li>Python: A lot</li>
+          <li>Unit Testing: Very Little</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class = "box" id = "box4">
+      <div class = "bar" id = "box4bar">
+        maxolotl.png
+        <button onclick = "hideBox(4)" id = box4x class = "xbtn">x</button>
+      </div>
+      <img src = "maxolotl.png" alt = "axolotl doodle">
+    </div>
+
+    <div class = "water" id = "w"></div>
+
+    <script defer src="script.js"></script>
   </body>
 </html>
