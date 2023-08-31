@@ -1,0 +1,39 @@
+.image-content-wrapper {
+  display: flex;
+}
+.left-image {
+  float: left;
+  padding-right: 20px;
+}
+
+.right-content {
+  overflow: hidden;
+}
+
+.none {
+  color: red;
+}
+
+.some {
+  color: #ffc40c;
+}
+
+.a-lot {
+  color: green;
+}
+
+html {
+  font-family: 'ADLaM Display';
+  background-color: #071d10;
+  color: #daf7e5;
+}
+
+a {
+  color: #cc6d2e;
+}
+
+.emp {
+  background-color: #5b27aa;
+  padding: 5px;
+  border-radius: 5px;
+}
