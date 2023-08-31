@@ -3,26 +3,110 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main_style.css">
+    
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
+    
+    <h1>Information about Nick Heineman, class of 2024</h1>
+    <h3>
+      Major:
+    </h3>
     <p>
-      Working experience
+      Computer Science Major
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <h3>
+      Important Classes:
+    </h3>
+    <p1>
+      -Software Engineering <br>
+      -Algorithms <br>
+      -Software Security Engineering
+    </p1>
+    <h3>
+      Related Skills:
+    </h3>
+    <p>
+      <table>
+        <tr>
+          <th>Skill</th>
+          <th>Competency</th>
+        </tr>
+        <tr>
+          <th>HTML</th>
+          <th>Some Experience</th>
+        </tr>
+        <tr>
+          <th>CSS</th>
+          <th>No Experience</th>
+        </tr>
+        <tr>
+          <th>Java</th>
+          <th>Significant Experience</th>
+        </tr>
+        <tr>
+          <th>Javascript</th>
+          <th>Some Experience</th>
+        </tr>
+        <tr>
+          <th>Ruby</th>
+          <th>No Experience</th>
+        </tr>
+        <tr>
+          <th>Python</th>
+          <th>Some experience</th>
+        </tr>
+        <tr>
+          <th>Unit Testing</th>
+          <th>Some Experience</th>
+        </tr>
+          
+        </tr>
+      </table>
+
+    </p>
+    <script>
+      <!-- create new function -->
+      const bgChange = function(){
+        //x will be of type rgb
+        let rgb = document.body.style.getPropertyValue('color')
+        let prevN
+        if(rgb === ""){
+          prevN = 0
+        } else{
+          prevN = rgb.substring(4, rgb.indexOf(","))
+        }
+        const n = Math.round(Math.random()*255)
+
+        prevN = parseInt(prevN)
+
+        let id = null;
+
+        clearInterval(id);
+
+        id = setInterval(frame, 5);
+        function frame(){
+            if(prevN === n){
+              clearInterval(id);
+            } else if(prevN < n){
+              prevN++;
+              document.body.style = `color:rgb(${prevN}, ${255-prevN}, ${0})`;
+            } else if(prevN > n){
+              prevN--;
+              document.body.style = `color:rgb(${prevN}, ${255-prevN}, ${0})`;
+            }
+        }
+
+       
+        
+      }
+      
+      window.onload = function(){
+        bgChange()
+        setInterval(bgChange, 2500);
+      }
+        
+    </script>
   </body>
 </html>

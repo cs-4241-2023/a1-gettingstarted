@@ -10,6 +10,9 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+    case '/main_style.css':
+      sendFile( response, 'main_style.css')
+      break;
     default:
       response.end( '404 Error: File Not Found' )
   }
@@ -18,7 +21,11 @@ const server = http.createServer( function( request,response ) {
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
-   fs.readFile( filename, function( err, content ) {
-     response.end( content, 'utf-8' )
-   })
+  fs.readFile( filename, (error, content) => {
+     if( error !== null ) {
+       response.end( 'file not found.')
+     }else{
+       response.end( content, 'utf-8' ) 
+     }
+  })
 }
