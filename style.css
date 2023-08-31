@@ -21,6 +21,9 @@ ul{
 iframe{
     background-color: #491ADB;
 }
+footer{
+    background-color: #FFF9A2;
+}
 .icon{
     position:absolute;
     top: 32px;
@@ -49,10 +52,10 @@ iframe{
     100%,0%{
         color: rgb(255,0,0);
     }
-    8%{
+    6%{
         color: #D9B591;
     }
-    16%{
+    14%{
         color: rgb(255,255,0);
     }
     25%{
@@ -61,22 +64,22 @@ iframe{
     33%{
         color: #FFF9A2;
     }
-    41%{
+    42%{
         color: rgb(0,255,133);
     }
     50%{
         color: rgb(0,255,255);
     }
-    58%{
+    59%{
         color: #00D3FA;
     }
-    66%{
+    67%{
         color: rgb(0,0,255);
     }
     75%{
         color: #491ADB;
     }
-    83%{
+    82%{
         color: rgb(255,0,255);
     }
     91%{

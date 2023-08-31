@@ -71,12 +71,21 @@ Note that if you want to load resources besides your index.html file (images, an
 
 *Technical*
 1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README. Needs Description but Check
-2. (5 points) Add a simple JavaScript animation to the page. Check
-3. (max 5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the tags you use in your README. 2 buttons, iframe, script? image -> working, link/anchor
+2. (5 points) Add a simple JavaScript animation to the page.
+- Well its a CSS Animation triggered by JavaScript
+3. (max 5 points) Experiment with other *semantic* HTML tags (links, images, tables, header, footer, etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the tags you use in your README.
+- 2 buttons
+- iframe
+- image
+- link/anchor(many)
+- footer
+- header
 
 *Design*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo. Check
-2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website. Check
+1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo. 
+- Screenshot is in the "assets" folder. All 5 Colors are used in the color change animation and all 5 of them are used statically as well
+2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website. 
+- Oswald and Rubik Iso
 
 Resources
 ---
@@ -88,13 +97,25 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+William Ryan
+http://a1-wfryan.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Rules added for h1, h2, p, ul, iframe, and footer selectors. I also took advantage of custom classes and utilized element IDs to give specific rules for specific elements.
 
+- **Simple Animation**: Made a simple color cycling animation using CSS and it gets triggered by JavaScript. 
+
+- **Other Tags Used/Semantic Tags Used**: 
+  - 2 Buttons
+  - image
+  - footer
+  - header
+  - iframe
+  - links/anchor
+  - I have a script tag if you consider that one of the semantic tags
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+
+- **Color Palette made with color.adobe.com and used throughout the site**: Screenshot is in the "assets" folder. All 5 Colors are used in the color change animation and all 5 of them are used statically as well
