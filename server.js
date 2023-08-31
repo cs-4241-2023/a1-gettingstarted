@@ -1,21 +1,15 @@
-const express = require('express');
-const path = require('path');
 const http = require('http'),
       fs   = require('fs'),
       port = 3000
 
-const app = express()
-
 const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/index.html':
+  const url = request.url.slice(1)
+  switch(url) {
+    case '':
       sendFile( response, 'index.html' )
       break
     default:
-      sendFile(request.url.slice(1));
+      sendFile(response, url);
       break;
   }
 })
@@ -27,5 +21,3 @@ const sendFile = function( response, filename ) {
      response.end( content, 'utf-8' )
    })
 }
-
-app.use(express.static(path.join(__dirname, 'public')));
