@@ -12,9 +12,30 @@
     <style>
       body {
         font-family: "VT323", serif;
-        font-size: 48px;
+        font-size: 24px;
+        margin-bottom: 5rem;
         background-color: green;
       }
+      
+      .reload-button {
+        z-index: 2;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+      }
+      
+      .reload-button-wrapper {
+        display: flex;
+        width: 50%;
+        max-width: 400px;
+        text-align: center;
+      }
+      
+      
     </style>
   </head>
   <body id="pageBody" onload="loadText(pageBody)">
@@ -49,7 +70,11 @@
       <li>WPI</li>
     </ul>
 
-    <button onclick="loadText(pageBody)">Reload Page</button>
+    <div class="reload-button-wrapper">
+      <div class="reload-button" onclick="loadText(pageBody)">
+        Reload Page
+      </div>
+    </div>
 
     <script>
       function animate({ draw, duration }) {
