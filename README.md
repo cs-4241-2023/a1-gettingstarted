@@ -1,15 +1,11 @@
 Tim Connors
 http://a1-timconnors33.glitch.me
 
-This project shows uses a webpage featuring basic HTML and CSS
-to display some basic information about myself.
+This project shows uses a webpage featuring basic HTML and CSS to display some basic information about myself.
 
 ## Technical Achievements
-- **Styled page with CSS**: Changed the font of the page using
-the universal selector, changed the background color of the
-header, made the header into a flexbox and used the
-justify-content and align-items rules, changed the text
-color of the h1, h2, and h3 elements, added a border to
+- **Styled page with CSS**: Changed the font of the body of the page, changed the background color of the header, made the header into a flexbox and used the
+justify-content and align-items rules, changed the text color of the h1, h2, and h3 elements, added a border to
 the table element, and added various other rules.
 
 - **Experimented with semantic HTML tags**: Added a header, footer, table, main, image, and link element to the webpage.
