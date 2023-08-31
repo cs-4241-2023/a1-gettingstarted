@@ -1,7 +1,8 @@
 # a1-SmeeBoi
 Sameer Desai https://sameer-test-glitch.glitch.me/
 
-This project shows ...
+This project shows:
+
 
 
 ## Technical Achievements
