@@ -1,68 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>CS4241 Assignment 1</title>
-  <meta charset="utf-8" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Add styles for the circles */
-    .circle {
-      width: 50px;
-      height: 50px;
-      background-color: #3498db;
-      border-radius: 50%;
-      position: absolute;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <ul>
+  <head>
+    <title>CS4241 Assignment 1</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
         <li><a href="https://www.google.com">Home</a></li>
         <li><a href="https://www.google.com">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="image-container">
-    <img src="WPI_Logo.png" alt="WPI Logo" />
-  </div>
-  <h1>Information about Engjell Ramadani</h1>
-  <p>
-    Some background about myself, I am from Boston Massachusetts. I am a first
-    generation college student and my favorite sport is basketball. I love
-    creating full stack projects outside of class
-  </p>
-  <p>
-    I am a Senior Computer Science major, Class of 2024. Some noteable classes
-    I have taken include: taken Software Engineering, Computer Networks, Big
-    Data Management, and Operating Systems
-  </p>
-  <p>
-    Some of my hobbies are playing basketball, playing video games, and
-    reading books.
-  </p>
+      </ul>
+    </nav>
+    <div class="image-container">
+      <img src="WPI_Logo.png" alt="WPI Logo" />
+    </div>
+    <h1>Information about Engjell Ramadani</h1>
+    <p>
+      Some background about myself, I am from Boston Massachusetts. I am a first
+      generation college student and my favorite sport is basketball. I love
+      creating full stack projects outside of class
+    </p>
+    <p>
+      I am a Senior Computer Science major, Class of 2024. Some noteable classes
+      I have taken include: taken Software Engineering, Computer Networks, Big
+      Data Management, and Operating Systems
+    </p>
+    <p>
+      Some of my hobbies are playing basketball, playing video games, and
+      reading books.
+    </p>
 
-  <h2>
-    I have a lot of experience with HTML, CSS, and Javascript. Building full
-    stack applications is my favorite thing to do. I have also learned a lot
-    of Java throughout my time here at WPI. I also love doing python
-    scripting, whether it is creating bots or analyzing sports data. I find
-    python as the funnest coding language
-  </h2>
-  <p>
-    My work experience consists of interning at Yale along with creating a
-    full stack e-commerce website for my friend's clothing brand as he grossed
-    over 2 million followers on TikTok
-  </p>
-  <ul>
-    <li>IBM/Rational</li>
-    <li>WPI</li>
-  </ul>
-  <div class="footer">
-    <p>&copy; 2023 Your Company. All rights reserved. | Designed by Engjell Ramadani</p>
-  </div>
-</body>
+    <h2>
+      I have a lot of experience with HTML, CSS, and Javascript. Building full
+      stack applications is my favorite thing to do. I have also learned a lot
+      of Java throughout my time here at WPI. I also love doing python
+      scripting, whether it is creating bots or analyzing sports data. I find
+      python as the funnest coding language
+    </h2>
+    <p>
+      My work experience consists of interning at Yale along with creating a
+      full stack e-commerce website for my friend's clothing brand as he grossed
+      over 2 million followers on TikTok
+    </p>
+    <ul>
+      <li>IBM/Rational</li>
+      <li>WPI</li>
+    </ul>
+    <div class="footer">
+      <p>
+        &copy; 2023 Your Company. All rights reserved. | Designed by Engjell
+        Ramadani
+      </p>
+    </div>
+  </body>
+  <style>
+    nav {
+      color: #ffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    body {
+      font-family: "Black Ops One", sans-serif;
+      background: rgb(22, 171, 212);
+      background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0) 0%,
+        #1098f7 48%,
+        #f0edee 100%
+      );
+    }
+
+    p {
+      font-family: "Black Ops One", sans-serif;
+      font-size: 1.5rem;
+      color: #fff;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    h1 {
+      font-family: "Black Ops One", sans-serif;
+      font-size: 3rem;
+      font-style: italic;
+      color: crimson;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-family: "Black Ops One", sans-serif;
+      font-size: 2rem;
+      color: #fff;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    ul {
+      color: crimson;
+      list-style: none;
+      display: flex;
+      justify-content: space-around; /* Spread out the navigation links */
+      padding: 0;
+    }
+
+    img {
+      width: 25%;
+      height: 25%;
+    }
+
+    .image-container {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      animation: fadeIn 5s;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    a {
+      color: crimson;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #ccc; /* Change the color on hover if desired */
+    }
+  </style>
 </html>
