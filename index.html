@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -40,6 +39,24 @@
             </ul>
         <hr> <!-- Horizontal line -->
     </div>
+
+    <script>const cursorDot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
+        
+        window.addEventListener("mousemove", (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+        
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+        
+            cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`,
+                }, { duration: 600, fill: "forwards" })
+        });
+    </script>
+
 </body>
 
 </html>
