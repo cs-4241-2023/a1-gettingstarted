@@ -13,11 +13,11 @@ I've included a JavaScript animation of a rotating tesseract to add an engaging 
 ### Experimented with Semantic HTML Tags (3 points)
 I've utilized various semantic HTML tags to structure my webpage's content:
 
-- <h1> and <h2> for headings.
-- <p> for paragraphs of text.
-- <ul> and <li> for unordered lists.
-- <table>, <th>, and <td> for creating structured tables.
-- <img> for displaying profile images.
+- `<h1>` and `<h2>` for headings.
+- `<p>` for paragraphs of text.
+- `<ul>` and `<li>` for unordered lists.
+- `<table>`, `<th>`, and `<td>` for creating structured tables.
+- `<img>` for displaying profile images.
 
 ## Design Achievements
 ### Created a Color Palette Using color.adobe.com (10 points)
