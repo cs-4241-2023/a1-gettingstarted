@@ -1,3 +1,13 @@
+html {
+    font-family: Consolas, serif;
+    background: black;
+    color: white;
+}
+
+p {
+    font-weight: bold;
+}
+
 #header {
     font-weight: bold;
     position: absolute;
@@ -5,7 +15,7 @@
     color: green;
 }
 
-#animation {
+#header-container {
     position: relative;
 }
 
@@ -30,10 +40,4 @@
 
 #content {
     padding: 50px;
-}
-
-html {
-    font-family: Consolas, serif;
-    background: black;
-    color: white;
 }

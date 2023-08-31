@@ -4,10 +4,16 @@ Samuel Karkache - Assignment 1
 This is the first project for CS 4241 Webware. 
 
 ## Technical and Design Achievements
-- **Created JavaScript Animation for the Header and Footer**: Created a function called `animateElement` that animates 
+
+- **Style Rules in style.css**: Many style rules were added to style.css to style the web page. The `html` selector is used 
+to apply style rules universally. For example, I wanted the web page to be in 'dark mode' by default. So under the `html selector`
+I created a style rule that said `background: black`. Since different elements of the same type required different style rules,
+I styled a lot of the elements by referencing IDs that I set inside HTML. These can be seen in style.css.
+
+- **Created JavaScript Animation for the Header and Footer**: I created a function called `animateElement` that animates 
 a given element either vertically or horizontally at a given speed. The function takes three arguments. The `element` argument
 is the HTML element that is going to be animated. This is typically obtained in JavaScript by using the `document.getElementById`
-function. The `speed` argument is the relative speed of the animation and the animationDirection is the direction of the animation
+function. The `speed` argument is the relative speed of the animation and the `animationDirection` argument is the direction of the animation
 (specified by a direction enum). The function utilizes the `setInterval` function given by JavaScript in order to animate the
 element. This function allows code specified in a callback closure/function to be called repeatedly during a specified interval.
 Inside this closure/function, the position of the element is set and then subsequently updated. The size of the user's screen

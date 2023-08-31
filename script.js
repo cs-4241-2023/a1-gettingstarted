@@ -45,7 +45,7 @@ let animateElement = (element, speed, animationDirection) => {
             }
         }
         element.style.left = pos + 'px';
-    }, 100);
+    }, 35);
 }
 /**
  * rotates the color of a given element between red, green, and blue
@@ -90,7 +90,7 @@ let initMouseOverFont = () => {
  * Run functions when the page loads
  */
 document.addEventListener("DOMContentLoaded", () => {
-    animateElement(document.getElementById("header"), 25, direction.Horizontal);
+    animateElement(document.getElementById("header"), 15, direction.Horizontal);
     animateElement(document.getElementById("footer"), 10, direction.Horizontal);
     rgbElement(document.getElementById("class-list"), 250);
     rgbElement(document.getElementById("skill-list"), 250);
