@@ -1,0 +1,56 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(0.37turn, #3f87a6, #ebf8e1, #f69d3c);
+    /* background: (45deg, red 0 50%, blue 50% 100%); */
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1em;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 50px 0 rgba(196, 37, 37, 0.5);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#headerName{
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    border: 1px solid #ffffff;
+    display: inline;
+    margin-right: auto;
+    padding: 0.5rem;
+}
+.headerBar a {
+    margin-left: 2em;
+    color: #ffffff;
+}
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer div {
+    background-color: #cdcdcd;
+}
+body h1, h2, h3, h4, h5, h5, h6, p, ul, ol {
+    margin-left: 1rem;
+}
+
+footer div {
+    padding: 0.5rem;
+}
