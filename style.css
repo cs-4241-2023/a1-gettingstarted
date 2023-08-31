@@ -1,0 +1,43 @@
+html {
+    font-family: Consolas, serif;
+    background: black;
+    color: white;
+}
+
+p {
+    font-weight: bold;
+}
+
+#header {
+    font-weight: bold;
+    position: absolute;
+    width: 600px;
+    color: green;
+}
+
+#header-container {
+    position: relative;
+}
+
+#footer {
+    color: red;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+}
+
+#footer-container {
+    position: relative;
+}
+
+#class-list {
+    width: 85px;
+}
+
+#skill-list {
+    width: 200px;
+}
+
+#content {
+    padding: 50px;
+}
