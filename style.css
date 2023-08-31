@@ -81,17 +81,8 @@ p {
     text-align: left;
 }
 
-/* Adjust the container around the list */
-.list-container {
-    display: flex;
-    justify-content: center;
-}
-
-/* Adjust the list styling */
 ul {
-    margin-top: 10px;
-    margin-bottom: 0px;
-    margin-left: 0; /* Remove default left margin */
+    margin-top: 5px;
     list-style-type: none; /* Remove default bullet points */
     padding: 0;
     text-align: left; /* Align the text to the left */
@@ -100,7 +91,9 @@ ul {
 li {
     display: flex; /* Use Flexbox for alignment */
     align-items: center; /* Vertically center bullet points and text */
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    justify-content: center; /* Horizontally center content */
+
 }
 
 
