@@ -1,28 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "VT323", serif;
+        font-size: 24px;
+        margin-bottom: 5rem;
+        background-color: green;
+      }
+      
+      .reload-button {
+        z-index: 2;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+      }
+      
+      .reload-button-wrapper {
+        display: flex;
+        width: 50%;
+        max-width: 400px;
+        text-align: center;
+      }
+      
+      
+    </style>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body id="pageBody" onload="loadText(pageBody)">
+    <h1>Information about Colin Mettler</h1>
+    <p>Hey! I'm from the class of 2024.</p>
     <p>
-      [Self introduction]
+      Major : <br />Computer Science<br />CS Classes Taken : <br />1101
+      <br />2303 <br />2102 <br />2223 <br />3516 <br />3043 <br />3013
+      <br />3133 <br />3733 <br />3431 <br />4432 <br />534
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      I spend a lot of my freetime rock climbing, lifting weights, and gaming!
     </p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <p>Coding Experience</p>
     <ul>
-      <li>IBM/Rational</li>
+      <li>HTML : Some</li>
+      <li>CSS : Some</li>
+      <li>Java : A Lot</li>
+      <li>JavaScript : None</li>
+      <li>Ruby : None</li>
+      <li>Python: A Lot</li>
+      <li>unit testing : A Lot</li>
+      <li>C : A Lot</li>
+      <li>C++ : A Lot</li>
+      <li>C# : Some</li>
+    </ul>
+    <p>Working experience</p>
+    <ul>
+      <li>Raytheon/Collins Aerospace</li>
       <li>WPI</li>
     </ul>
+
+    <div class="reload-button-wrapper">
+      <div class="reload-button" onclick="loadText(pageBody)">
+        Reload Page
+      </div>
+    </div>
+
+    <script>
+      function animate({ draw, duration }) {
+        let start = performance.now();
+
+        requestAnimationFrame(function animate(time) {
+          let progress = (time - start) / duration;
+
+          draw(progress);
+
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          }
+        });
+      }
+
+      function loadText(body) {
+        let text = body.innerHTML;
+        let end = text.length;
+        let start = 0;
+
+        animate({
+          duration: 10000,
+          draw: function (progress) {
+            let animProgress = end * progress;
+            body.innerHTML = text.slice(0, Math.ceil(animProgress));
+          },
+        });
+      }
+    </script>
   </body>
 </html>
