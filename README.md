@@ -42,4 +42,4 @@ This project shows a webpage with basic information about me, such as major and 
 
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used Adobe Color Palette**: I incorporated all the colors from the color palette generated on Adobe's website, which can be seen in the screenshot colorPalette.png.
