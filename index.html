@@ -1,28 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Information about Justin Wonoski</h1>
+  <img src="https://cdn.glitch.global/7e098c65-0055-4c92-bf08-acb941337d8d/profile.jpg?v=1693265223477" alt="Professional Photo.">
+  <div id="intro">
+    <p>
+      Hi, I'm Justin and I am a senior at WPI studying Computer Science.
+    </p>
+    <p>
+      Major: Computer Science 2024
+    </p>
+    <p>
+      So far I've taken these CS Classes:
+    </p>
+  </div>
+  <ul>
+    <li>CS1101</li>
+    <li>CS2102</li>
+    <li>CS2011</li>
+    <li>CS2022</li>
+    <li>CS2223</li>
+    <li>CS3133</li>
+    <li>CS3733</li>
+    <li>CS3013</li>
+    <li>CS3041</li>
+    <li>CS3043</li>
+    <li>CS4233</li>
+    <li>CS4801</li>
+  </ul>
+  <div id="experience">
     <h2>Experience</h2>
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Software Engineering WPI- CSS/Java/Html</li>
+      <li>Human Computer Interaction WPI- CSS/Java/Html</li>
+      <a href="https://www.linkedin.com/in/justin-santiago-wonoski/" target="_blank"><button class ="myButton">LinkedLn</button></a>
+      <a href="https://github.com/Sombero" target="_blank"><button class ="myButton">Github</button></a>
+      <a href="https://www.wpi.edu/" target="_blank"><button class ="myButton">WPI</button></a>
     </ul>
-  </body>
+  </div>
+  <div id="clickButton">
+  <p><button onclick="moveBox()">Click Me</button></p> 
+</div>
+<div id="animate">
+  <script>
+    function moveBox() {
+      let id = null;
+      const elem = document.getElementById("animate");   
+      let position = 100;
+      clearInterval(id);
+      id = setInterval(frame, 10);
+      function frame() {
+        if (position == 390) {
+          clearInterval(id);
+        } else {
+          position++; 
+          elem.style.top = position + "px"; 
+          elem.style.left = position + "px"; 
+        }
+      }
+    }
+    </script>
+    </div>
+</body>
+
 </html>
