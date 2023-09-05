@@ -36,3 +36,5 @@ implementing it.
 - **Used the Open Sans Font from Google Fonts**: I used Open Sans font from Google for my primary font.
 
 -**Color Palette:** I used a color pallet from pigment.shapefactory.co. The two colors being Christalle (#421073) and Tradewind (#5CB5B2). Here is the link to that color palette generation. https://pigment.shapefactory.co/?a=421073&b=5CB5B2 I also will include an image in the repository.
+
+[![color-pallete.png](https://i.postimg.cc/YqhDG3Sm/color-pallete.png)](https://postimg.cc/ppMJ3Kz2) Professor said I can add this without any point deduction. 
