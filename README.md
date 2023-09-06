@@ -13,3 +13,7 @@ Assignment details
 ---
 
 For this assignment I added css styling for the h1, h2, p, body and table tags. I gave them colors based on a color palte from Adobe. I added a table, image, header and footer. The image of color palate is on the website.
+
+Glitch Link: 
+Code: https://glitch.com/edit/#!/leaf-imported-thrill
+Live Site: https://leaf-imported-thrill.glitch.me
