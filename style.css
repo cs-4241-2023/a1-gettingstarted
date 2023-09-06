@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=RubikIso=swap');
+
+body {
+    background-color: #FA8532;
+  }
+  
+  h1 {
+    color: #27FFB0;
+    margin-left: 15px;
+  }
+
+  h2 {
+    color: #DB3B67;
+    margin-left: 15px;
+  }
+
+  p {
+    color: #3B83DB;
+    margin-left: 15px;
+  }
+
+  table, th, td {
+    border: 3px solid;
+    color: #9A4EF2;
+  }
